@@ -4,9 +4,9 @@ import 'package:flutter_svg/svg.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
-    super.key,
+    super.key, required this.title,
   });
-
+  final String title;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,7 +21,7 @@ class CustomAppBar extends StatelessWidget {
               children: [
                 SvgPicture.asset("assets/icons/wHeart.svg"),
                 Text(
-                  "Flash Sale",
+                  title,
                   style: AppFonts.header.copyWith(
                       fontWeight: FontWeight.w700,
                       fontSize: 18.30,

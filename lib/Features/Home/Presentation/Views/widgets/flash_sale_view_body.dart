@@ -13,7 +13,8 @@ class FlashSaleViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: const PreferredSize(
-            preferredSize: Size.fromHeight(179), child: CustomAppBar()),
+            preferredSize: Size.fromHeight(179), child:
+             CustomAppBar(title: "Flash Sale",)),
         body: ListView(
           padding: EdgeInsets.symmetric(horizontal: 24),
           children: const [
