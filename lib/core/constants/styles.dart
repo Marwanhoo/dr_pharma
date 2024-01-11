@@ -10,7 +10,20 @@ class AppFonts {
     height: 0.12,
     letterSpacing: 0.14,
   );
-
+  static TextStyle Timer = const TextStyle(
+    color: Color(0xFF566CA2),
+    fontSize: 20,
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w600,
+    height: 0,
+  );
+  static TextStyle Date = const TextStyle(
+    color: Color(0xFF566CA2),
+    fontSize: 14,
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w400,
+    height: 0,
+  );
   static TextStyle button = const TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w600,
