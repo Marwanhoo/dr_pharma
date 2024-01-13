@@ -14,90 +14,91 @@ class CategoryView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 40),
-        child: DefaultTabController(
-          length: 2,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const SerachTextField(),
-              SizedBox(
-                height: context.screenHeight * .1 - 60,
-              ),
-              const TabBar(
-                indicatorPadding: EdgeInsetsDirectional.all(-10),
-                automaticIndicatorColorAdjustment: false,
-                dividerColor: Colors.transparent,
-                indicatorWeight: 4,
-                tabs: [
-                  Text(
-                    "Category",
-                    style: TextStyle(
-                      color: Color(0xFF566CA2),
-                      fontSize: 16,
-                      fontFamily: 'Outfit',
-                      fontWeight: FontWeight.w700,
-                      height: 0,
-                    ),
-                  ),
-                  Text(
-                    "Brands",
-                    style: TextStyle(
-                      color: Color(0xFF566CA2),
-                      fontSize: 16,
-                      fontFamily: 'Outfit',
-                      fontWeight: FontWeight.w700,
-                      height: 0,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: context.screenHeight * .1 - 30,
-              ),
-              Expanded(
-                child: TabBarView(children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      CategoryRow(),
-                      SizedBox(
-                        height: context.screenHeight * .1 - 30,
-                      ),
-                      const Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          CategoryItem(
-                            categoryItemCount: 60,
-                            catName: "Medicines",
-                            iconPath: "assets/icons/medicine.svg",
-                          ),
-                          CategoryItem(
-                            categoryItemCount: 60,
-                            catName: "Medical Supplies",
-                            iconPath: "assets/icons/equ.svg",
-                          ),
-                          CategoryItem(
-                            categoryItemCount: 60,
-                            catName: "Beauty Tools",
-                            iconPath: "assets/icons/tools.svg",
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  const Text("data")
-                ]),
-              ),
-            ],
-          ),
-        ),
-      ),
+    return Center(
+      child: Text("Category"),
     );
+    // return Scaffold(
+    //   backgroundColor: Colors.white,
+    //   body: Padding(
+    //     padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 40),
+    //     child: DefaultTabController(
+    //       length: 2,
+    //       child: Column(
+    //         crossAxisAlignment: CrossAxisAlignment.center,
+    //         children: [
+    //           const SerachTextField(),
+    //           SizedBox(
+    //             height: context.screenHeight * .1 - 60,
+    //           ),
+    //           const TabBar(
+    //             indicatorPadding: EdgeInsetsDirectional.all(-10),
+    //             automaticIndicatorColorAdjustment: false,
+    //             dividerColor: Colors.transparent,
+    //             indicatorWeight: 4,
+    //             tabs: [
+    //               Text(
+    //                 "Category",
+    //                 style: TextStyle(
+    //                   color: Color(0xFF566CA2),
+    //                   fontSize: 16,
+    //                   fontFamily: 'Outfit',
+    //                   fontWeight: FontWeight.w700,
+    //                   height: 0,
+    //                 ),
+    //               ),
+    //               Text(
+    //                 "Brands",
+    //                 style: TextStyle(
+    //                   color: Color(0xFF566CA2),
+    //                   fontSize: 16,
+    //                   fontFamily: 'Outfit',
+    //                   fontWeight: FontWeight.w700,
+    //                   height: 0,
+    //                 ),
+    //               ),
+    //             ],
+    //           ),
+    //           SizedBox(
+    //             height: context.screenHeight * .1 - 30,
+    //           ),
+    //           Expanded(
+    //             child: TabBarView(children: [
+    //               Column(
+    //                 crossAxisAlignment: CrossAxisAlignment.stretch,
+    //                 children: [
+    //                   CategoryRow(),
+    //                   SizedBox(
+    //                     height: context.screenHeight * .1 - 30,
+    //                   ),
+    //                   const Row(
+    //                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    //                     children: [
+    //                       CategoryItem(
+    //                         categoryItemCount: 60,
+    //                         catName: "Medicines",
+    //                         iconPath: "assets/icons/medicine.svg",
+    //                       ),
+    //                       CategoryItem(
+    //                         categoryItemCount: 60,
+    //                         catName: "Medical Supplies",
+    //                         iconPath: "assets/icons/equ.svg",
+    //                       ),
+    //                       CategoryItem(
+    //                         categoryItemCount: 60,
+    //                         catName: "Beauty Tools",
+    //                         iconPath: "assets/icons/tools.svg",
+    //                       ),
+    //                     ],
+    //                   ),
+    //                 ],
+    //               ),
+    //               const Text("data")
+    //             ]),
+    //           ),
+    //         ],
+    //       ),
+    //     ),
+    //   ),
+    // );
   }
 }
-
-

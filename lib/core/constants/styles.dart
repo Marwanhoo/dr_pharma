@@ -3,7 +3,7 @@ import 'package:flutter_drpharma_2/Core/constants/colors.dart';
 
 class AppFonts {
   static TextStyle header = const TextStyle(
-    fontSize: 12,
+    fontSize: 15,
     fontWeight: FontWeight.w700,
     color: Color(0xFF12121D),
     fontFamily: 'Urbanist',
@@ -16,6 +16,13 @@ class AppFonts {
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w600,
     height: 0,
+  );
+  static TextStyle header2 = const TextStyle(
+    color: Colors.black,
+    fontSize: 18,
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w900,
+    height: 0.14,
   );
   static TextStyle Date = const TextStyle(
     color: Color(0xFF566CA2),
@@ -34,7 +41,7 @@ class AppFonts {
     fontSize: 14,
     fontWeight: FontWeight.w600,
     color: Colors.black,
-    fontFamily: 'Urbanist',
+    fontFamily: 'Poppins',
   );
   static TextStyle small = const TextStyle(
     fontSize: 13,

@@ -31,10 +31,10 @@ final  void Function()? onTap;
             ),
           ),
           Text(catName, style: AppFonts.header),
-          Text(
-            "$categoryItemCount Items",
-            style: AppFonts.small.copyWith(color: AppColors.softGrey),
-          )
+          // Text(
+          //   "$categoryItemCount Items",
+          //   style: AppFonts.small.copyWith(color: AppColors.softGrey),
+          // )
         ],
       ),
     );

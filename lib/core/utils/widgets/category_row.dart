@@ -18,6 +18,7 @@ class CategoryRow extends StatelessWidget {
           catName: "Medicines",
           iconPath: "assets/icons/medicine.svg",
           onTap: () {
+            print("object");
             Navigator.push(context, MaterialPageRoute(builder: (context) {
               return MedicinesView();
             }));

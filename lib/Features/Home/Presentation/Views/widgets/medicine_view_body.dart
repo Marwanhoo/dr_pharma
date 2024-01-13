@@ -11,7 +11,11 @@ class MedicinesViewBody extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        leading: const Icon(Icons.arrow_back_ios),
+        leading: GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: const Icon(Icons.arrow_back_ios)),
         iconTheme: const IconThemeData(size: 15, color: Colors.black),
         centerTitle: true,
         title: const Text(
@@ -26,34 +30,39 @@ class MedicinesViewBody extends StatelessWidget {
       ),
       body: ListView(
         physics: BouncingScrollPhysics(),
-        padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+        padding: EdgeInsets.symmetric(
+          vertical: 16,
+        ),
         children: [
           Row(
             children: [
               BestOffersCard(imagePath: "assets/images/medicineImage.png"),
               SizedBox(
-                width: 15,
+                width: 10,
               ),
               BestOffersCard(imagePath: "assets/images/medicineImage.png")
             ],
           ),
           SizedBox(
-            height: 15,
+            height: 10,
           ),
           Row(
             children: [
               BestOffersCard(imagePath: "assets/images/medicineImage.png"),
               SizedBox(
-                width: 15,
+                width: 10,
               ),
               BestOffersCard(imagePath: "assets/images/medicineImage.png")
             ],
           ),
+          SizedBox(
+            height: 10,
+          ),
           Row(
             children: [
               BestOffersCard(imagePath: "assets/images/medicineImage.png"),
               SizedBox(
-                width: 15,
+                width: 10,
               ),
               BestOffersCard(imagePath: "assets/images/medicineImage.png")
             ],

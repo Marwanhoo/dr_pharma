@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_drpharma_2/Core/constants/styles.dart';
 import 'package:flutter_drpharma_2/Core/helper.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/best_offers_card.dart';
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/bottomNavBar.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_app_bar.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/timer_card.dart';
 import 'package:flutter_svg/svg.dart';
@@ -12,11 +13,15 @@ class FlashSaleViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
         appBar: const PreferredSize(
-            preferredSize: Size.fromHeight(179), child:
-             CustomAppBar(title: "Flash Sale",)),
+            preferredSize: Size.fromHeight(179),
+            child: CustomAppBar(
+              title: "Flash Sale",
+              isFlash: true,
+            )),
         body: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 24),
+          padding: EdgeInsets.symmetric(horizontal: 0),
           children: const [
             TimerCard(),
             SizedBox(
@@ -26,19 +31,19 @@ class FlashSaleViewBody extends StatelessWidget {
               children: [
                 BestOffersCard(imagePath: "assets/images/medicineImage.png"),
                 SizedBox(
-                  width: 15,
+                  width: 10,
                 ),
                 BestOffersCard(imagePath: "assets/images/medicineImage.png")
               ],
             ),
             SizedBox(
-              height: 15,
+              height: 10,
             ),
             Row(
               children: [
                 BestOffersCard(imagePath: "assets/images/medicineImage.png"),
                 SizedBox(
-                  width: 15,
+                  width: 10,
                 ),
                 BestOffersCard(imagePath: "assets/images/medicineImage.png")
               ],
@@ -47,7 +52,7 @@ class FlashSaleViewBody extends StatelessWidget {
               children: [
                 BestOffersCard(imagePath: "assets/images/medicineImage.png"),
                 SizedBox(
-                  width: 15,
+                  width: 10,
                 ),
                 BestOffersCard(imagePath: "assets/images/medicineImage.png")
               ],

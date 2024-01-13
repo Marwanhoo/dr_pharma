@@ -7,9 +7,7 @@ class CustomSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
-      
-      options: CarouselOptions(height: 200.0,autoPlay: true),
-      
+      options: CarouselOptions(height: 200.0, autoPlay: true),
       items: [2, 3, 4, 5].map((i) {
         return Builder(
           builder: (BuildContext context) {
@@ -26,7 +24,14 @@ class CustomSlider extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12)),
                 child: Stack(
                   children: [
-                    Image.asset("assets/images/gradientShadow.png"),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset(
+                        "assets/images/gradientShadow.png",
+                        fit: BoxFit.cover,
+                        height: 200,
+                      ),
+                    ),
                     Padding(
                       padding: const EdgeInsets.only(
                         left: 20,

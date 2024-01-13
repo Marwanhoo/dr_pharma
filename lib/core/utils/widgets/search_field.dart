@@ -11,7 +11,7 @@ class SerachTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: context.screenWidth * .85,
+      width: context.screenWidth * .8,
       decoration: BoxDecoration(
         color: AppColors.grey,
         borderRadius: BorderRadius.circular(18),
@@ -19,6 +19,7 @@ class SerachTextField extends StatelessWidget {
       child: Center(
         child: TextFormField(
           decoration: InputDecoration(
+              contentPadding: EdgeInsets.zero,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(18),
                 borderSide: BorderSide.none,

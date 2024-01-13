@@ -17,12 +17,10 @@ class PriceRow extends StatelessWidget {
         ),
         Text(
           "  \$355.00",
-          style: AppFonts.small.copyWith(color: Colors.black),
+          style: AppFonts.small.copyWith(
+              decoration: TextDecoration.lineThrough, color: Colors.black),
         )
       ],
     );
   }
 }
-
-
-
