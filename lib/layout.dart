@@ -7,10 +7,6 @@ class Layout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
-      child: Scaffold(
-        bottomNavigationBar: BottomNavBar(),
-        body: HomeView(),),
-    );
+    return  BottomNavBar();
   }
 }

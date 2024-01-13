@@ -7,7 +7,6 @@ import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/bott
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_header.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_row.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_slider.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/medicine_view_body.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});

@@ -4,6 +4,7 @@ import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/search_view.
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_container.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_header.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/profile_info_view_body.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class ProfileInfoView extends StatelessWidget {
   const ProfileInfoView({super.key});
@@ -32,9 +33,12 @@ class ProfileInfoView extends StatelessWidget {
             CustomContainer(
               imagePath: "assets/icons/searchh.svg",
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return SearchView();
-                }));
+                PersistentNavBarNavigator.pushNewScreen(
+                  context,
+                  screen: SearchView(),
+                  withNavBar: false, // OPTIONAL VALUE. True by default.
+                  pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                );
               },
             )
           ],

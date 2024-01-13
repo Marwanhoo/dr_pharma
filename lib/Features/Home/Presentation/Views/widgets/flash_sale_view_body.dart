@@ -19,6 +19,7 @@ class FlashSaleViewBody extends StatelessWidget {
             child: CustomAppBar(
               title: "Flash Sale",
               isFlash: true,
+            
             )),
         body: ListView(
           padding: EdgeInsets.symmetric(horizontal: 0),
