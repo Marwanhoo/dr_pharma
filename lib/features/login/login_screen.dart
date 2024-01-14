@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/features/forgot_password/forgot_password_screen.dart';
+import 'package:flutter_drpharma_2/features/signup/signup_screen.dart';
 import 'package:flutter_drpharma_2/widgets/CustomRow.dart';
 import 'package:flutter_drpharma_2/widgets/CustomTextFormField.dart';
 
@@ -38,11 +40,14 @@ class LoginScreen extends StatelessWidget {
                 prefixIcon: Icons.lock,
                 hintText: "Password",
                 suffixIcon: Icons.remove_red_eye_outlined,
+                obscureText: true,
               ),
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const ForgotPasswordScreen()));
+                  },
                   child: const Text(
                     "Forgot Password",
                     style: TextStyle(
@@ -56,7 +61,9 @@ class LoginScreen extends StatelessWidget {
               ),
               CustomRow(
                 text: "Sign In",
-                onPressed: () {},
+                onPressed: () {
+
+                },
               ),
               const SizedBox(
                 height: 40,
@@ -134,11 +141,11 @@ class LoginScreen extends StatelessWidget {
                   InkWell(
                     borderRadius: BorderRadius.circular(2),
                     onTap: () {
-                      // Navigator.of(context).push(
-                      //   MaterialPageRoute(
-                      //     builder: (_) => const SignUpScreen(),
-                      //   ),
-                      // );
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const SignUpScreen(),
+                        ),
+                      );
                     },
                     child: const Text(
                       "sign up",

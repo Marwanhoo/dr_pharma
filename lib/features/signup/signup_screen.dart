@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dash_flags/dash_flags.dart';
+import 'package:flutter_drpharma_2/features/signup/create_account_screen.dart';
 import 'package:flutter_drpharma_2/widgets/CustomRow.dart';
 import 'package:flutter_drpharma_2/widgets/CustomTextFormField.dart';
 class SignUpScreen extends StatelessWidget {
@@ -56,6 +57,7 @@ class SignUpScreen extends StatelessWidget {
                 prefixIcon: Icons.lock,
                 hintText: "Password",
                 suffixIcon: Icons.remove_red_eye_outlined,
+                obscureText: true,
               ),
               const SizedBox(
                 height: 15,
@@ -64,6 +66,7 @@ class SignUpScreen extends StatelessWidget {
                 prefixIcon: Icons.lock,
                 hintText: "Confirm Password",
                 suffixIcon: Icons.remove_red_eye_outlined,
+                obscureText: true,
               ),
               const SizedBox(
                 height: 15,
@@ -192,7 +195,7 @@ void showBusinessSpecialization(BuildContext context) {
             CustomRow(
               text: "Continue",
               onPressed: () {
-                //Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const CreateAccountScreen()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const CreateAccountScreen()));
               },
             ),
           ],

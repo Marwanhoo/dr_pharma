@@ -9,6 +9,7 @@ class CustomTextFormField extends StatelessWidget {
     this.enabled = true,
     this.showCursor = true,
     this.readOnly = false,
+    this.obscureText = false,
   });
 
   final IconData prefixIcon;
@@ -18,6 +19,7 @@ class CustomTextFormField extends StatelessWidget {
   final bool enabled;
   final bool showCursor;
   final bool readOnly;
+  final bool obscureText;
 
 
   @override
@@ -34,6 +36,7 @@ class CustomTextFormField extends StatelessWidget {
         ],
       ),
       child: TextFormField(
+        obscureText: obscureText,
         decoration: InputDecoration(
           prefixIcon: Icon(
             prefixIcon,

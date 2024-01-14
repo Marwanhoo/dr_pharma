@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_drpharma_2/features/login/login_screen.dart';
+import 'package:flutter_drpharma_2/features/signup/signup_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -24,6 +25,9 @@ class OnBoardingScreen extends StatelessWidget {
                   height: 30,
                 ),
                 buildElevatedButton(
+                  (){
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const LoginScreen()));
+                  },
                   "login",
                   const Color(0XFF566CA2),
                 ),
@@ -31,6 +35,9 @@ class OnBoardingScreen extends StatelessWidget {
                   height: 20,
                 ),
                 buildElevatedButton(
+                      (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const SignUpScreen()));
+                      },
                   "sign up",
                   Colors.transparent,
                   Colors.white,
@@ -44,9 +51,11 @@ class OnBoardingScreen extends StatelessWidget {
   }
 
   Widget buildElevatedButton(
+      VoidCallback onPressed,
     String text,
     Color backgroundColor, [
     Color? textColor,
+
   ]) {
     return Container(
       width: double.infinity,
@@ -62,7 +71,7 @@ class OnBoardingScreen extends StatelessWidget {
                 : BorderSide.none,
           ),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text(
           text,
           style: TextStyle(
@@ -129,11 +138,11 @@ class OnBoardingScreen extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                if(index == 0) SizedBox(height: 110,),
+                if(index == 0) const SizedBox(height: 110,),
                 Image.asset(
                   vector[index],
                 ),
-                if(index == 2) SizedBox(height: 90,),
+                if(index == 2) const SizedBox(height: 90,),
               ],
             ),
 
