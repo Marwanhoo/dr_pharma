@@ -2,6 +2,7 @@ import 'package:flutter_drpharma_2/core/app_export.dart';
 
 
 class OnBoardingScreen extends StatelessWidget {
+  static const String routeName = "OnBoarding Screen";
   const OnBoardingScreen({super.key});
 
   @override
