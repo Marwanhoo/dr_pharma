@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/features/forgot_password/forgot_password_screen.dart';
-import 'package:flutter_drpharma_2/features/signup/signup_screen.dart';
+import 'package:flutter_drpharma_2/Features/forgot_password/forgot_password_screen.dart';
+import 'package:flutter_drpharma_2/Features/signup/signup_screen.dart';
+
 import 'package:flutter_drpharma_2/widgets/CustomRow.dart';
 import 'package:flutter_drpharma_2/widgets/CustomTextFormField.dart';
 

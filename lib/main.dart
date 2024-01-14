@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/Features/on_boarding/onboarding_screen.dart';
 
-import 'package:flutter_drpharma_2/features/on_boarding/onboarding_screen.dart';
 
 void main() {
   runApp(const MyApp());

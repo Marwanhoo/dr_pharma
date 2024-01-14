@@ -1,0 +1,6 @@
+sha,filename,url,lines,title,comment,priority,category,additional,id,private
+"518d7aa8792335af02a62b1cf451099019db4166","/lib/layout.dart","","9:27-9:27","structure","farah, this class proceed to what ?","2","Architecture","","ee369244-90bb-4a77-938c-14c1ee99c8b9","0"
+"518d7aa8792335af02a62b1cf451099019db4166","/lib/main.dart","","19:37-19:37","routes","named routes ","2","Best Practices","","41c8690f-6e7e-478f-9455-c8de47aff3c4","0"
+"518d7aa8792335af02a62b1cf451099019db4166","/lib/widgets/CustomRow.dart","","14:13-14:13","widgets","need to make a small widgets","2","Code-Style","","6c9eb37a-25ef-4e48-a53e-e57bf233f66f","0"
+"518d7aa8792335af02a62b1cf451099019db4166","/lib/widgets/CustomRow.dart","","3:41-3:41","bad structure","follow the structure","3","Architecture","","1cbf770b-2019-442f-ae69-201f44f1d729","0"
+"518d7aa8792335af02a62b1cf451099019db4166","/lib/widgets/CustomTextFormField.dart","","3:51-3:51","bad structure","follow structure","3","Architecture","","aaa4d258-e1fb-4c2f-b394-165614c67197","0"

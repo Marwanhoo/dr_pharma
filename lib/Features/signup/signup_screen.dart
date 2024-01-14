@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dash_flags/dash_flags.dart';
-import 'package:flutter_drpharma_2/features/signup/create_account_screen.dart';
+import 'package:flutter_drpharma_2/Features/signup/create_account_screen.dart';
 import 'package:flutter_drpharma_2/widgets/CustomRow.dart';
 import 'package:flutter_drpharma_2/widgets/CustomTextFormField.dart';
 class SignUpScreen extends StatelessWidget {
