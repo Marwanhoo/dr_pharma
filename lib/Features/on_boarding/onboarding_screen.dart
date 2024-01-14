@@ -1,8 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Features/login/login_screen.dart';
-import 'package:flutter_drpharma_2/Features/signup/signup_screen.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -27,7 +24,7 @@ class OnBoardingScreen extends StatelessWidget {
                 ),
                 buildElevatedButton(
                   (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const LoginScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_)=>  LoginScreen()));
                   },
                   "login",
                   const Color(0XFF566CA2),

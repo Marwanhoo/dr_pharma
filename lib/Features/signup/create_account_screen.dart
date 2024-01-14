@@ -1,8 +1,8 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/widgets/CustomRow.dart';
-import 'package:flutter_drpharma_2/widgets/CustomTextFormField.dart';
+import 'package:flutter_drpharma_2/core/utils/widgets/CustomRow.dart';
+import 'package:flutter_drpharma_2/core/utils/widgets/CustomTextFormField.dart';
 
 
 class CreateAccountScreen extends StatelessWidget {
