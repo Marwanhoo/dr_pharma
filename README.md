@@ -1,16 +1,35 @@
-# flutter_drpharma_2
 
-A new Flutter project.
+# Dr-pharma
+### Table of contents
+- [Application structure](#project-structure)
+- [Figma design ](#figma-design)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+### Figma design 
 
-A few resources to get you started if this is your first Flutter project:
+https://www.figma.com/file/gzXxLHdPKNsQrNsyKj6MrQ/DR.pharma2?type=design&node-id=0%3A1&mode=design&t=miM5bKQPHJumy4MX-1
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Application structure
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+your application structure should look like this:
+
+```
+├── Android                         - It contains files required to run the application on an Android platform.
+├── assets                          - It contains all images and fonts of your application.
+├── iOS                             - It contains files required to run the application on an iOS platform.
+├── lib                             - The most important folder in the application, used to write most of the Dart code.
+    ├── main.dart                   - Starting point of the application
+    ├── core
+    │   ├── app_export.dart         - It contains commonly used file imports
+    │   ├── constants               - It contains the static constant class file
+    │   └── utils                   - It contains common files and utilities of the application
+    │        └──widgets             - It contains all custom widget classes
+    ├── Features                    - It contains widgets on the screens
+    ├── Service                     - It contains all the helper classes of the application
+    └── config                  
+         ├── theme             - It contains app theme and decoration classes
+         └── routes            - It contains all the routes of the application
+```
+
+
+
