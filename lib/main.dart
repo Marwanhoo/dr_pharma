@@ -14,10 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      initialRoute: OnBoardingView.routeName,
-      routes: {
-        OnBoardingView.routeName : (context) => const OnBoardingView(),
-      },
+      home: const OnBoardingView(),
     );
   }
 }
