@@ -1,4 +1,6 @@
+
 import 'package:device_preview/device_preview.dart';
+
 
 import 'Core/app_export.dart';
 
@@ -12,11 +14,11 @@ void main() => runApp(
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+
       supportedLocales: const [Locale('en', 'US'), Locale("ar", '')],
       localizationsDelegates: {
         AppLocalizations.delegate,
@@ -35,6 +37,7 @@ class MyApp extends StatelessWidget {
         return supportedLocale.first;
       },
       home: Layout(),
+
     );
   }
 }

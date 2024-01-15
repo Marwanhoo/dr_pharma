@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/search_view.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../../../../core/constants/styles.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({

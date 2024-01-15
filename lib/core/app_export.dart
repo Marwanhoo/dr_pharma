@@ -1,3 +1,4 @@
+
 export 'package:flutter/foundation.dart';
 export 'package:flutter/material.dart';
 export 'package:flutter_drpharma_2/Config/app_localizations.dart';
@@ -37,3 +38,4 @@ export 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/add_
 export 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/rating.dart';
 export 'package:flutter_drpharma_2/Features/Category/Presentation/Views/category_view.dart';
 export 'package:flutter_drpharma_2/Features/Home/Presentation/Views/cash_back_view.dart';
+

@@ -1,5 +1,10 @@
 
+
 import 'package:flutter_drpharma_2/Core/app_export.dart';
+
+
+import '../../../../../core/constants/colors.dart';
+import '../../../../../core/constants/styles.dart';
 
 class CashesDetails extends StatelessWidget {
   const CashesDetails({

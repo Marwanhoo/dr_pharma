@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
-import 'package:flutter_drpharma_2/Core/helper.dart';
+import 'package:flutter_drpharma_2/core/constants/styles.dart';
+import 'package:flutter_drpharma_2/core/helper.dart';
+
+import '../../constants/colors.dart';
 
 class SerachTextField extends StatelessWidget {
   const SerachTextField({

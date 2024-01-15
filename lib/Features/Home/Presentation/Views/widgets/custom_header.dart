@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
+
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_container.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../../../../core/constants/styles.dart';
 
 class CustomHeader extends StatelessWidget implements PreferredSize {
   const CustomHeader({

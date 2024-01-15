@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
-import 'package:flutter_drpharma_2/Core/helper.dart';
-import 'package:flutter_drpharma_2/Core/utils/widgets/category_row.dart';
-import 'package:flutter_drpharma_2/Core/utils/widgets/search_field.dart';
+
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/category_item.dart';
 import 'package:flutter_svg/svg.dart';
 

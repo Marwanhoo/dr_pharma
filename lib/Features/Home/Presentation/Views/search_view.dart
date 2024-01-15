@@ -1,5 +1,7 @@
 
+
 import 'package:flutter_drpharma_2/Core/app_export.dart';
+
 import 'package:lottie/lottie.dart';
 
 class SearchView extends StatelessWidget {

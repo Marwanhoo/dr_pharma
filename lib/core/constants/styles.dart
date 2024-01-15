@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
+import 'package:flutter_drpharma_2/core/constants/colors.dart';
 
 class AppFonts {
   static TextStyle style14Urbn = const TextStyle(
