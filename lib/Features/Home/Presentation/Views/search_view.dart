@@ -1,8 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
-import 'package:flutter_drpharma_2/Core/helper.dart';
-import 'package:flutter_drpharma_2/Core/utils/widgets/search_field.dart';
+
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 import 'package:lottie/lottie.dart';
 
 class SearchView extends StatelessWidget {

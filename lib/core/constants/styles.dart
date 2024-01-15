@@ -2,13 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_drpharma_2/Core/constants/colors.dart';
 
 class AppFonts {
-  static TextStyle header = const TextStyle(
-    fontSize: 15,
-    fontWeight: FontWeight.w700,
+  static TextStyle style14Urbn = const TextStyle(
     color: Color(0xFF12121D),
+    fontSize: 14,
     fontFamily: 'Urbanist',
-    height: 0.12,
-    letterSpacing: 0.14,
+    fontWeight: FontWeight.w700,
+  );
+
+  static TextStyle style18Pop = TextStyle(
+    color: Colors.black,
+    fontSize: 18,
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w500,
+    height: 0.14,
   );
   static TextStyle Timer = const TextStyle(
     color: Color(0xFF566CA2),

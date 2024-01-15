@@ -28,7 +28,7 @@ class CustomAppBar extends StatelessWidget {
                       SvgPicture.asset(leadingIcon),
                       Text(
                         title,
-                        style: AppFonts.header.copyWith(
+                        style: AppFonts.style14Urbn.copyWith(
                             fontWeight: FontWeight.w700,
                             fontSize: 18.30,
                             fontFamily: 'Poppins',
@@ -54,7 +54,7 @@ class CustomAppBar extends StatelessWidget {
                       Spacer(),
                       Text(
                         title,
-                        style: AppFonts.header.copyWith(
+                        style: AppFonts.style14Urbn.copyWith(
                             fontWeight: FontWeight.w700,
                             fontSize: 18.30,
                             fontFamily: 'Poppins',

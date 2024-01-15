@@ -1,9 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/cashItem.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/progressIndicator.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/refundButton.dart';
+
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 
 class CashesDetails extends StatelessWidget {
   const CashesDetails({

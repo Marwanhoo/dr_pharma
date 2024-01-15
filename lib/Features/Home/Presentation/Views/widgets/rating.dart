@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
-import 'package:flutter_svg/svg.dart';
+
+
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 
 class RatingRow extends StatelessWidget {
   const RatingRow({

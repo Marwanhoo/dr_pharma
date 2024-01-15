@@ -1,13 +1,6 @@
+
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/category_view.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/cash_back_view.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/home_view.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/flash_sale_view_body.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/home_view_body.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 
 class BottomNavBar extends StatelessWidget {
   BottomNavBar({super.key});

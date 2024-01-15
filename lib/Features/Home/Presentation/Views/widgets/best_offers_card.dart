@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/medicine_view.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/profile_info.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/add_to_cart_button.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/disc_fav_row.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/price_row.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/rating.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 
 class BestOffersCard extends StatelessWidget {
   const BestOffersCard({super.key, required this.imagePath});

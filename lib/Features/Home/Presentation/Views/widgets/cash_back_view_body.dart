@@ -1,11 +1,6 @@
-import 'dart:ui';
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/cash_details.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_app_bar.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/trans_card.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/trans_details.dart';
 
+
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 
 class CashBackViewBody extends StatelessWidget {
   const CashBackViewBody({super.key});

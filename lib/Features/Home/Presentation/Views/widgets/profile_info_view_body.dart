@@ -1,13 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
-import 'package:flutter_drpharma_2/Core/helper.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/best_offers_card.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_row.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/disc_fav_row.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/price_row.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:flutter_drpharma_2/Core/app_export.dart';
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/counter_row.dart';
 
 class ProfileInfoViewBody extends StatefulWidget {
   const ProfileInfoViewBody({super.key});
@@ -96,11 +88,11 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                       style: AppFonts.Date.copyWith(color: AppColors.darkGrey))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               const CounterRow(),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -172,41 +164,6 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
             ),
           ],
         ),
-      ],
-    );
-  }
-}
-
-class CounterRow extends StatelessWidget {
-  const CounterRow({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        PriceRow(),
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(6),
-              color: Color(0xffFFE177).withOpacity(.45)),
-          child: Row(
-            children: [
-              SvgPicture.asset("assets/icons/dollar.svg"),
-              Text(
-                "Points    ",
-                style: AppFonts.medium.copyWith(color: Color(0xffFCD240)),
-              ),
-              Text(
-                "50",
-                style: AppFonts.medium.copyWith(color: Color(0xffFCD240)),
-              )
-            ],
-          ),
-        )
       ],
     );
   }

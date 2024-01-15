@@ -1,10 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/search_view.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_container.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_header.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/profile_info_view_body.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 
 class ProfileInfoView extends StatelessWidget {
   const ProfileInfoView({super.key});
@@ -18,7 +13,7 @@ class ProfileInfoView extends StatelessWidget {
           centerTitle: true,
           title: Text(
             "Profile Info",
-            style: AppFonts.header.copyWith(fontSize: 20),
+            style: AppFonts.style14Urbn.copyWith(fontSize: 20),
           ),
           leading: GestureDetector(
             onTap: () {

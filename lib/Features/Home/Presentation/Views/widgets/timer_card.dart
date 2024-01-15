@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
+
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 
 class TimerCard extends StatelessWidget {
   const TimerCard({
