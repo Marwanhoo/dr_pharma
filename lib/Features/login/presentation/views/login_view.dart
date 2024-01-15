@@ -64,7 +64,9 @@ class LoginScreen extends StatelessWidget {
               SizedBox(
                 height: context.screenHeight / 50,
               ),
-              buildDontHaveAccount(context),
+              buildDontHaveAccount(context, "You don't hava account ? ", "Sign Up",(){
+                Navigator.pushNamed(context, '/signup view');
+              }),
             ],
           ),
         ),

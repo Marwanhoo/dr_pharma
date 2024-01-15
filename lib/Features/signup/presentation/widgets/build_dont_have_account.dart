@@ -1,20 +1,18 @@
 import '../../../../core/app_export.dart';
 
-Row buildDontHaveAccount(BuildContext context) {
+Row buildDontHaveAccount(BuildContext context, String text , String sign, VoidCallback onPressed) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
-      const Text(
-        "you don’t have account ? ",
+       Text(
+        text,
       ),
       InkWell(
         borderRadius: BorderRadius.circular(2),
-        onTap: () {
-          Navigator.of(context).pop();
-        },
-        child: const Text(
-          "sign in",
-          style: TextStyle(
+        onTap: onPressed,
+        child:  Text(
+          sign,
+          style: const TextStyle(
             color: Colors.red,
             decoration: TextDecoration.underline,
             decorationThickness: 2,

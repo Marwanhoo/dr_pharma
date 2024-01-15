@@ -4,10 +4,10 @@ import  '../widgets/build_dont_have_account.dart';
 import  '../widgets/show_business_specialization.dart';
 import  '../widgets/show_country_picker.dart';
 
-class SignUpScreen extends StatelessWidget {
+class SignUpView extends StatelessWidget {
   static const String routeName = "SignUpScreen";
 
-  const SignUpScreen({super.key});
+  const SignUpView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -87,8 +87,9 @@ class SignUpScreen extends StatelessWidget {
               SizedBox(
                 height: context.screenHeight / 40, //15,
               ),
-              buildDontHaveAccount(context),
-            ],
+              buildDontHaveAccount(context, "Already hava an account ? ", "Sign In" , (){
+                Navigator.pop(context);
+              }),            ],
           ),
         ),
       ),

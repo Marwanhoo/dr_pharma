@@ -33,7 +33,8 @@ class OnBoardingView extends StatelessWidget {
                 buildElevatedButton(
                   context,
                   () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => LoginScreen()));
+                    //Navigator.of(context).push(MaterialPageRoute(builder: (_) => LoginScreen()));
+                    Navigator.pushNamed(context, '/login view');
                   },
                   "login",
                   const Color(0XFF566CA2),
@@ -43,7 +44,8 @@ class OnBoardingView extends StatelessWidget {
                 buildElevatedButton(
                   context,
                   () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SignUpScreen()));
+                    //Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SignUpScreen()));
+                    Navigator.pushNamed(context, '/signup view');
                   },
                   "sign up",
                   Colors.transparent,
