@@ -16,7 +16,9 @@ class SearchView extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: context.screenHeight * .01, vertical: context.screenHeight * .05),
+          padding: EdgeInsets.symmetric(
+              horizontal: context.screenWidth * .02,
+              vertical: context.screenHeight * .07),
           child: Column(
             children: [
               Row(
@@ -30,8 +32,9 @@ class SearchView extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding:
-                    EdgeInsets.symmetric(horizontal: context.screenHeight * .01, vertical: context.screenHeight * .02),
+                padding: EdgeInsets.symmetric(
+                    horizontal: context.screenHeight * .01,
+                    vertical: context.screenHeight * .02),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -41,7 +44,9 @@ class SearchView extends StatelessWidget {
                     ),
                     Text(
                       "Clear",
-                      style: AppFonts.small.copyWith(color: AppColors.softGrey, fontWeight: FontWeight.bold),
+                      style: AppFonts.small.copyWith(
+                          color: AppColors.softGrey,
+                          fontWeight: FontWeight.bold),
                     )
                   ],
                 ),

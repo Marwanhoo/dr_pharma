@@ -9,12 +9,18 @@ class AppFonts {
     fontWeight: FontWeight.w700,
   );
 
-  static TextStyle style18Pop = TextStyle(
+  static TextStyle style18Pop =const TextStyle(
     color: Colors.black,
     fontSize: 18,
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w500,
     height: 0.14,
+  );
+  static TextStyle style20Pop =const TextStyle(
+    color: Colors.white,
+    fontSize: 20,
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w500,
   );
   static TextStyle Timer = const TextStyle(
     color: Color(0xFF566CA2),
@@ -30,11 +36,11 @@ class AppFonts {
     fontWeight: FontWeight.w900,
     height: 0.14,
   );
-  static TextStyle Date = const TextStyle(
+  static TextStyle style14Pop500 = const TextStyle(
     color: Color(0xFF566CA2),
     fontSize: 14,
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w500,
     height: 0,
   );
   static TextStyle button = const TextStyle(

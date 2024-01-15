@@ -49,7 +49,9 @@ class LoginScreen extends StatelessWidget {
               ),
               CustomRow(
                 text: "Sign In",
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/layout');
+                },
               ),
               SizedBox(
                 height: context.screenHeight / 10, //40,

@@ -1,7 +1,6 @@
 import '../../../../../core/app_export.dart';
 import '../../../../../core/constants/colors.dart';
 
-
 class CashBackViewBody extends StatelessWidget {
   const CashBackViewBody({super.key});
 
@@ -9,7 +8,7 @@ class CashBackViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const PreferredSize(
-        preferredSize: Size.fromHeight(179),
+        preferredSize: Size.fromHeight(130),
         child: CustomAppBar(
           title: "Cash Back",
           leadingIcon: "assets/icons/arrow.svg",
@@ -36,6 +35,9 @@ class CashBackViewBody extends StatelessWidget {
           TransactionDetails(
             iconPath: "assets/icons/redTrans.svg",
             color: AppColors.red,
+          ),
+          SizedBox(
+            height: 20,
           ),
         ],
       ),

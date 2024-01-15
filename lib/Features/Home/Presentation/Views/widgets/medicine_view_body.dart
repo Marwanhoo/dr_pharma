@@ -8,7 +8,8 @@ class MedicinesViewBody extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white,
         leading: GestureDetector(
             onTap: () {
               Navigator.pop(context);
@@ -27,17 +28,15 @@ class MedicinesViewBody extends StatelessWidget {
         ),
       ),
       body: ListView(
-        physics: BouncingScrollPhysics(),
-        padding: EdgeInsets.symmetric(
+        physics: const BouncingScrollPhysics(),
+        padding: const EdgeInsets.symmetric(
           vertical: 16,
         ),
-        children: [
+        children: const [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-              SizedBox(
-                width: 10,
-              ),
               BestOffersCard(imagePath: "assets/images/medicineImage.png")
             ],
           ),
@@ -45,11 +44,9 @@ class MedicinesViewBody extends StatelessWidget {
             height: 10,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-              SizedBox(
-                width: 10,
-              ),
               BestOffersCard(imagePath: "assets/images/medicineImage.png")
             ],
           ),
@@ -57,14 +54,12 @@ class MedicinesViewBody extends StatelessWidget {
             height: 10,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-              SizedBox(
-                width: 10,
-              ),
               BestOffersCard(imagePath: "assets/images/medicineImage.png")
             ],
-          )
+          ),
         ],
       ),
     );

@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_container.dart';
-import 'package:flutter_svg/svg.dart';
-
 import '../../../../../core/constants/styles.dart';
 
-class CustomHeader extends StatelessWidget implements PreferredSize {
+class CustomHeader extends StatelessWidget {
   const CustomHeader({
     super.key,
   });
@@ -41,16 +39,12 @@ class CustomHeader extends StatelessWidget implements PreferredSize {
             ),
             CustomContainer(
               imagePath: "assets/icons/gift.svg",
+              onTap: () {
+                PersistentNavBarNavigator.pushNewScreen(context,
+                    screen: CashBackView(), withNavBar: false);
+              },
             )
           ]),
     );
   }
-  
-  @override
-  // TODO: implement child
-  Widget get child => throw UnimplementedError();
-  
-  @override
-  // TODO: implement preferredSize
-  Size get preferredSize => throw UnimplementedError();
 }

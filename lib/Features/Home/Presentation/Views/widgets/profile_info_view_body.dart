@@ -1,9 +1,7 @@
-
+import 'package:flutter_drpharma_2/Core/constants/colors.dart';
+import 'package:flutter_drpharma_2/Core/constants/styles.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/counter_row.dart';
-
-import '../../../../../core/app_export.dart';
-import '../../../../../core/constants/colors.dart';
-import '../../../../../core/constants/styles.dart';
+import '../../../../../Core/app_export.dart';
 
 class ProfileInfoViewBody extends StatefulWidget {
   const ProfileInfoViewBody({super.key});
@@ -83,9 +81,9 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                 children: [
                   Text(
                     "From:Gsk Comapny",
-                    style: AppFonts.Date.copyWith(color: AppColors.darkGrey),
+                    style: AppFonts.style14Pop500.copyWith(color: AppColors.darkGrey),
                   ),
-                  Text("(1045 Reviews)", style: AppFonts.Date.copyWith(color: AppColors.darkGrey))
+                  Text("(1045 Reviews)", style: AppFonts.style14Pop500.copyWith(color: AppColors.darkGrey))
                 ],
               ),
               const SizedBox(
