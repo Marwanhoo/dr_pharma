@@ -1,14 +1,13 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
-Widget oneItemBusinessSpecialization(IconData icon, String name,
-    [bool shape = false]) {
+Widget oneItemAttachFile(IconData icon, String name, [bool shape = false]) {
   return Card(
     shape: (shape)
         ? RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(12),
       side: const BorderSide(
         width: 1,
-        color: Colors.red,
+        color: Color(0xFF566CA2),
       ),
     )
         : null,
@@ -23,7 +22,12 @@ Widget oneItemBusinessSpecialization(IconData icon, String name,
             color: Colors.white,
           ),
         ),
-        Text(name),
+        Text(
+          name,
+          style: const TextStyle(
+            fontWeight: FontWeight.w700,
+          ),
+        ),
       ],
     ),
   );

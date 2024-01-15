@@ -10,7 +10,7 @@ class SignUpScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(26),
+          padding: EdgeInsets.symmetric(horizontal: context.screenWidth / 15),
           child: Column(
             children: [
               const Align(
@@ -24,8 +24,8 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 15,
+              SizedBox(
+                height: context.screenHeight / 30, //15,
               ),
               CustomTextFormField(
                 prefixIcon: Icons.map,
@@ -37,20 +37,21 @@ class SignUpScreen extends StatelessWidget {
                 showCursor: false,
                 readOnly: true,
               ),
-              const SizedBox(
-                height: 15,
-              ),
+              SizedBox(height: context.screenHeight / 40 //15,
+                  ),
               const CustomTextFormField(
                 prefixIcon: Icons.phone_android,
                 hintText: "Phone",
               ),
-              const SizedBox(
-                height: 15,
+              SizedBox(
+                height: context.screenHeight / 40, //15,
               ),
               const CustomTextFormField(
-                  prefixIcon: Icons.mail, hintText: "Email"),
-              const SizedBox(
-                height: 15,
+                prefixIcon: Icons.mail,
+                hintText: "Email",
+              ),
+              SizedBox(
+                height: context.screenHeight / 40, //15,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
@@ -58,8 +59,8 @@ class SignUpScreen extends StatelessWidget {
                 suffixIcon: Icons.remove_red_eye_outlined,
                 obscureText: true,
               ),
-              const SizedBox(
-                height: 15,
+              SizedBox(
+                height: context.screenHeight / 40, //15,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
@@ -67,11 +68,11 @@ class SignUpScreen extends StatelessWidget {
                 suffixIcon: Icons.remove_red_eye_outlined,
                 obscureText: true,
               ),
-              const SizedBox(
-                height: 15,
+              SizedBox(
+                height: context.screenHeight / 40, //15,
               ),
-              const SizedBox(
-                height: 15,
+              SizedBox(
+                height: context.screenHeight / 40, //15,
               ),
               CustomRow(
                 text: "Continue",
@@ -79,32 +80,10 @@ class SignUpScreen extends StatelessWidget {
                   showBusinessSpecialization(context);
                 },
               ),
-              const SizedBox(
-                height: 15,
+              SizedBox(
+                height: context.screenHeight / 40, //15,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Text(
-                    "you don’t have account ? ",
-                  ),
-                  InkWell(
-                    borderRadius: BorderRadius.circular(2),
-                    onTap: () {
-                      Navigator.of(context).pop();
-                    },
-                    child: const Text(
-                      "sign in",
-                      style: TextStyle(
-                        color: Colors.red,
-                        decoration: TextDecoration.underline,
-                        decorationThickness: 2,
-                        decorationColor: Colors.red,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              buildDontHaveAccount(context),
             ],
           ),
         ),
@@ -112,9 +91,3 @@ class SignUpScreen extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-

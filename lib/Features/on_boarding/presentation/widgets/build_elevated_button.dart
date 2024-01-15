@@ -1,6 +1,7 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 Widget buildElevatedButton(
+    BuildContext context,
     VoidCallback onPressed,
     String text,
     Color backgroundColor, [
@@ -8,7 +9,7 @@ Widget buildElevatedButton(
     ]) {
   return Container(
     width: double.infinity,
-    height: 50,
+    height: context.screenHeight /14, //50,
     padding: const EdgeInsets.symmetric(horizontal: 10),
     child: ElevatedButton(
       style: ElevatedButton.styleFrom(

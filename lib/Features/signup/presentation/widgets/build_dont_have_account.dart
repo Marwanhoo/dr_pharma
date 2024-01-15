@@ -1,0 +1,27 @@
+import 'package:flutter_drpharma_2/core/app_export.dart';
+
+Row buildDontHaveAccount(BuildContext context) {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      const Text(
+        "you don’t have account ? ",
+      ),
+      InkWell(
+        borderRadius: BorderRadius.circular(2),
+        onTap: () {
+          Navigator.of(context).pop();
+        },
+        child: const Text(
+          "sign in",
+          style: TextStyle(
+            color: Colors.red,
+            decoration: TextDecoration.underline,
+            decorationThickness: 2,
+            decorationColor: Colors.red,
+          ),
+        ),
+      ),
+    ],
+  );
+}

@@ -15,12 +15,17 @@ export 'package:flutter_drpharma_2/Features/on_boarding/data/fake_data.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/views/signup_view.dart';
 export 'package:dash_flags/dash_flags.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/views/create_account_view.dart';
-export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/one_item_business_specialization.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/country_names.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/show_country_picker.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/show_business_specialization.dart';
-export  'package:dotted_border/dotted_border.dart';
-export  'package:dotted_line/dotted_line.dart';
-export  'package:flutter_drpharma_2/Features/signup/presentation/widgets/show_region.dart';
-
-
+export 'package:dotted_border/dotted_border.dart';
+export 'package:dotted_line/dotted_line.dart';
+export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/show_region.dart';
+export 'package:flutter_drpharma_2/core/helper.dart';
+export 'package:flutter_drpharma_2/Features/login/presentation/widgets/build_forgot_password.dart';
+export 'package:flutter_drpharma_2/Features/login/presentation/widgets/build_login_with.dart';
+export 'package:flutter_drpharma_2/Features/login/presentation/widgets/build_login_google_or_apple.dart';
+export 'package:flutter_drpharma_2/Features/login/presentation/widgets/build_dont_have_account.dart';
+export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/show_attach_file.dart';
+export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/build_attach_file.dart';
+export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/one_item_attach_file.dart';
