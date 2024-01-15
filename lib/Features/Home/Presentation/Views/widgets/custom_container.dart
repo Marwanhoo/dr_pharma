@@ -6,10 +6,11 @@ import '../../../../../core/constants/colors.dart';
 class CustomContainer extends StatelessWidget {
   const CustomContainer({
     super.key,
-    required this.imagePath, this.onTap,
+    required this.imagePath,
+    this.onTap,
   });
   final String imagePath;
-  final  Function()? onTap;
+  final Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -18,7 +19,7 @@ class CustomContainer extends StatelessWidget {
         width: 40,
         height: 40,
         decoration: BoxDecoration(
-            color: AppColors.darkGrey, borderRadius: BorderRadius.circular(7)),
+            color: AppColors.grey, borderRadius: BorderRadius.circular(7)),
         child: SvgPicture.asset(
           imagePath,
           fit: BoxFit.scaleDown,

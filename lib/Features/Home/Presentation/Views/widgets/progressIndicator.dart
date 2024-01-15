@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 
-import 'package:step_progress_indicator/step_progress_indicator.dart';
+
+import 'package:flutter_drpharma_2/Core/app_export.dart';
+
 
 import '../../../../../core/constants/colors.dart';
 import '../../../../../core/constants/styles.dart';

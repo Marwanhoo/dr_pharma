@@ -10,13 +10,14 @@ class CategoryItem extends StatelessWidget {
     super.key,
     required this.categoryItemCount,
     required this.catName,
-    required this.iconPath, this.onTap,
+    required this.iconPath,
+    this.onTap,
   });
 
   final int categoryItemCount;
   final String catName;
   final String iconPath;
-final  void Function()? onTap;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -32,11 +33,11 @@ final  void Function()? onTap;
               height: 28,
             ),
           ),
-          Text(catName, style: AppFonts.header),
-          // Text(
-          //   "$categoryItemCount Items",
-          //   style: AppFonts.small.copyWith(color: AppColors.softGrey),
-          // )
+          Text(catName, style: AppFonts.style14Urbn),
+          Text(
+            "$categoryItemCount Items",
+            style: AppFonts.small.copyWith(color: AppColors.softGrey),
+          )
         ],
       ),
     );

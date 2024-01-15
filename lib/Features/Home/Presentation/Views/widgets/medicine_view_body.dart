@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/best_offers_card.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_app_bar.dart';
+
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 
 class MedicinesViewBody extends StatelessWidget {
   const MedicinesViewBody({super.key});

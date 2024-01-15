@@ -1,8 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/core/constants/colors.dart';
-import 'package:flutter_drpharma_2/core/constants/styles.dart';
-import 'package:flutter_drpharma_2/core/helper.dart';
-import 'package:flutter_drpharma_2/core/utils/widgets/search_field.dart';
+
+
+import 'package:flutter_drpharma_2/Core/app_export.dart';
 
 import 'package:lottie/lottie.dart';
 
