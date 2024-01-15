@@ -10,7 +10,7 @@ class BestOffersCard extends StatelessWidget {
       onTap: () {
         PersistentNavBarNavigator.pushNewScreen(
           context,
-          screen: ProfileInfoView(),
+          screen: const ProfileInfoView(),
           withNavBar: false, // OPTIONAL VALUE. True by default.
           pageTransitionAnimation: PageTransitionAnimation.cupertino,
         );
@@ -36,7 +36,7 @@ class BestOffersCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              DiscFavRow(),
+              const DiscFavRow(),
               Image.asset(imagePath),
               const Text(
                 'panadol advace exs....',

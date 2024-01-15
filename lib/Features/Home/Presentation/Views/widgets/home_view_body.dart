@@ -10,32 +10,33 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: PreferredSize(
+        appBar: const PreferredSize(
           preferredSize: Size.fromHeight(90),
           child: CustomHeader(),
         ),
         backgroundColor: Colors.white,
         body: ListView(
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30),
               child: SerachTextField(),
             ),
-            CustomSlider(),
-            Padding(
+            const CustomSlider(),
+            const Padding(
               padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
               child: CustomCategoryWitharrow(
                 text: 'Categories',
                 isProfile: false,
               ),
             ),
-            CategoryRow(),
+            const CategoryRow(),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 30),
-              child: Text('Best offers', style: AppFonts.style18Pop),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 30.0, horizontal: 30),
+              child: Text('Best offers', style: AppFonts.header2),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 BestOffersCard(
                   imagePath: "assets/images/medicineImage.png",

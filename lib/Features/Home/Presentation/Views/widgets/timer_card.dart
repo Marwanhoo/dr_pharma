@@ -1,5 +1,6 @@
-import '../../../../../core/app_export.dart';
-import '../../../../../core/constants/styles.dart';
+import 'package:flutter_drpharma_2/Core/constants/styles.dart';
+
+import '../../../../../Core/app_export.dart';
 
 class TimerCard extends StatelessWidget {
   const TimerCard({
@@ -29,7 +30,7 @@ class TimerCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "There is Time Left",
               style: TextStyle(
                 color: Color(0xFF566CA2),
@@ -48,7 +49,7 @@ class TimerCard extends StatelessWidget {
                       "01",
                       style: AppFonts.Timer,
                     ),
-                    Text(
+                    const Text(
                       ":",
                       style: TextStyle(
                         color: Color(0xFF566CA2),
@@ -83,21 +84,21 @@ class TimerCard extends StatelessWidget {
                   children: [
                     Text(
                       "Hours",
-                      style: AppFonts.Date,
+                      style: AppFonts.style14Pop500,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
                     Text(
                       "Minute",
-                      style: AppFonts.Date,
+                      style: AppFonts.style14Pop500,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
                     Text(
                       "Second",
-                      style: AppFonts.Date,
+                      style: AppFonts.style14Pop500,
                     ),
                   ],
                 ),

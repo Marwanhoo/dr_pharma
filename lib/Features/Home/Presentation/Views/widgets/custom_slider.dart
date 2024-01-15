@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/Core/constants/styles.dart';
 
 class CustomSlider extends StatelessWidget {
   const CustomSlider({super.key});
@@ -40,17 +41,16 @@ class CustomSlider extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset("assets/images/logo.png"),
-                          const SizedBox(
+                          Image.asset(
+                            "assets/images/logo.png",
+                            width: 33,
+                            height: 33,
+                          ),
+                           SizedBox(
                             width: 271,
                             child: Text(
                               'With a reach rate of more than 200 pharmaceutical companies',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w500,
-                              ),
+                              style: AppFonts.style20Pop,
                             ),
                           ),
                         ],

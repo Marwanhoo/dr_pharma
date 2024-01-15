@@ -12,13 +12,11 @@ class FlashSaleViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
         appBar: const PreferredSize(
-            preferredSize: Size.fromHeight(179),
+            preferredSize: Size.fromHeight(130),
             child: CustomAppBar(
               title: "Flash Sale",
               isFlash: true,
-            
             )),
         body: ListView(
           padding: EdgeInsets.symmetric(horizontal: 0),
@@ -28,11 +26,9 @@ class FlashSaleViewBody extends StatelessWidget {
               height: 30,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-                SizedBox(
-                  width: 10,
-                ),
                 BestOffersCard(imagePath: "assets/images/medicineImage.png")
               ],
             ),
@@ -40,23 +36,22 @@ class FlashSaleViewBody extends StatelessWidget {
               height: 10,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-                SizedBox(
-                  width: 10,
-                ),
                 BestOffersCard(imagePath: "assets/images/medicineImage.png")
               ],
             ),
+            SizedBox(
+              height: 10,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-                SizedBox(
-                  width: 10,
-                ),
                 BestOffersCard(imagePath: "assets/images/medicineImage.png")
               ],
-            )
+            ),
           ],
         ));
   }

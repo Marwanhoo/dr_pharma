@@ -8,8 +8,9 @@ class ProfileInfoView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        bottomNavigationBar: null,
         appBar: AppBar(
+          backgroundColor: Colors.white,
+          surfaceTintColor: Colors.white,
           centerTitle: true,
           title: Text(
             "Profile Info",
@@ -19,7 +20,7 @@ class ProfileInfoView extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
             },
-            child: Icon(
+            child: const Icon(
               Icons.arrow_back_ios,
               size: 15,
             ),
@@ -30,7 +31,7 @@ class ProfileInfoView extends StatelessWidget {
               onTap: () {
                 PersistentNavBarNavigator.pushNewScreen(
                   context,
-                  screen: SearchView(),
+                  screen: const SearchView(),
                   withNavBar: false, // OPTIONAL VALUE. True by default.
                   pageTransitionAnimation: PageTransitionAnimation.cupertino,
                 );
@@ -38,6 +39,6 @@ class ProfileInfoView extends StatelessWidget {
             )
           ],
         ),
-        body: ProfileInfoViewBody());
+        body: const ProfileInfoViewBody());
   }
 }
