@@ -4,8 +4,8 @@ import '../../../../core/app_export.dart';
 import '../widgets/build_attach_file.dart';
 import '../widgets/show_region.dart';
 
-class CreateAccountScreen extends StatelessWidget {
-  const CreateAccountScreen({super.key});
+class CreateAccountView extends StatelessWidget {
+  const CreateAccountView({super.key});
 
   @override
   Widget build(BuildContext context) {

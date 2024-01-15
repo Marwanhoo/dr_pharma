@@ -32,11 +32,7 @@ void showBusinessSpecialization(BuildContext context) {
             CustomRow(
               text: "Continue",
               onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => const CreateAccountScreen(),
-                  ),
-                );
+                Navigator.pushNamed(context, '/create account view');
               },
             ),
           ],

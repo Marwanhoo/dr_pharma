@@ -13,7 +13,7 @@ Row buildDontHaveAccount(BuildContext context) {
         onTap: () {
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (_) => const SignUpScreen(),
+              builder: (_) => const SignUpView(),
             ),
           );
         },
