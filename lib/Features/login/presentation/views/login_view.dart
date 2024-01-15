@@ -8,7 +8,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(26),
+          padding: EdgeInsets.all(context.screenWidth / 15),
           child: Column(
             children: [
               const Align(
@@ -22,15 +22,14 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              SizedBox(height: context.screenHeight / 30 //20,
+                  ),
               const CustomTextFormField(
                 prefixIcon: Icons.person,
                 hintText: "Username or Email",
               ),
-              const SizedBox(
-                height: 30,
+              SizedBox(
+                height: context.screenHeight / 40, //30,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
@@ -38,123 +37,26 @@ class LoginScreen extends StatelessWidget {
                 suffixIcon: Icons.remove_red_eye_outlined,
                 obscureText: true,
               ),
-              Align(
-                alignment: Alignment.centerRight,
-                child: TextButton(
-                  onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const ForgotPasswordScreen()));
-                  },
-                  child: const Text(
-                    "Forgot Password",
-                    style: TextStyle(
-                      color: Color(0XFF347A6A),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                height: 20,
+              buildForgotPassword(context),
+              SizedBox(
+                height: context.screenHeight / 30, //20,
               ),
               CustomRow(
                 text: "Sign In",
-                onPressed: () {
-
-                },
+                onPressed: () {},
               ),
-              const SizedBox(
-                height: 40,
+              SizedBox(
+                height: context.screenHeight / 10, //40,
               ),
-              const Align(
-                alignment: Alignment.center,
-                child: Text(
-                  "Or login with",
-                  style: TextStyle(
-                    color: Color(0XFFDA3A2A),
-                  ),
-                ),
+              buildLoginWith(),
+              SizedBox(
+                height: context.screenHeight / 50,
               ),
-              const SizedBox(
-                height: 15,
+              buildLoginGoogleOrApple(),
+              SizedBox(
+                height: context.screenHeight / 50,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    decoration: const BoxDecoration(
-                      color: Color(0xFFFAFBFA),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey,
-                          blurRadius: 14.50,
-                          offset: Offset(0, 4),
-                          spreadRadius: 0,
-                        ),
-                      ],
-                      shape: BoxShape.circle,
-                    ),
-                    child: CircleAvatar(
-                      backgroundColor: const Color(0XFFFAFBFA),
-                      radius: 30,
-                      child: Image.asset(
-                        "assets/images/google.png",
-                        width: 35,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    decoration: const BoxDecoration(
-                      color: Color(0xFFFAFBFA),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey,
-                          blurRadius: 14.50,
-                          offset: Offset(0, 4),
-                          spreadRadius: 0,
-                        ),
-                      ],
-                      shape: BoxShape.circle,
-                    ),
-                    child: CircleAvatar(
-                      backgroundColor: const Color(0XFFFAFBFA),
-                      radius: 30,
-                      child: Image.asset(
-                        "assets/images/apple.png",
-                        width: 35,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Text(
-                    "you don’t have account ? ",
-                  ),
-                  InkWell(
-                    borderRadius: BorderRadius.circular(2),
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const SignUpScreen(),
-                        ),
-                      );
-                    },
-                    child: const Text(
-                      "sign up",
-                      style: TextStyle(
-                        color: Colors.red,
-                        decoration: TextDecoration.underline,
-                        decorationThickness: 2,
-                        decorationColor: Colors.red,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              buildDontHaveAccount(context),
             ],
           ),
         ),
