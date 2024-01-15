@@ -1,5 +1,4 @@
-
-import 'package:flutter_drpharma_2/Core/app_export.dart';
+import '../../../../../core/app_export.dart';
 
 class TransactionCard extends StatelessWidget {
   const TransactionCard({

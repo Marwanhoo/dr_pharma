@@ -1,6 +1,7 @@
-
-import 'package:flutter_drpharma_2/Core/app_export.dart';
-
+import '../../../../../core/app_export.dart';
+import '../../../../../core/constants/styles.dart';
+import '../../../../../core/utils/widgets/category_row.dart';
+import '../../../../../core/utils/widgets/search_field.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -31,10 +32,7 @@ class HomeViewBody extends StatelessWidget {
             CategoryRow(),
             Padding(
               padding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 30),
-              child: Text(
-                'Best offers',
-                style: AppFonts.style18Pop
-              ),
+              child: Text('Best offers', style: AppFonts.style18Pop),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

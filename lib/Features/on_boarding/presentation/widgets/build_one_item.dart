@@ -1,4 +1,5 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import '../../../../core/app_export.dart';
+import '../../data/fake_data.dart';
 
 Widget buildOneItem(index) {
   return Stack(

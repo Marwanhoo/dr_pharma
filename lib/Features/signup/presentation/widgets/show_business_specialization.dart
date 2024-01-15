@@ -1,4 +1,8 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/helper.dart';
+
+import '../../../../core/app_export.dart';
+import '../../../../core/utils/widgets/CustomRow.dart';
+import '../views/create_account_view.dart';
 
 void showBusinessSpecialization(BuildContext context) {
   showModalBottomSheet(
@@ -72,8 +76,7 @@ Container buildLineGrey() {
   );
 }
 
-Widget oneItemBusinessSpecialization(IconData icon, String name,
-    [bool shape = false]) {
+Widget oneItemBusinessSpecialization(IconData icon, String name, [bool shape = false]) {
   return Card(
     shape: (shape)
         ? RoundedRectangleBorder(

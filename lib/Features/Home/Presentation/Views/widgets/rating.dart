@@ -1,8 +1,4 @@
-
-
-
-import 'package:flutter_drpharma_2/Core/app_export.dart';
-
+import '../../../../../core/app_export.dart';
 
 import '../../../../../core/constants/colors.dart';
 import '../../../../../core/constants/styles.dart';
@@ -21,8 +17,7 @@ class RatingRow extends StatelessWidget {
           "assets/icons/star.svg",
           width: 20,
         ),
-        Text("4.5",
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
+        Text("4.5", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
         Text(
           reviews,
           style: AppFonts.small.copyWith(color: AppColors.black),

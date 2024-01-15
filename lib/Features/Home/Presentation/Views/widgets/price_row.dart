@@ -1,7 +1,5 @@
-
-
-import 'package:flutter_drpharma_2/Core/app_export.dart';
-
+import '../../../../../core/app_export.dart';
+import '../../../../../core/constants/styles.dart';
 
 class PriceRow extends StatelessWidget {
   const PriceRow({
@@ -14,13 +12,11 @@ class PriceRow extends StatelessWidget {
       children: [
         Text(
           "\$235.00",
-          style: AppFonts.medium
-              .copyWith(color: const Color.fromARGB(255, 182, 23, 11)),
+          style: AppFonts.medium.copyWith(color: const Color.fromARGB(255, 182, 23, 11)),
         ),
         Text(
           "  \$355.00",
-          style: AppFonts.small.copyWith(
-              decoration: TextDecoration.lineThrough, color: Colors.black),
+          style: AppFonts.small.copyWith(decoration: TextDecoration.lineThrough, color: Colors.black),
         )
       ],
     );

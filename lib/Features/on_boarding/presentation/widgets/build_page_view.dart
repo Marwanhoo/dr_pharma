@@ -1,4 +1,6 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import '../../../../core/app_export.dart';
+import '../../data/fake_data.dart';
+import 'build_one_item.dart';
 
 Widget buildPageView(PageController pageController) {
   return PageView.builder(

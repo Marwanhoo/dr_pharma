@@ -1,4 +1,9 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/helper.dart';
+
+import '../../../../core/app_export.dart';
+import  '../widgets/build_dont_have_account.dart';
+import  '../widgets/show_business_specialization.dart';
+import  '../widgets/show_country_picker.dart';
 
 class SignUpScreen extends StatelessWidget {
   static const String routeName = "SignUpScreen";

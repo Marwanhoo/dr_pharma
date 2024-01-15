@@ -1,7 +1,5 @@
-
-
-import 'package:flutter_drpharma_2/Core/app_export.dart';
-
+import '../../../../core/app_export.dart';
+import '../../../../core/constants/styles.dart';
 
 class ProfileInfoView extends StatelessWidget {
   const ProfileInfoView({super.key});

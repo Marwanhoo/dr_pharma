@@ -1,9 +1,7 @@
-
-import 'package:flutter_drpharma_2/Core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 class FlashSaleView extends StatelessWidget {
-  const FlashSaleView
-  ({super.key});
+  const FlashSaleView({super.key});
 
   @override
   Widget build(BuildContext context) {

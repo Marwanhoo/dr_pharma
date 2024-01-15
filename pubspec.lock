@@ -105,7 +105,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
-
+  dash_flags:
+    dependency: "direct main"
+    description:
+      name: dash_flags
+      sha256: bcd173faf4ace26bbd161c4f38b55ad92b31d29fa85d6f430f7a785831bd6760
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.1"
   device_frame:
     dependency: transitive
     description:
@@ -122,7 +129,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
-
+  dotted_border:
+    dependency: "direct main"
+    description:
+      name: dotted_border
+      sha256: "108837e11848ca776c53b30bc870086f84b62ed6e01c503ed976e8f8c7df9c04"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
+  dotted_line:
+    dependency: "direct main"
+    description:
+      name: dotted_line
+      sha256: c931ba331656154711d9420f369f80cf9e8869ca9933ae5fb35b7669bcbe7d2e
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.2"
   fake_async:
     dependency: transitive
     description:
@@ -160,13 +182,19 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
-
   flutter_localizations:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
-
+  flutter_native_splash:
+    dependency: "direct main"
+    description:
+      name: flutter_native_splash
+      sha256: "9cdb5d9665dab5d098dc50feab74301c2c228cd02ca25c9b546ab572cebcd6af"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.9"
   flutter_svg:
     dependency: "direct main"
     description:
@@ -185,7 +213,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-
   freezed_annotation:
     dependency: transitive
     description:
@@ -194,6 +221,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.4.1"
+  html:
+    dependency: transitive
+    description:
+      name: html
+      sha256: "3a7812d5bcd2894edf53dfaf8cd640876cf6cef50a8f238745c8b8120ea74d3a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.15.4"
+  image:
+    dependency: transitive
+    description:
+      name: image
+      sha256: "004a2e90ce080f8627b5a04aecb4cdfac87d2c3f3b520aa291260be5a32c033d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.1.4"
   intl:
     dependency: transitive
     description:
@@ -202,7 +245,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.18.1"
-
   js:
     dependency: transitive
     description:

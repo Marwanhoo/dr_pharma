@@ -1,9 +1,9 @@
 
-import 'package:flutter_drpharma_2/Core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/counter_row.dart';
 
-
+import '../../../../../core/app_export.dart';
 import '../../../../../core/constants/colors.dart';
+import '../../../../../core/constants/styles.dart';
 
 class ProfileInfoViewBody extends StatefulWidget {
   const ProfileInfoViewBody({super.key});
@@ -38,34 +38,31 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
               ]),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  DiscFavRow(),
-                  Image.asset("assets/images/bigMed.png"),
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Color.fromARGB(77, 116, 116, 116),
-                        borderRadius: BorderRadius.circular(13)),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: SmoothPageIndicator(
-                        controller: PageController(),
-                        count: 4,
-                        axisDirection: Axis.horizontal,
-                        effect: const SlideEffect(
-                            spacing: 3,
-                            radius: 10.0,
-                            dotWidth: 9.0,
-                            dotHeight: 8.0,
-                            paintStyle: PaintingStyle.stroke,
-                            strokeWidth: 1.5,
-                            dotColor: Colors.grey,
-                            activeDotColor: Colors.indigo),
-                      ),
-                    ),
-                  )
-                ]),
+            child: Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+              DiscFavRow(),
+              Image.asset("assets/images/bigMed.png"),
+              Container(
+                decoration:
+                    BoxDecoration(color: Color.fromARGB(77, 116, 116, 116), borderRadius: BorderRadius.circular(13)),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: SmoothPageIndicator(
+                    controller: PageController(),
+                    count: 4,
+                    axisDirection: Axis.horizontal,
+                    effect: const SlideEffect(
+                        spacing: 3,
+                        radius: 10.0,
+                        dotWidth: 9.0,
+                        dotHeight: 8.0,
+                        paintStyle: PaintingStyle.stroke,
+                        strokeWidth: 1.5,
+                        dotColor: Colors.grey,
+                        activeDotColor: Colors.indigo),
+                  ),
+                ),
+              )
+            ]),
           ),
         ),
         Padding(
@@ -88,8 +85,7 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                     "From:Gsk Comapny",
                     style: AppFonts.Date.copyWith(color: AppColors.darkGrey),
                   ),
-                  Text("(1045 Reviews)",
-                      style: AppFonts.Date.copyWith(color: AppColors.darkGrey))
+                  Text("(1045 Reviews)", style: AppFonts.Date.copyWith(color: AppColors.darkGrey))
                 ],
               ),
               const SizedBox(

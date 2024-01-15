@@ -1,4 +1,8 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/helper.dart';
+
+import '../../../../core/app_export.dart';
+import '../widgets/build_attach_file.dart';
+import '../widgets/show_region.dart';
 
 class CreateAccountScreen extends StatelessWidget {
   const CreateAccountScreen({super.key});
@@ -23,23 +27,20 @@ class CreateAccountScreen extends StatelessWidget {
                   ),
                 ),
               ),
-                SizedBox(
-                  height: context.screenHeight / 30 //15,
-              ),
+              SizedBox(height: context.screenHeight / 30 //15,
+                  ),
               const CustomTextFormField(
                 prefixIcon: Icons.local_hospital,
                 hintText: "Pharmacy Name",
               ),
-               SizedBox(
-                  height: context.screenHeight / 30 //15,
-              ),
+              SizedBox(height: context.screenHeight / 30 //15,
+                  ),
               const CustomTextFormField(
                 prefixIcon: Icons.phone_android,
                 hintText: "Pharmacy phone",
               ),
-               SizedBox(
-                  height: context.screenHeight / 30 //15,
-              ),
+              SizedBox(height: context.screenHeight / 30 //15,
+                  ),
               const Text(
                 "Pharmacy license",
                 style: TextStyle(
@@ -53,13 +54,11 @@ class CreateAccountScreen extends StatelessWidget {
                   color: Colors.grey,
                 ),
               ),
-               SizedBox(
-                  height: context.screenHeight / 30 //15,
-              ),
+              SizedBox(height: context.screenHeight / 30 //15,
+                  ),
               buildAttachAFile(context),
-               SizedBox(
-                  height: context.screenHeight / 30 //15,
-              ),
+              SizedBox(height: context.screenHeight / 30 //15,
+                  ),
               CustomTextFormField(
                 prefixIcon: Icons.map,
                 hintText: "Your Region",
@@ -69,9 +68,8 @@ class CreateAccountScreen extends StatelessWidget {
                 showCursor: false,
                 readOnly: true,
               ),
-               SizedBox(
-                  height: context.screenHeight / 50 //30,
-              ),
+              SizedBox(height: context.screenHeight / 50 //30,
+                  ),
               CustomRow(text: "Sign up", onPressed: () {}),
             ],
           ),
@@ -79,9 +77,4 @@ class CreateAccountScreen extends StatelessWidget {
       ),
     );
   }
-
 }
-
-
-
-

@@ -1,4 +1,5 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import '../../../../core/app_export.dart';
+import '../../../signup/presentation/views/signup_view.dart';
 
 Row buildDontHaveAccount(BuildContext context) {
   return Row(

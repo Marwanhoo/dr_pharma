@@ -1,15 +1,15 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 Widget oneItemAttachFile(IconData icon, String name, [bool shape = false]) {
   return Card(
     shape: (shape)
         ? RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(12),
-      side: const BorderSide(
-        width: 1,
-        color: Color(0xFF566CA2),
-      ),
-    )
+            borderRadius: BorderRadius.circular(12),
+            side: const BorderSide(
+              width: 1,
+              color: Color(0xFF566CA2),
+            ),
+          )
         : null,
     color: Colors.white,
     child: Column(

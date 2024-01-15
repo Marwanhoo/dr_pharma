@@ -1,4 +1,12 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/helper.dart';
+
+import '../../../../core/app_export.dart';
+import '../../../login/presentation/views/login_view.dart';
+import '../../../signup/presentation/views/signup_view.dart';
+import '../widgets/build_elevated_button.dart';
+import '../widgets/build_logo_avatar.dart';
+import '../widgets/build_page_indicator.dart';
+import '../widgets/build_page_view.dart';
 
 class OnBoardingView extends StatelessWidget {
   static const String routeName = "OnBoardingView";
@@ -20,26 +28,22 @@ class OnBoardingView extends StatelessWidget {
                 buildLogoAvatar(),
                 const Spacer(),
                 buildPageIndicator(pageController),
-                 SizedBox(
-                  height: context.screenHeight / 20 //30,
-                ),
+                SizedBox(height: context.screenHeight / 20 //30,
+                    ),
                 buildElevatedButton(
                   context,
                   () {
-                    Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (_) => LoginScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => LoginScreen()));
                   },
                   "login",
                   const Color(0XFF566CA2),
                 ),
-                 SizedBox(
-                  height: context.screenHeight / 30 //20,
-                ),
+                SizedBox(height: context.screenHeight / 30 //20,
+                    ),
                 buildElevatedButton(
                   context,
                   () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (_) => const SignUpScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SignUpScreen()));
                   },
                   "sign up",
                   Colors.transparent,
@@ -53,4 +57,3 @@ class OnBoardingView extends StatelessWidget {
     );
   }
 }
-

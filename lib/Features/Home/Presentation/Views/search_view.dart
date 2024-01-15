@@ -1,8 +1,12 @@
+import 'package:flutter_drpharma_2/core/helper.dart';
 
-
-import 'package:flutter_drpharma_2/Core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 import 'package:lottie/lottie.dart';
+
+import '../../../../core/constants/colors.dart';
+import '../../../../core/constants/styles.dart';
+import '../../../../core/utils/widgets/search_field.dart';
 
 class SearchView extends StatelessWidget {
   const SearchView({super.key});
@@ -12,9 +16,7 @@ class SearchView extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         body: Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: context.screenHeight * .01,
-              vertical: context.screenHeight * .05),
+          padding: EdgeInsets.symmetric(horizontal: context.screenHeight * .01, vertical: context.screenHeight * .05),
           child: Column(
             children: [
               Row(
@@ -28,9 +30,8 @@ class SearchView extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: context.screenHeight * .01,
-                    vertical: context.screenHeight * .02),
+                padding:
+                    EdgeInsets.symmetric(horizontal: context.screenHeight * .01, vertical: context.screenHeight * .02),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -40,20 +41,22 @@ class SearchView extends StatelessWidget {
                     ),
                     Text(
                       "Clear",
-                      style: AppFonts.small.copyWith(
-                          color: AppColors.softGrey,
-                          fontWeight: FontWeight.bold),
+                      style: AppFonts.small.copyWith(color: AppColors.softGrey, fontWeight: FontWeight.bold),
                     )
                   ],
                 ),
               ),
               Spacer(),
-              Lottie.asset("assets/animations/empty.json",),
+              Lottie.asset(
+                "assets/animations/empty.json",
+              ),
               Text(
                 "There is no search yet",
                 style: AppFonts.medium.copyWith(color: Colors.grey),
               ),
-              Spacer(flex: 2,)
+              Spacer(
+                flex: 2,
+              )
             ],
           ),
         ));

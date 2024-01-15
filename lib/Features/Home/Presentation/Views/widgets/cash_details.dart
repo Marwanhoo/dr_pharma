@@ -1,8 +1,5 @@
 
-
-import 'package:flutter_drpharma_2/Core/app_export.dart';
-
-
+import '../../../../../core/app_export.dart';
 import '../../../../../core/constants/colors.dart';
 import '../../../../../core/constants/styles.dart';
 
@@ -70,15 +67,11 @@ class CashesDetails extends StatelessWidget {
                   children: [
                     Text(
                       "You Can Convert your Points To : ",
-                      style: AppFonts.Timer.copyWith(
-                          fontWeight: FontWeight.w700, fontSize: 14),
+                      style: AppFonts.Timer.copyWith(fontWeight: FontWeight.w700, fontSize: 14),
                     ),
                     Text(
                       "200 EGP",
-                      style: AppFonts.Timer.copyWith(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 12,
-                          color: AppColors.red),
+                      style: AppFonts.Timer.copyWith(fontWeight: FontWeight.w700, fontSize: 12, color: AppColors.red),
                     )
                   ],
                 ),

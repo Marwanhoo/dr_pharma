@@ -1,4 +1,7 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:dash_flags/dash_flags.dart';
+
+import '../../../../core/app_export.dart';
+import 'country_names.dart';
 
 void showCountryPicker(BuildContext context) {
   showModalBottomSheet(
@@ -17,7 +20,7 @@ void showCountryPicker(BuildContext context) {
                 color: Colors.grey,
               ),
             ),
-             const SizedBox(
+            const SizedBox(
               height: 10,
             ),
             const Text(

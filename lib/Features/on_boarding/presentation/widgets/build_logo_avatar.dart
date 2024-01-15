@@ -1,4 +1,4 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import '../../../../core/app_export.dart';
 
 Widget buildLogoAvatar() {
   return const Align(
