@@ -24,8 +24,9 @@ class AppLocalizations {
       },
     );
 
-    String translate(String key) => _localizedStrings[key] ?? '';
   }
+      String translate(String key) => _localizedStrings[key] ?? '';
+
 }
 
 class _AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {
