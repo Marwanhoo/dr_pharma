@@ -6,40 +6,46 @@ class CashBackViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const PreferredSize(
-        preferredSize: Size.fromHeight(130),
-        child: CustomAppBar(
-          title: "Cash Back",
-          leadingIcon: "assets/icons/arrow.svg",
-          isFlash: false,
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [
+            CustomAppBar(
+              title: "Cash Back",
+              leadingIcon: "assets/icons/arrow.svg",
+              isFlash: false,
+            ),
+            Expanded(
+              child: ListView(
+                shrinkWrap: true,
+                padding: const EdgeInsets.all(10),
+                children: const [
+                  CashesDetails(),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  TransactionCard(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TransactionDetails(
+                    iconPath: "assets/icons/greenTranss.svg",
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TransactionDetails(
+                    iconPath: "assets/icons/redTrans.svg",
+                    color: AppColors.red,
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
-      ),
-      body: ListView(
-        padding: const EdgeInsets.all(10),
-        children: const [
-          CashesDetails(),
-          SizedBox(
-            height: 10,
-          ),
-          TransactionCard(),
-          SizedBox(
-            height: 20,
-          ),
-          TransactionDetails(
-            iconPath: "assets/icons/greenTranss.svg",
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          TransactionDetails(
-            iconPath: "assets/icons/redTrans.svg",
-            color: AppColors.red,
-          ),
-          SizedBox(
-            height: 20,
-          ),
-        ],
       ),
     );
   }

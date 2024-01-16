@@ -12,45 +12,55 @@ class FlashSaleViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: const PreferredSize(
-            preferredSize: Size.fromHeight(130),
-            child: CustomAppBar(
+        backgroundColor: Colors.white,
+        body: Column(
+          children: [
+            CustomAppBar(
               title: "Flash Sale",
               isFlash: true,
-            )),
-        body: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 0),
-          children: const [
-            TimerCard(),
-            SizedBox(
-              height: 30,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-                BestOffersCard(imagePath: "assets/images/medicineImage.png")
-              ],
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-                BestOffersCard(imagePath: "assets/images/medicineImage.png")
-              ],
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-                BestOffersCard(imagePath: "assets/images/medicineImage.png")
-              ],
+            Expanded(
+              child: ListView(
+                children: const [
+                  TimerCard(),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      BestOffersCard(
+                          imagePath: "assets/images/medicineImage.png"),
+                      BestOffersCard(
+                          imagePath: "assets/images/medicineImage.png")
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      BestOffersCard(
+                          imagePath: "assets/images/medicineImage.png"),
+                      BestOffersCard(
+                          imagePath: "assets/images/medicineImage.png")
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      BestOffersCard(
+                          imagePath: "assets/images/medicineImage.png"),
+                      BestOffersCard(
+                          imagePath: "assets/images/medicineImage.png")
+                    ],
+                  ),
+                ],
+              ),
             ),
           ],
         ));

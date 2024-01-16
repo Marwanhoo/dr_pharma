@@ -8,9 +8,9 @@ extension AppSizes on BuildContext {
 }
 
 
-extension Translate on String {
-  String tr(BuildContext context) {
-    return AppLocalizations.of(context)!.translate(this);
-  }
+// extension Translate on String {
+//   String tr(BuildContext context) {
+//     return AppLocalizations.of(context)!.translate(this);
+//   }
 
-}
+// }

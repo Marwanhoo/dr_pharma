@@ -19,7 +19,7 @@ class CategoryRow extends StatelessWidget {
       children: [
         CategoryItem(
           categoryItemCount: 60,
-          catName: "Medicines".tr(context),
+          catName: "Medicines",
           iconPath: "assets/icons/medicine.svg",
           onTap: () {
             print("object");
