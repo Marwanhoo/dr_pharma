@@ -1,7 +1,5 @@
-import '../../../../../core/app_export.dart';
-import '../../../../../core/constants/styles.dart';
-import '../../../../../core/utils/widgets/category_row.dart';
-import '../../../../../core/utils/widgets/search_field.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
+
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});

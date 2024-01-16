@@ -1,5 +1,4 @@
-import '../../../../../core/app_export.dart';
-import '../../../../../core/constants/styles.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class CounterRow extends StatelessWidget {
   const CounterRow({
@@ -11,20 +10,20 @@ class CounterRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        PriceRow(),
+        const PriceRow(),
         Container(
-          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(6), color: Color(0xffFFE177).withOpacity(.45)),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(6), color: const Color(0xffFFE177).withOpacity(.45)),
           child: Row(
             children: [
               SvgPicture.asset("assets/icons/dollar.svg"),
               Text(
                 "Points    ",
-                style: AppFonts.medium.copyWith(color: Color(0xffFCD240)),
+                style: AppFonts.medium.copyWith(color: const Color(0xffFCD240)),
               ),
               Text(
                 "50",
-                style: AppFonts.medium.copyWith(color: Color(0xffFCD240)),
+                style: AppFonts.medium.copyWith(color: const Color(0xffFCD240)),
               )
             ],
           ),

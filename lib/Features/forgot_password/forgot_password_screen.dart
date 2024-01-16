@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/main.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
   const ForgotPasswordScreen({super.key});
@@ -8,6 +9,14 @@ class ForgotPasswordScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Forgot Password"),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("Forgot Pasword View",style: Theme.of(navigatorKey.currentContext!).textTheme.headlineLarge,)
+          ],
+        ),
       ),
     );
   }

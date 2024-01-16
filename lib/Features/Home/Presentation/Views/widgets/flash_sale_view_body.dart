@@ -1,10 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/best_offers_card.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/bottomNavBar.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_app_bar.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/timer_card.dart';
-import 'package:flutter_svg/svg.dart';
 
 class FlashSaleViewBody extends StatelessWidget {
   const FlashSaleViewBody({super.key});

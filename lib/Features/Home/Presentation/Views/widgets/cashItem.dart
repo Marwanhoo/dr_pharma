@@ -1,6 +1,5 @@
-import '../../../../../core/app_export.dart';
-import '../../../../../core/constants/colors.dart';
-import '../../../../../core/constants/styles.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
+
 
 class CashItem extends StatelessWidget {
   const CashItem({

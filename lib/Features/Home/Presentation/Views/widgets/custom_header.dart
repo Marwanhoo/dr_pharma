@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/app_export.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_container.dart';
-import '../../../../../core/constants/styles.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class CustomHeader extends StatelessWidget {
   const CustomHeader({
@@ -26,7 +22,7 @@ class CustomHeader extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                          Text(
-                          AppLocalizations.of(context)!.helloWorld,
+                          AppLocalizations.of(navigatorKey.currentContext!)!.helloWorld,
                           style:const TextStyle(
                               fontWeight: FontWeight.w600, fontSize: 20),
                         ),
@@ -41,8 +37,8 @@ class CustomHeader extends StatelessWidget {
             CustomContainer(
               imagePath: "assets/icons/gift.svg",
               onTap: () {
-                PersistentNavBarNavigator.pushNewScreen(context,
-                    screen: CashBackView(), withNavBar: false);
+                PersistentNavBarNavigator.pushNewScreen(navigatorKey.currentContext!,
+                    screen: const CashBackView(), withNavBar: false);
               },
             )
           ]),

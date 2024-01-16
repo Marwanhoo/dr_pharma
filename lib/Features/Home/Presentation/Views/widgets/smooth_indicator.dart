@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Core/constants/images.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
+
 
 class SmoothIndicatorr extends StatefulWidget {
   const SmoothIndicatorr({Key? key}) : super(key: key);

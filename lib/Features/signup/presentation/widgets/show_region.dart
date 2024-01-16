@@ -1,6 +1,5 @@
-import 'package:dotted_line/dotted_line.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
-import '../../../../core/app_export.dart';
 
 void showRegion(BuildContext context) {
   showModalBottomSheet(

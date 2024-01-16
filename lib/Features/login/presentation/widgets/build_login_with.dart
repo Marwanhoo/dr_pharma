@@ -1,7 +1,7 @@
-import '../../../../core/app_export.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 Widget buildLoginWith() {
-  return Align(
+  return const Align(
     alignment: Alignment.center,
     child: Text(
       "Or login with",

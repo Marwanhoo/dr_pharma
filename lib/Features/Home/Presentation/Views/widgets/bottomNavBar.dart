@@ -1,11 +1,12 @@
+
+
+
 import 'package:flutter/cupertino.dart';
 
-import '../../../../../core/app_export.dart';
-
-import '../../../../../core/constants/colors.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class BottomNavBar extends StatelessWidget {
-  BottomNavBar({super.key});
+  const BottomNavBar({super.key});
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
       PersistentBottomNavBarItem(
@@ -49,11 +50,11 @@ class BottomNavBar extends StatelessWidget {
 
   List<Widget> _buildScreens() {
     return [
-      HomeViewBody(),
+      const HomeViewBody(),
       CategoryView(),
-      FlashSaleViewBody(),
-      HomeViewBody(),
-      HomeViewBody(),
+      const FlashSaleViewBody(),
+      const HomeViewBody(),
+      const HomeViewBody(),
     ];
   }
 

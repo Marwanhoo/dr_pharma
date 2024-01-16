@@ -1,12 +1,4 @@
-import 'package:flutter_drpharma_2/core/helper.dart';
-
-import '../../../../core/app_export.dart';
-
-import 'package:lottie/lottie.dart';
-
-import '../../../../core/constants/colors.dart';
-import '../../../../core/constants/styles.dart';
-import '../../../../core/utils/widgets/search_field.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class SearchView extends StatelessWidget {
   const SearchView({super.key});
@@ -18,13 +10,14 @@ class SearchView extends StatelessWidget {
         body: Padding(
           padding: EdgeInsets.symmetric(
               horizontal: context.screenWidth * .02,
-              vertical: context.screenHeight * .07),
+              vertical: context.screenHeight * .07,
+          ),
           child: Column(
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SerachTextField(),
+                  const SerachTextField(),
                   Text(
                     "Cancel",
                     style: AppFonts.medium,
@@ -34,7 +27,8 @@ class SearchView extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(
                     horizontal: context.screenHeight * .01,
-                    vertical: context.screenHeight * .02),
+                    vertical: context.screenHeight * .02,
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -51,7 +45,7 @@ class SearchView extends StatelessWidget {
                   ],
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               Lottie.asset(
                 "assets/animations/empty.json",
               ),
@@ -59,7 +53,7 @@ class SearchView extends StatelessWidget {
                 "There is no search yet",
                 style: AppFonts.medium.copyWith(color: Colors.grey),
               ),
-              Spacer(
+              const Spacer(
                 flex: 2,
               )
             ],

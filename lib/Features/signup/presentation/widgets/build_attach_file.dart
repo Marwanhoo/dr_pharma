@@ -1,7 +1,4 @@
-import 'package:dotted_border/dotted_border.dart';
-import 'package:flutter_drpharma_2/Features/signup/presentation/widgets/show_attach_file.dart';
-
-import '../../../../core/app_export.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 InkWell buildAttachAFile(BuildContext context) {
   return InkWell(

@@ -1,4 +1,4 @@
-class FakeData {
+class DataText {
   static List<String> imagesBackground = [
     "assets/images/onboarding1.png",
     "assets/images/obboarding2.png",

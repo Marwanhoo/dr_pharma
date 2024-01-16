@@ -1,10 +1,10 @@
-import '../../../../core/app_export.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class HomeView extends StatelessWidget {
-  HomeView({super.key});
+  const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return HomeViewBody();
+    return const HomeViewBody();
   }
 }

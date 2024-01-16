@@ -1,10 +1,11 @@
+import 'package:flutter_drpharma_2/Features/on_boarding/data/data_text.dart';
+
 import '../../../../core/app_export.dart';
-import '../../data/fake_data.dart';
 
 Widget buildPageIndicator(PageController pageController) {
   return SmoothPageIndicator(
     controller: pageController,
-    count: FakeData.imagesBackground.length,
+    count: DataText.imagesBackground.length,
     effect: const SlideEffect(
       spacing: 2.5,
       activeDotColor: Colors.red,

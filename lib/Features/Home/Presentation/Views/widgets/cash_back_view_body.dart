@@ -1,5 +1,5 @@
-import '../../../../../core/app_export.dart';
-import '../../../../../core/constants/colors.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
+
 
 class CashBackViewBody extends StatelessWidget {
   const CashBackViewBody({super.key});
@@ -10,7 +10,7 @@ class CashBackViewBody extends StatelessWidget {
       child: Scaffold(
         body: Column(
           children: [
-            CustomAppBar(
+            const CustomAppBar(
               title: "Cash Back",
               leadingIcon: "assets/icons/arrow.svg",
               isFlash: false,
