@@ -1,10 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/cash_back_view.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/search_view.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-
-import '../../../../../core/constants/styles.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({

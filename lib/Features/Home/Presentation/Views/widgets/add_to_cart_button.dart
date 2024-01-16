@@ -1,4 +1,4 @@
-import '../../../../../core/app_export.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class AddToCartBtn extends StatelessWidget {
   const AddToCartBtn({
@@ -11,7 +11,7 @@ class AddToCartBtn extends StatelessWidget {
       width: 133,
       height: 35,
       decoration: ShapeDecoration(
-        color: Color(0xFF566CA2),
+        color: const Color(0xFF566CA2),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(33),
         ),

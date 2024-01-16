@@ -1,4 +1,4 @@
-import '../../../../core/app_export.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 Row buildLoginGoogleOrApple() {
   return Row(
@@ -43,7 +43,7 @@ Row buildLoginGoogleOrApple() {
           backgroundColor: const Color(0XFFFAFBFA),
           radius: 30,
           child: Image.asset(
-            "assets/images/apple.png",
+            AppImages.logoApple,
             width: 35,
           ),
         ),

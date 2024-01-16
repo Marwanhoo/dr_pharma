@@ -1,7 +1,7 @@
 
 
-import '../../../../../core/app_export.dart';
-import '../../../../../core/constants/colors.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
+
 
 
 

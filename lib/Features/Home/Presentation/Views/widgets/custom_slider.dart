@@ -1,7 +1,4 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/styles.dart';
-
+import 'package:flutter_drpharma_2/core/app_export.dart';
 class CustomSlider extends StatelessWidget {
   const CustomSlider({super.key});
 

@@ -1,41 +1,36 @@
-import 'package:flutter_drpharma_2/core/helper.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
-import '../../../../core/app_export.dart';
-import '../../../signup/presentation/widgets/build_dont_have_account.dart';
-import '../widgets/build_forgot_password.dart';
-import '../widgets/build_login_google_or_apple.dart';
-import '../widgets/build_login_with.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class LoginView extends StatelessWidget {
+  const LoginView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(context.screenWidth / 15),
+          padding: EdgeInsets.all(navigatorKey.currentContext!.screenWidth / 15),
           child: Column(
             children: [
-              const Align(
+               const Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   "Welcome\nBack!",
                   style: TextStyle(
-                    color: Color(0xFF566CA2),
+                    color: AppColors.primary,
                     fontWeight: FontWeight.w700,
                     fontSize: 35,
                   ),
                 ),
               ),
-              SizedBox(height: context.screenHeight / 30 //20,
+              SizedBox(height: navigatorKey.currentContext!.screenHeight / 30 //20,
                   ),
               const CustomTextFormField(
                 prefixIcon: Icons.person,
                 hintText: "Username or Email",
               ),
               SizedBox(
-                height: context.screenHeight / 40, //30,
+                height: navigatorKey.currentContext!.screenHeight / 40, //30,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
@@ -43,9 +38,9 @@ class LoginScreen extends StatelessWidget {
                 suffixIcon: Icons.remove_red_eye_outlined,
                 obscureText: true,
               ),
-              buildForgotPassword(context),
+              buildForgotPassword(navigatorKey.currentContext!),
               SizedBox(
-                height: context.screenHeight / 30, //20,
+                height: navigatorKey.currentContext!.screenHeight / 30, //20,
               ),
               CustomRow(
                 text: "Sign In",
@@ -54,18 +49,18 @@ class LoginScreen extends StatelessWidget {
                 },
               ),
               SizedBox(
-                height: context.screenHeight / 10, //40,
+                height: navigatorKey.currentContext!.screenHeight / 10, //40,
               ),
               buildLoginWith(),
               SizedBox(
-                height: context.screenHeight / 50,
+                height: navigatorKey.currentContext!.screenHeight / 50,
               ),
               buildLoginGoogleOrApple(),
               SizedBox(
-                height: context.screenHeight / 50,
+                height: navigatorKey.currentContext!.screenHeight / 50,
               ),
-              buildDontHaveAccount(context, "You don't hava account ? ", "Sign Up",(){
-                Navigator.pushNamed(context, '/signup view');
+              buildDontHaveAccount(navigatorKey.currentContext!, "You don't hava account ? ", "Sign Up",(){
+                Navigator.pushNamed(navigatorKey.currentContext!, '/signup view');
               }),
             ],
           ),

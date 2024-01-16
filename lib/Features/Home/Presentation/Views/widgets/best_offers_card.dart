@@ -1,4 +1,4 @@
-import '../../../../../core/app_export.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class BestOffersCard extends StatelessWidget {
   const BestOffersCard({super.key, required this.imagePath});

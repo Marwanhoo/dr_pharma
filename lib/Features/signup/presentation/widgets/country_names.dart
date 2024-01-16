@@ -1,6 +1,4 @@
-import 'package:dash_flags/dash_flags.dart';
-
-import '../../../../core/app_export.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 Widget country(Country country, String nameCountry) {
   return Container(

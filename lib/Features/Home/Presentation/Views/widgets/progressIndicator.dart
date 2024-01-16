@@ -1,7 +1,6 @@
-import '../../../../../core/app_export.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
-import '../../../../../core/constants/colors.dart';
-import '../../../../../core/constants/styles.dart';
+
 
 class ProgressIndicatorr extends StatelessWidget {
   const ProgressIndicatorr({
@@ -18,7 +17,7 @@ class ProgressIndicatorr extends StatelessWidget {
             width: 360,
             child: StepProgressIndicator(
               totalSteps: 80,
-              currentStep: 40,
+              currentStep: 45,
               size: 20,
               padding: 0,
               roundedEdges: Radius.circular(10),

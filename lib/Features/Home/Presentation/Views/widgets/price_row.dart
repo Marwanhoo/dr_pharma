@@ -1,5 +1,4 @@
-import '../../../../../core/app_export.dart';
-import '../../../../../core/constants/styles.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class PriceRow extends StatelessWidget {
   const PriceRow({

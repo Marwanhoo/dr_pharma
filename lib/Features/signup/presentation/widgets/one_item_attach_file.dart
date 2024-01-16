@@ -1,4 +1,4 @@
-import '../../../../core/app_export.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 Widget oneItemAttachFile(IconData icon, String name, [bool shape = false]) {
   return Card(
