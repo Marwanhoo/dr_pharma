@@ -23,7 +23,7 @@ class HomeViewBody extends StatelessWidget {
             ),
             const CustomSlider(),
             const Padding(
-              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 28),
               child: CustomCategoryWitharrow(
                 text: 'Categories',
                 isProfile: false,
@@ -31,21 +31,26 @@ class HomeViewBody extends StatelessWidget {
             ),
             const CategoryRow(),
             Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 30.0, horizontal: 30),
+              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 28),
               child: Text('Best offers', style: AppFonts.header2),
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                BestOffersCard(
-                  imagePath: "assets/images/medicineImage.png",
-                ),
-                BestOffersCard(
-                  imagePath: "assets/images/medicineImage.png",
-                ),
+                BestOffersCard(imagePath: "assets/images/medicineImage.png"),
+                BestOffersCard(imagePath: "assets/images/medicineImage.png")
               ],
-            )
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                BestOffersCard(imagePath: "assets/images/medicineImage.png"),
+                BestOffersCard(imagePath: "assets/images/medicineImage.png")
+              ],
+            ),
           ],
         ),
       ),

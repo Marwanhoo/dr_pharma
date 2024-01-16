@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_drpharma_2/Core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/custom_container.dart';
 import '../../../../../core/constants/styles.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CustomHeader extends StatelessWidget {
   const CustomHeader({
@@ -24,9 +25,9 @@ class CustomHeader extends StatelessWidget {
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
-                          "A.Z Pharmacy",
-                          style: TextStyle(
+                         Text(
+                          AppLocalizations.of(context)!.helloWorld,
+                          style:const TextStyle(
                               fontWeight: FontWeight.w600, fontSize: 20),
                         ),
                         Text(

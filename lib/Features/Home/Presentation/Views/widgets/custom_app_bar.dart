@@ -18,21 +18,22 @@ class CustomAppBar extends StatelessWidget {
   final bool isFlash;
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Image.asset(
-          "assets/images/Group.png",
-          fit: BoxFit.cover,
+    return Container(
+      height: 150,
+      decoration: const BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.fill,
+              image: AssetImage(
+                "assets/images/Group.png",
+              ))),
+      child: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: isFlash
+              ? IsFlashRow(leadingIcon: leadingIcon, title: title)
+              : isNotFLash(leadingIcon: leadingIcon, title: title),
         ),
-        Center(
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: isFlash
-                ? IsFlashRow(leadingIcon: leadingIcon, title: title)
-                : isNotFLash(leadingIcon: leadingIcon, title: title),
-          ),
-        ),
-      ],
+      ),
     );
   }
 }

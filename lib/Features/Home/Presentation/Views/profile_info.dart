@@ -26,16 +26,19 @@ class ProfileInfoView extends StatelessWidget {
             ),
           ),
           actions: [
-            CustomContainer(
-              imagePath: "assets/icons/searchh.svg",
-              onTap: () {
-                PersistentNavBarNavigator.pushNewScreen(
-                  context,
-                  screen: const SearchView(),
-                  withNavBar: false, // OPTIONAL VALUE. True by default.
-                  pageTransitionAnimation: PageTransitionAnimation.cupertino,
-                );
-              },
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12.0),
+              child: CustomContainer(
+                imagePath: "assets/icons/searchh.svg",
+                onTap: () {
+                  PersistentNavBarNavigator.pushNewScreen(
+                    context,
+                    screen: const SearchView(),
+                    withNavBar: false, // OPTIONAL VALUE. True by default.
+                    pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                  );
+                },
+              ),
             )
           ],
         ),

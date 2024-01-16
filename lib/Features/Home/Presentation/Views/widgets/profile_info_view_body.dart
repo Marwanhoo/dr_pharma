@@ -1,6 +1,8 @@
 import 'package:flutter_drpharma_2/Core/constants/colors.dart';
+import 'package:flutter_drpharma_2/Core/constants/images.dart';
 import 'package:flutter_drpharma_2/Core/constants/styles.dart';
 import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/counter_row.dart';
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/smooth_indicator.dart';
 import '../../../../../Core/app_export.dart';
 
 class ProfileInfoViewBody extends StatefulWidget {
@@ -12,6 +14,17 @@ class ProfileInfoViewBody extends StatefulWidget {
 
 class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
   int counter = 0;
+  final PageController _pageController =
+      PageController(viewportFraction: 0.8, keepPage: true);
+
+  List<String> imagesUrl = [
+    AppImages.med,
+    AppImages.med,
+    AppImages.med,
+    AppImages.med,
+    AppImages.med,
+  ];
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -34,34 +47,11 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                   spreadRadius: 0,
                 )
               ]),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-              DiscFavRow(),
-              Image.asset("assets/images/bigMed.png"),
-              Container(
-                decoration:
-                    BoxDecoration(color: Color.fromARGB(77, 116, 116, 116), borderRadius: BorderRadius.circular(13)),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: SmoothPageIndicator(
-                    controller: PageController(),
-                    count: 4,
-                    axisDirection: Axis.horizontal,
-                    effect: const SlideEffect(
-                        spacing: 3,
-                        radius: 10.0,
-                        dotWidth: 9.0,
-                        dotHeight: 8.0,
-                        paintStyle: PaintingStyle.stroke,
-                        strokeWidth: 1.5,
-                        dotColor: Colors.grey,
-                        activeDotColor: Colors.indigo),
-                  ),
-                ),
-              )
-            ]),
-          ),
+          child: Column(children: [
+            DiscFavRow(),
+            //Image.asset("assets/images/bigMed.png"),
+            SmoothIndicatorr()
+          ]),
         ),
         Padding(
           padding: EdgeInsets.all(16.0),
@@ -81,9 +71,12 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                 children: [
                   Text(
                     "From:Gsk Comapny",
-                    style: AppFonts.style14Pop500.copyWith(color: AppColors.darkGrey),
+                    style: AppFonts.style14Pop500
+                        .copyWith(color: AppColors.darkGrey),
                   ),
-                  Text("(1045 Reviews)", style: AppFonts.style14Pop500.copyWith(color: AppColors.darkGrey))
+                  Text("(1045 Reviews)",
+                      style: AppFonts.style14Pop500
+                          .copyWith(color: AppColors.darkGrey))
                 ],
               ),
               const SizedBox(
