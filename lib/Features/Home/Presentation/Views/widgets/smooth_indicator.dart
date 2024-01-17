@@ -1,25 +1,23 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
-
-class SmoothIndicatorr extends StatefulWidget {
-  const SmoothIndicatorr({Key? key}) : super(key: key);
+class CustomSmoothIndicator extends StatefulWidget {
+  const CustomSmoothIndicator(
+      {Key? key,
+      required this.imagesUrl,
+      required this.effect,
+      required this.isProfile})
+      : super(key: key);
+  final List<String> imagesUrl;
+  final IndicatorEffect effect;
+  final bool isProfile;
 
   @override
-  State<SmoothIndicatorr> createState() => _SmoothIndicatorrState();
+  State<CustomSmoothIndicator> createState() => _CustomSmoothIndicatorState();
 }
 
-class _SmoothIndicatorrState extends State<SmoothIndicatorr> {
-  Color mainColor = const Color(0xFF2631C1);
+class _CustomSmoothIndicatorState extends State<CustomSmoothIndicator> {
   final PageController _pageController =
       PageController(viewportFraction: 0.8, keepPage: true);
-
-  List<String> imagesUrl = [
-    AppImages.med,
-    AppImages.med,
-    AppImages.med,
-    AppImages.med,
-    AppImages.med,
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -29,32 +27,36 @@ class _SmoothIndicatorrState extends State<SmoothIndicatorr> {
           height: 200,
           child: PageView.builder(
             controller: _pageController,
-            itemCount: imagesUrl.length,
+            itemCount: widget.imagesUrl.length,
             itemBuilder: (_, index) => Image.asset(
-              imagesUrl[index],
+              widget.imagesUrl[index],
             ),
           ),
         ),
-        Container(
-          width: 85,
-          height: 15,
-          decoration: BoxDecoration(
-              color: AppColors.softGrey,
-              borderRadius: BorderRadius.circular(13)),
-          child: Center(
-            child: SmoothPageIndicator(
-              controller: _pageController, // PageController
-              count: imagesUrl.length,
+        widget.isProfile
+            ? Container(
+                width: 85,
+                height: 15,
+                decoration: BoxDecoration(
+                    color: AppColors.softGrey,
+                    borderRadius: BorderRadius.circular(13)),
+                child: Center(
+                  child: SmoothPageIndicator(
+                    controller: _pageController, // PageController
+                    count: widget.imagesUrl.length,
 
-              effect: WormEffect(
-                  dotHeight: 8,
-                  dotWidth: 8,
-                  dotColor: const Color.fromARGB(255, 203, 201, 201),
-                  activeDotColor: Colors.white), // your preferred effect
-              onDotClicked: (index) {},
-            ),
-          ),
-        ),
+                    effect: widget.effect, // your preferred effect
+                    onDotClicked: (index) {},
+                  ),
+                ),
+              )
+            : SmoothPageIndicator(
+                controller: _pageController, // PageController
+                count: widget.imagesUrl.length,
+
+                effect: widget.effect, // your preferred effect
+                onDotClicked: (index) {},
+              ),
       ],
     );
   }

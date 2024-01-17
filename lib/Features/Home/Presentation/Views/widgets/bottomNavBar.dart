@@ -51,7 +51,7 @@ class BottomNavBar extends StatelessWidget {
   List<Widget> _buildScreens() {
     return [
       const HomeViewBody(),
-      CategoryView(),
+     const CategoryView(),
       const FlashSaleViewBody(),
       const HomeViewBody(),
       const HomeViewBody(),

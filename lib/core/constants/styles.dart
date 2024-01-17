@@ -8,14 +8,21 @@ class AppFonts {
     fontWeight: FontWeight.w700,
   );
 
-  static TextStyle style18Pop =const TextStyle(
+  static TextStyle style22Pop = const TextStyle(
     color: Colors.black,
-    fontSize: 18,
+    fontSize: 22,
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w500,
-    height: 0.14,
+    fontWeight: FontWeight.w900,
   );
-  static TextStyle style20Pop =const TextStyle(
+
+  static TextStyle tabBar = const TextStyle(
+    color: Color(0xFF566CA2),
+    fontSize: 16,
+    fontFamily: 'Outfit',
+    fontWeight: FontWeight.w700,
+    height: 0,
+  );
+  static TextStyle style20Pop = const TextStyle(
     color: Colors.white,
     fontSize: 20,
     fontFamily: 'Poppins',
@@ -45,7 +52,7 @@ class AppFonts {
   static TextStyle button = const TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w600,
-    color: AppColors.grey,
+    color: Colors.black,
     fontFamily: 'Urbanist',
   );
   static TextStyle medium = const TextStyle(

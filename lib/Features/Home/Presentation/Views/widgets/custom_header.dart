@@ -21,9 +21,10 @@ class CustomHeader extends StatelessWidget {
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                         Text(
-                          AppLocalizations.of(navigatorKey.currentContext!)!.helloWorld,
-                          style:const TextStyle(
+                     const   Text(
+                          'A.Z Pharmacy',
+                          // AppLocalizations.of(navigatorKey.currentContext!)!.helloWorld,
+                          style:  TextStyle(
                               fontWeight: FontWeight.w600, fontSize: 20),
                         ),
                         Text(
@@ -37,8 +38,10 @@ class CustomHeader extends StatelessWidget {
             CustomContainer(
               imagePath: "assets/icons/gift.svg",
               onTap: () {
-                PersistentNavBarNavigator.pushNewScreen(navigatorKey.currentContext!,
-                    screen: const CashBackView(), withNavBar: false);
+                PersistentNavBarNavigator.pushNewScreen(
+                    navigatorKey.currentContext!,
+                    screen: const CashBackView(),
+                    withNavBar: false);
               },
             )
           ]),

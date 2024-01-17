@@ -23,9 +23,8 @@ class CategoryRow extends StatelessWidget {
           iconPath: "assets/icons/medicine.svg",
           onTap: () {
             print("object");
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return MedicinesView();
-            }));
+            Navigator.of(navigatorKey.currentContext!)
+                .pushNamed('/medicines');
           },
         ),
         CategoryItem(
@@ -37,6 +36,10 @@ class CategoryRow extends StatelessWidget {
           categoryItemCount: 60,
           catName: "Beauty Tools",
           iconPath: "assets/icons/tools.svg",
+          onTap: () {
+            Navigator.of(navigatorKey.currentContext!)
+                .pushNamed('/beautyTools');
+          },
         ),
       ],
     );

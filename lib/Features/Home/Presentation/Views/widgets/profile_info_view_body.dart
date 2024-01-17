@@ -1,7 +1,4 @@
-
-
 import 'package:flutter_drpharma_2/core/app_export.dart';
-
 
 class ProfileInfoViewBody extends StatefulWidget {
   const ProfileInfoViewBody({super.key});
@@ -12,8 +9,6 @@ class ProfileInfoViewBody extends StatefulWidget {
 
 class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
   int counter = 0;
-  final PageController _pageController =
-      PageController(viewportFraction: 0.8, keepPage: true);
 
   List<String> imagesUrl = [
     AppImages.med,
@@ -46,13 +41,20 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                 )
               ]),
           child: Column(children: [
-            DiscFavRow(),
-            //Image.asset("assets/images/bigMed.png"),
-            SmoothIndicatorr()
+            const DiscFavRow(),
+            CustomSmoothIndicator(
+              isProfile: true,
+              imagesUrl: imagesUrl,
+              effect: const WormEffect(
+                  dotHeight: 8,
+                  dotWidth: 8,
+                  dotColor: Color.fromARGB(255, 203, 201, 201),
+                  activeDotColor: Colors.white),
+            )
           ]),
         ),
         Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,

@@ -1,4 +1,4 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+import '../../../../../Core/app_export.dart';
 
 class MedicinesViewBody extends StatelessWidget {
   const MedicinesViewBody({super.key});
@@ -17,15 +17,7 @@ class MedicinesViewBody extends StatelessWidget {
             child: const Icon(Icons.arrow_back_ios)),
         iconTheme: const IconThemeData(size: 15, color: Colors.black),
         centerTitle: true,
-        title: const Text(
-          "Medicines",
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 22,
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w900,
-          ),
-        ),
+        title: Text("Medicines", style: AppFonts.style20Pop),
       ),
       body: ListView(
         physics: const BouncingScrollPhysics(),

@@ -3,6 +3,19 @@ class AppImages {
   static const String logo = 'assets/images/logo.png';
   static const String background = 'assets/images/background.png';
   static const String med = "assets/images/bigMed.png";
+  static const String beauty = "assets/images/beauty.png";
+  static const String brand = "assets/images/brand.png";
+  static const String brand1 = "assets/images/brand1.png";
+  static const String brand2 = "assets/images/brand2.png";
+  static const String brand3 = "assets/images/brand3.png";
+  static const String gmail = 'assets/icons/gmail.svg';
+
+  static const String cart = 'assets/icons/cart.svg';
+
+  static const String phone = 'assets/icons/phone.svg';
+  static const String medicine = "assets/images/medicineImage.png";
+  static const String location = 'assets/icons/location.svg';
+  static const String map = 'assets/images/map.png';
   static const String splash = 'assets/images/splash.png';
   static const String onboarding1 = 'assets/images/onboarding1.png';
   static const String onboarding2 = 'assets/images/onboarding2.png';
