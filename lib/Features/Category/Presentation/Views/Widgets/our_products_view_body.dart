@@ -13,7 +13,7 @@ class OurProducts extends StatelessWidget {
         length: 4,
         child: ListView(children: [
           const SizedBox(
-            height: 30,
+            height: 10,
           ),
           TabBar(
             dividerColor: const Color(0xffB3B3B5),
@@ -25,27 +25,26 @@ class OurProducts extends StatelessWidget {
             tabs: [
               Text("all", style: AppFonts.tabBar.copyWith(fontSize: 14)),
               Text("new", style: AppFonts.tabBar.copyWith(fontSize: 14)),
-              Text("most popular",
-                  style: AppFonts.tabBar.copyWith(fontSize: 1)),
-              Text("best offer", style: AppFonts.tabBar.copyWith(fontSize: 12)),
+              Text("popular", style: AppFonts.tabBar.copyWith(fontSize: 14)),
+              Text("best offer", style: AppFonts.tabBar.copyWith(fontSize: 14)),
             ],
           ),
           SizedBox(
             height: 500,
             child: TabBarView(children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                child: ListView.separated(
-                    itemBuilder: (context, index) {
-                      return const SizedBox(
-                        height: 20,
-                      );
-                    },
-                    separatorBuilder: (context, index) {
-                      return const ProductCard();
-                    },
-                    itemCount: 10),
-              ),
+              ListView.separated(
+                  itemBuilder: (context, index) {
+                    return const SizedBox(
+                      height: 20,
+                    );
+                  },
+                  separatorBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                      child: const ProductCard(),
+                    );
+                  },
+                  itemCount: 10),
               Text('data'),
               Text('data'),
               Text('data')

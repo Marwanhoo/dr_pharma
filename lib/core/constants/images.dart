@@ -9,9 +9,13 @@ class AppImages {
   static const String brand2 = "assets/images/brand2.png";
   static const String brand3 = "assets/images/brand3.png";
   static const String gmail = 'assets/icons/gmail.svg';
+  static const String equ = "assets/icons/equ.svg";
+  static const String minus = "assets/images/minus.png";
 
+  static const String plus = "assets/images/plus.png";
+  static const String tools = "assets/icons/tools.svg";
+  static const String circle = 'assets/icons/circle.svg';
   static const String cart = 'assets/icons/cart.svg';
-
   static const String phone = 'assets/icons/phone.svg';
   static const String medicine = "assets/images/medicineImage.png";
   static const String location = 'assets/icons/location.svg';

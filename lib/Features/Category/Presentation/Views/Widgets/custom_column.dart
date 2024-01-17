@@ -18,7 +18,7 @@ class CustomColumn extends StatelessWidget {
       children: [
         Stack(
           children: [
-            SvgPicture.asset('assets/icons/circle.svg'),
+            SvgPicture.asset(AppImages.circle),
             Positioned(top: 6, left: 9, child: SvgPicture.asset(iconPath)),
           ],
         ),

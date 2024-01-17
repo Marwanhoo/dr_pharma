@@ -1,15 +1,18 @@
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/app_export.dart';
+import 'package:flutter_drpharma_2/Core/constants/colors.dart';
+import 'package:flutter_drpharma_2/Core/constants/images.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/custom_column.dart';
-import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/distance_container.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/location_container.dart';
+
+import '../../../../../Core/constants/styles.dart';
 
 class AboutUs extends StatelessWidget {
   const AboutUs({super.key});
 
   @override
   Widget build(BuildContext context) {
+    
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 14),
       child: Column(
@@ -22,13 +25,8 @@ class AboutUs extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(21.18),
               ),
-              shadows: const [
-                BoxShadow(
-                  color: Color(0x3F868181),
-                  blurRadius: 11.60,
-                  offset: Offset(0, 4),
-                  spreadRadius: 0,
-                )
+              shadows:const  [
+              AppFonts.boxShadow  
               ],
             ),
             child: const Row(

@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/operator_container.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class ProfileInfoViewBody extends StatefulWidget {
@@ -32,14 +33,7 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(28),
               ),
-              shadows: const [
-                BoxShadow(
-                  color: Color(0x3F868181),
-                  blurRadius: 11.60,
-                  offset: Offset(0, 4),
-                  spreadRadius: 0,
-                )
-              ]),
+              shadows: const [AppFonts.boxShadow]),
           child: Column(children: [
             const DiscFavRow(),
             CustomSmoothIndicator(
@@ -95,16 +89,8 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                         counter--;
                       });
                     },
-                    child: Container(
-                      width: 101,
-                      height: 47,
-                      decoration: ShapeDecoration(
-                        shape: RoundedRectangleBorder(
-                          side: BorderSide(width: 2, color: AppColors.red),
-                          borderRadius: BorderRadius.circular(18.37),
-                        ),
-                      ),
-                      child: Image.asset("assets/images/minus.png"),
+                    child: const OperatorContainer(
+                      imagePath: AppImages.minus,
                     ),
                   ),
                   Text(
@@ -112,26 +98,17 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                     style: AppFonts.header2,
                   ),
                   GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        counter++;
-                      });
-                    },
-                    child: Container(
-                      width: 101,
-                      height: 47,
-                      decoration: ShapeDecoration(
-                        shape: RoundedRectangleBorder(
-                          side: BorderSide(width: 2, color: AppColors.red),
-                          borderRadius: BorderRadius.circular(18.37),
-                        ),
-                      ),
-                      child: Image.asset("assets/images/plus.png"),
-                    ),
-                  )
+                      onTap: () {
+                        setState(() {
+                          counter++;
+                        });
+                      },
+                      child: const OperatorContainer(
+                        imagePath: AppImages.plus,
+                      ))
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Padding(
@@ -144,16 +121,29 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
             ],
           ),
         ),
-        const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            BestOffersCard(
-              imagePath: "assets/images/medicineImage.png",
+        Expanded(
+          child: ListView.separated(
+            shrinkWrap: true,
+            physics: const BouncingScrollPhysics(),
+            padding: const EdgeInsets.symmetric(
+              vertical: 16,
             ),
-            BestOffersCard(
-              imagePath: "assets/images/medicineImage.png",
-            ),
-          ],
+            itemBuilder: (BuildContext context, int index) {
+              return const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  BestOffersCard(imagePath: "assets/images/medicineImage.png"),
+                  BestOffersCard(imagePath: "assets/images/medicineImage.png")
+                ],
+              );
+            },
+            separatorBuilder: (BuildContext context, int index) {
+              return const SizedBox(
+                height: 10,
+              );
+            },
+            itemCount: 10,
+          ),
         ),
       ],
     );

@@ -23,19 +23,20 @@ class CategoryRow extends StatelessWidget {
           iconPath: "assets/icons/medicine.svg",
           onTap: () {
             print("object");
-            Navigator.of(navigatorKey.currentContext!)
-                .pushNamed('/medicines');
+            PersistentNavBarNavigator.pushNewScreen(
+                navigatorKey.currentContext!,
+                screen: MedicinesView());
           },
         ),
-        CategoryItem(
+        const CategoryItem(
           categoryItemCount: 60,
           catName: "Medical Supplies",
-          iconPath: "assets/icons/equ.svg",
+          iconPath: AppImages.equ,
         ),
         CategoryItem(
           categoryItemCount: 60,
           catName: "Beauty Tools",
-          iconPath: "assets/icons/tools.svg",
+          iconPath:AppImages.tools,
           onTap: () {
             Navigator.of(navigatorKey.currentContext!)
                 .pushNamed('/beautyTools');

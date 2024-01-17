@@ -28,8 +28,11 @@ class _CustomSmoothIndicatorState extends State<CustomSmoothIndicator> {
           child: PageView.builder(
             controller: _pageController,
             itemCount: widget.imagesUrl.length,
-            itemBuilder: (_, index) => Image.asset(
-              widget.imagesUrl[index],
+            itemBuilder: (_, index) => Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 35.0),
+              child: Image.asset(
+                widget.imagesUrl[index],
+              ),
             ),
           ),
         ),

@@ -1,5 +1,10 @@
-import 'package:flutter_drpharma_2/Core/app_export.dart';
+
+import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/Core/constants/colors.dart';
+import 'package:flutter_drpharma_2/Core/constants/images.dart';
+import 'package:flutter_drpharma_2/Core/constants/styles.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/distance_container.dart';
+import 'package:flutter_svg/svg.dart';
 
 class LocationContainer extends StatelessWidget {
   const LocationContainer({
@@ -23,12 +28,7 @@ class LocationContainer extends StatelessWidget {
                   borderRadius: BorderRadius.circular(9.52),
                 ),
                 shadows: [
-                  BoxShadow(
-                    color: Color(0x3F3C3C3C),
-                    blurRadius: 11.64,
-                    offset: Offset(-1.06, 4.23),
-                    spreadRadius: 0,
-                  )
+                 AppFonts.boxShadow
                 ],
               ),
               child: Row(
@@ -52,7 +52,7 @@ class LocationContainer extends StatelessWidget {
                         ),
                       ],
                     ),
-                    DistanceContainer()
+                const    DistanceContainer()
                   ]),
             ),
           ],

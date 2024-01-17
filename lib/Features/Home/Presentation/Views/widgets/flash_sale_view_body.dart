@@ -1,6 +1,5 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
-
 class FlashSaleViewBody extends StatelessWidget {
   const FlashSaleViewBody({super.key});
 
@@ -10,7 +9,7 @@ class FlashSaleViewBody extends StatelessWidget {
         backgroundColor: Colors.white,
         body: Column(
           children: [
-            CustomAppBar(
+            const CustomAppBar(
               title: "Flash Sale",
               isFlash: true,
             ),
@@ -54,6 +53,9 @@ class FlashSaleViewBody extends StatelessWidget {
                           imagePath: "assets/images/medicineImage.png")
                     ],
                   ),
+                  SizedBox(
+                    height: 60,
+                  )
                 ],
               ),
             ),

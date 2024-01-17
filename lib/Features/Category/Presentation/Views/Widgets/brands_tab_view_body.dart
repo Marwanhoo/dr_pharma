@@ -9,7 +9,7 @@ class BrandsTabViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        left: 20.0,
+        left: 10.0,
       ),
       child: GridView.count(
         crossAxisCount: 3,

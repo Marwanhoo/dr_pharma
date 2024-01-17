@@ -67,4 +67,13 @@ class AppFonts {
     color: AppColors.grey,
     fontFamily: 'Urbanist',
   );
+
+   static const boxShadow = BoxShadow(
+                  color: Color(0x3F868181),
+                  blurRadius: 11.60,
+                  offset: Offset(0, 4),
+                  spreadRadius: 0,
+                );
+
+                
 }

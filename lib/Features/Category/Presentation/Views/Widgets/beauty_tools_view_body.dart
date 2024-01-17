@@ -19,6 +19,7 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Beauty Tools", style: AppFonts.header2),
         centerTitle: true,
@@ -47,7 +48,7 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
               ),
             ),
             const SizedBox(
-              height: 30,
+              height: 10,
             ),
             TabBar(
               dividerColor: const Color(0xffB3B3B5),
@@ -65,17 +66,33 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
                     style: AppFonts.tabBar.copyWith(fontSize: 14)),
               ],
             ),
-            const SizedBox(
-              height: 500,
+            SizedBox(
+              height: 400,
               child: TabBarView(children: [
-                Center(
-                  child: Row(
-                    children: [
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png"),
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png")
-                    ],
+                Expanded(
+                  child: ListView.separated(
+                    shrinkWrap: true,
+                    physics: const BouncingScrollPhysics(),
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 16,
+                    ),
+                    itemBuilder: (BuildContext context, int index) {
+                      return const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          BestOffersCard(
+                              imagePath: "assets/images/medicineImage.png"),
+                          BestOffersCard(
+                              imagePath: "assets/images/medicineImage.png")
+                        ],
+                      );
+                    },
+                    separatorBuilder: (BuildContext context, int index) {
+                      return SizedBox(
+                        height: 10,
+                      );
+                    },
+                    itemCount: 10,
                   ),
                 ),
                 const Text("data"),
