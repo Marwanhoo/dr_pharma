@@ -5,15 +5,17 @@ class RatingRow extends StatelessWidget {
   const RatingRow({
     super.key,
     required this.reviews,
+    this.iconWidth=20
   });
   final String reviews;
+  final double iconWidth ;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         SvgPicture.asset(
           "assets/icons/star.svg",
-          width: 20,
+          width:iconWidth,
         ),
         Text("4.5", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
         Text(

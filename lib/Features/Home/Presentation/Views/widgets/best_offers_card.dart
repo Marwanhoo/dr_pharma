@@ -1,4 +1,13 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+
+
+import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/Core/constants/styles.dart';
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/profile_info.dart';
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/add_to_cart_button.dart';
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/disc_fav_row.dart';
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/price_row.dart';
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/rating.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class BestOffersCard extends StatelessWidget {
   const BestOffersCard({super.key, required this.imagePath});
@@ -25,12 +34,7 @@ class BestOffersCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(28),
             ),
             shadows: const [
-              BoxShadow(
-                color: Color(0x3F868181),
-                blurRadius: 11.60,
-                offset: Offset(0, 4),
-                spreadRadius: 0,
-              )
+             AppFonts.boxShadow
             ]),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -38,27 +42,17 @@ class BestOffersCard extends StatelessWidget {
             children: [
               const DiscFavRow(),
               Image.asset(imagePath),
-              const Text(
+               Text(
                 'panadol advace exs....',
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 12,
-                  fontFamily: 'Urbanist',
-                  fontWeight: FontWeight.w700,
-                ),
+                style: AppFonts.style14Urbn.copyWith(fontSize: 12)
               ),
               Text(
                 'from : gsk company',
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black.withOpacity(0.44999998807907104),
-                  fontSize: 10,
-                  fontFamily: 'Urbanist',
-                  fontWeight: FontWeight.w400,
-                  height: 0,
-                  letterSpacing: 0.10,
-                ),
+                style: AppFonts.small.copyWith(
+                    color: Colors.black.withOpacity(0.44999998807907104),
+                    fontSize: 10)
               ),
               const RatingRow(
                 reviews: "(1045 Reviews)",
