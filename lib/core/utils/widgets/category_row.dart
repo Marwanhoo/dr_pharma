@@ -1,11 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Config/app_localizations.dart';
-import 'package:flutter_drpharma_2/core/helper.dart';
 import '../../../../core/app_export.dart';
-
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/category_item.dart';
-import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/category_view.dart';
-import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/medicine_view.dart';
 
 class CategoryRow extends StatelessWidget {
   const CategoryRow({
@@ -25,7 +19,7 @@ class CategoryRow extends StatelessWidget {
             print("object");
             PersistentNavBarNavigator.pushNewScreen(
                 navigatorKey.currentContext!,
-                screen: MedicinesView());
+                screen:const MedicinesView());
           },
         ),
         const CategoryItem(

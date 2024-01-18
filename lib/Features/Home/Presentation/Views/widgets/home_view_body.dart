@@ -7,7 +7,7 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: const PreferredSize(
+        appBar:const  PreferredSize(
           preferredSize: Size.fromHeight(90),
           child: CustomHeader(),
         ),

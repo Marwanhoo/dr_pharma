@@ -11,7 +11,7 @@ class AppImages {
   static const String gmail = 'assets/icons/gmail.svg';
   static const String equ = "assets/icons/equ.svg";
   static const String minus = "assets/images/minus.png";
-
+  static const String coupon = "assets/icons/coupon.svg";
   static const String plus = "assets/images/plus.png";
   static const String tools = "assets/icons/tools.svg";
   static const String circle = 'assets/icons/circle.svg';

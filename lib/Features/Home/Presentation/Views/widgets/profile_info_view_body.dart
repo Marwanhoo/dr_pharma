@@ -91,6 +91,7 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                     },
                     child: const OperatorContainer(
                       imagePath: AppImages.minus,
+                      isInvoice: false,
                     ),
                   ),
                   Text(
@@ -105,6 +106,7 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
                       },
                       child: const OperatorContainer(
                         imagePath: AppImages.plus,
+                        isInvoice: false,
                       ))
                 ],
               ),
