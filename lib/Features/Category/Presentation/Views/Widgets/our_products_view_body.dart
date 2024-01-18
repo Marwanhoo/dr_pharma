@@ -2,7 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/product_card.dart';
 
-import '../../../../../Core/app_export.dart';
+import '../../../../../core/constants/colors.dart';
+import '../../../../../core/constants/styles.dart';
 
 class OurProducts extends StatelessWidget {
   const OurProducts({super.key});

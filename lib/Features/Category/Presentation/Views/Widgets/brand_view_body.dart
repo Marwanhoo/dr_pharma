@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/about_us_view_body.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/our_products_view_body.dart';
 import 'package:flutter_drpharma_2/core/constants/styles.dart';
+import 'package:flutter_drpharma_2/core/helper.dart';
+
+import '../../../../../core/constants/images.dart';
+import '../../../../../main.dart';
 
 class BrandViewBody extends StatelessWidget {
   const BrandViewBody({super.key, required this.brandAme});
@@ -50,7 +53,7 @@ class BrandViewBody extends StatelessWidget {
                 height: 500,
                 child: TabBarView(children: [
                   AboutUs(),
-                 OurProducts(),
+                  OurProducts(),
                 ]),
               ),
             ],

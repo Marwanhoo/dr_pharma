@@ -1,6 +1,8 @@
-import 'package:flutter_drpharma_2/Core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/brands_item.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/brand_view.dart';
+
+import '../../../../../core/app_export.dart';
+import '../../../../../core/constants/images.dart';
 
 class BrandsTabViewBody extends StatelessWidget {
   const BrandsTabViewBody({super.key});
@@ -19,10 +21,8 @@ class BrandsTabViewBody extends StatelessWidget {
             brandName: 'Sanofi',
             brandImage: AppImages.brand3,
             onTap: () {
-              PersistentNavBarNavigator.pushNewScreen(
-                  navigatorKey.currentContext!,
-                  screen: const BrandView(),
-                  withNavBar: false);
+              PersistentNavBarNavigator.pushNewScreen(navigatorKey.currentContext!,
+                  screen: const BrandView(), withNavBar: false);
             },
           ),
           const BrandsItem(

@@ -8,26 +8,20 @@ class AppFonts {
     fontWeight: FontWeight.w700,
   );
 
-//   static TextStyle style22Pop = const TextStyle(
-//     color: Colors.black,
-//     fontSize: 22,
-//     fontFamily: 'Poppins',
-//     fontWeight: FontWeight.w900,
-//   );
+  static TextStyle style22Pop = const TextStyle(
+    color: Colors.black,
+    fontSize: 22,
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w900,
+  );
 
-//   static TextStyle tabBar = const TextStyle(
-//     color: Color(0xFF566CA2),
-//     fontSize: 16,
-//     fontFamily: 'Outfit',
-//     fontWeight: FontWeight.w700,
-//     height: 0,
-//   );
-//   static TextStyle style20Pop = const TextStyle(
-//     color: Colors.white,
-//     fontSize: 20,
-//     fontFamily: 'Poppins',
-//     fontWeight: FontWeight.w500,
-//   );
+  static TextStyle tabBar = const TextStyle(
+    color: Color(0xFF566CA2),
+    fontSize: 16,
+    fontFamily: 'Outfit',
+    fontWeight: FontWeight.w700,
+    height: 0,
+  );
 
   static TextStyle Timer = const TextStyle(
     color: Color(0xFF566CA2),
@@ -62,7 +56,6 @@ class AppFonts {
     color: AppColors.grey,
     fontFamily: 'Urbanist',
   );
-
 
   //POP
   static TextStyle style14Pop500 = const TextStyle(
@@ -123,13 +116,10 @@ class AppFonts {
     //height: 0.14,
   );
 
-//    static const boxShadow = BoxShadow(
-//                   color: Color(0x3F868181),
-//                   blurRadius: 11.60,
-//                   offset: Offset(0, 4),
-//                   spreadRadius: 0,
-//                 );
-
-                
-
+  static const boxShadow = BoxShadow(
+    color: Color(0x3F868181),
+    blurRadius: 11.60,
+    offset: Offset(0, 4),
+    spreadRadius: 0,
+  );
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_drpharma_2/Config/app_localizations.dart';
+import 'package:flutter_drpharma_2/core/constants/images.dart';
 import 'package:flutter_drpharma_2/core/helper.dart';
 import '../../../../core/app_export.dart';
 
@@ -23,9 +24,7 @@ class CategoryRow extends StatelessWidget {
           iconPath: "assets/icons/medicine.svg",
           onTap: () {
             print("object");
-            PersistentNavBarNavigator.pushNewScreen(
-                navigatorKey.currentContext!,
-                screen: MedicinesView());
+            PersistentNavBarNavigator.pushNewScreen(navigatorKey.currentContext!, screen: MedicinesView());
           },
         ),
         const CategoryItem(
@@ -36,10 +35,9 @@ class CategoryRow extends StatelessWidget {
         CategoryItem(
           categoryItemCount: 60,
           catName: "Beauty Tools",
-          iconPath:AppImages.tools,
+          iconPath: AppImages.tools,
           onTap: () {
-            Navigator.of(navigatorKey.currentContext!)
-                .pushNamed('/beautyTools');
+            Navigator.of(navigatorKey.currentContext!).pushNamed('/beautyTools');
           },
         ),
       ],

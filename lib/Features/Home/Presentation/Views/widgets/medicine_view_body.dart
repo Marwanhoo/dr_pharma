@@ -1,4 +1,4 @@
-import '../../../../../Core/app_export.dart';
+import '../../../../../core/app_export.dart';
 
 class MedicinesViewBody extends StatelessWidget {
   const MedicinesViewBody({super.key});

@@ -36,7 +36,7 @@ export '../../../../core/utils/widgets/CustomTextFormField.dart';
 export '../../../../../core/constants/colors.dart';
 export '../../../../../core/constants/styles.dart';
 export 'package:flutter_drpharma_2/main.dart';
-export 'package:flutter_drpharma_2/Core/constants/images.dart';
+// export 'package:flutter_drpharma_2/Core/constants/images.dart';
 export 'package:flutter_drpharma_2/core/helper.dart';
 export 'package:flutter_drpharma_2/Config/routes/routes.dart';
 export '../../../../core/app_export.dart';
@@ -82,7 +82,7 @@ export 'package:flutter_drpharma_2/Features/settings/presentation/widgets/more_t
 export 'package:flutter_drpharma_2/Features/settings/presentation/widgets/profile_info_widget.dart';
 export 'package:flutter_drpharma_2/Features/settings/presentation/widgets/custom_list_title_widget.dart';
 export 'package:flutter_drpharma_2/Features/settings/presentation/widgets/build_change_language.dart';
-export  'package:flutter_drpharma_2/Features/settings/presentation/view/profile_info_edit_view.dart';
+export 'package:flutter_drpharma_2/Features/settings/presentation/view/profile_info_edit_view.dart';
 export 'package:flutter_drpharma_2/Features/settings/presentation/view/pharmacy_info_edit_view.dart';
 export 'package:flutter_drpharma_2/Features/settings/presentation/view/settings_view.dart';
 export 'package:flutter_drpharma_2/Features/settings/presentation/widgets/build_change_pass.dart';

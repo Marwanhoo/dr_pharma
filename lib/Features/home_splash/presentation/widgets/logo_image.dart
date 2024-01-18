@@ -1,5 +1,7 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
+import '../../../../core/constants/images.dart';
+
 Container buildContainer(BuildContext context) {
   return Container(
     margin: EdgeInsets.only(right: context.screenWidth / 11),
