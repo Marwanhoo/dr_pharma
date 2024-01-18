@@ -1,7 +1,8 @@
-import '../../../../../Core/app_export.dart';
+import '../../../../../core/app_export.dart';
+import '../../../../../core/constants/images.dart';
 
 class BeautyToolsViewBody extends StatefulWidget {
-  BeautyToolsViewBody({super.key});
+  const BeautyToolsViewBody({super.key});
 
   @override
   State<BeautyToolsViewBody> createState() => _BeautyToolsViewBodyState();
@@ -60,10 +61,8 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
               tabs: [
                 Text("all", style: AppFonts.tabBar.copyWith(fontSize: 14)),
                 Text("makeup", style: AppFonts.tabBar.copyWith(fontSize: 14)),
-                Text("skin care",
-                    style: AppFonts.tabBar.copyWith(fontSize: 14)),
-                Text("hair care",
-                    style: AppFonts.tabBar.copyWith(fontSize: 14)),
+                Text("skin care", style: AppFonts.tabBar.copyWith(fontSize: 14)),
+                Text("hair care", style: AppFonts.tabBar.copyWith(fontSize: 14)),
               ],
             ),
             SizedBox(
@@ -80,15 +79,13 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
                       return const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          BestOffersCard(
-                              imagePath: "assets/images/medicineImage.png"),
-                          BestOffersCard(
-                              imagePath: "assets/images/medicineImage.png")
+                          BestOffersCard(imagePath: "assets/images/medicineImage.png"),
+                          BestOffersCard(imagePath: "assets/images/medicineImage.png")
                         ],
                       );
                     },
                     separatorBuilder: (BuildContext context, int index) {
-                      return SizedBox(
+                      return const SizedBox(
                         height: 10,
                       );
                     },

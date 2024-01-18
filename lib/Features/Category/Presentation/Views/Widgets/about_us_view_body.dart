@@ -1,18 +1,16 @@
-
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/constants/colors.dart';
-import 'package:flutter_drpharma_2/Core/constants/images.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/custom_column.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/location_container.dart';
 
-import '../../../../../Core/constants/styles.dart';
+import '../../../../../core/constants/colors.dart';
+import '../../../../../core/constants/images.dart';
+import '../../../../../core/constants/styles.dart';
 
 class AboutUs extends StatelessWidget {
   const AboutUs({super.key});
 
   @override
   Widget build(BuildContext context) {
-    
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 14),
       child: Column(
@@ -25,37 +23,32 @@ class AboutUs extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(21.18),
               ),
-              shadows:const  [
-              AppFonts.boxShadow  
-              ],
+              shadows: const [AppFonts.boxShadow],
             ),
-            child: const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  CustomColumn(
-                    iconPath: AppImages.gmail,
-                    title: 'Our Gmail',
-                    subTitle: 'ZARA73@gmail.com',
-                  ),
-                  VerticalDivider(
-                    color: AppColors.darkGrey,
-                    indent: 10,
-                    endIndent: 10,
-                  ),
-                  CustomColumn(
-                    iconPath: AppImages.phone,
-                    title: 'Call Us',
-                    subTitle: '+020949485783',
-                  ),
-                ]),
+            child: const Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              CustomColumn(
+                iconPath: AppImages.gmail,
+                title: 'Our Gmail',
+                subTitle: 'ZARA73@gmail.com',
+              ),
+              VerticalDivider(
+                color: AppColors.darkGrey,
+                indent: 10,
+                endIndent: 10,
+              ),
+              CustomColumn(
+                iconPath: AppImages.phone,
+                title: 'Call Us',
+                subTitle: '+020949485783',
+              ),
+            ]),
           ),
-         const SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          LocationContainer()
+          const LocationContainer()
         ],
       ),
     );
   }
 }
-

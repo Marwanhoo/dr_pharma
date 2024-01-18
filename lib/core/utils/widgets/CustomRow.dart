@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class CustomRow extends StatelessWidget {
@@ -16,7 +18,7 @@ class CustomRow extends StatelessWidget {
           style: const TextStyle(
             fontWeight: FontWeight.bold,
             color: Color(0xFF566CA2),
-            fontSize: 30,
+            fontSize: 25,
           ),
         ),
         Container(
@@ -31,7 +33,7 @@ class CustomRow extends StatelessWidget {
           ),
           child: CircleAvatar(
             backgroundColor: const Color(0xFF566CA2),
-            radius: 30,
+            radius: 25,
             child: IconButton(
               color: Colors.white,
               iconSize: 30,

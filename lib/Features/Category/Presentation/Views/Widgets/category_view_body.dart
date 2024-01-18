@@ -1,5 +1,6 @@
-import 'package:flutter_drpharma_2/Core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/brands_tab_view.dart';
+
+import '../../../../../core/app_export.dart';
 
 class CategoryViewBody extends StatelessWidget {
   const CategoryViewBody({
@@ -44,11 +45,11 @@ class CategoryViewBody extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        CategoryRow(),
+                        const CategoryRow(),
                         SizedBox(
                           height: context.screenHeight * .1 - 30,
                         ),
-                        CategoryRow(),
+                        const CategoryRow(),
                       ],
                     ),
                     const BrandsTabView()

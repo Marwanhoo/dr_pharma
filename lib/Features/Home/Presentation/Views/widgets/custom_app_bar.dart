@@ -1,5 +1,7 @@
+
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/is_not_flash.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/isFlashRow.dart';
+
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -33,3 +35,4 @@ class CustomAppBar extends StatelessWidget {
     );
   }
 }
+

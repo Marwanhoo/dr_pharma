@@ -1,5 +1,6 @@
-import 'package:flutter_drpharma_2/core/app_export.dart';
+// ignore_for_file: file_names
 
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class CashItem extends StatelessWidget {
   const CashItem({

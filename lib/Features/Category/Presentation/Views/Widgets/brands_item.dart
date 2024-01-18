@@ -1,10 +1,9 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Core/app_export.dart';
+
+import '../../../../../core/constants/styles.dart';
 
 class BrandsItem extends StatelessWidget {
-  const BrandsItem(
-      {super.key, required this.brandName, required this.brandImage, this.onTap});
+  const BrandsItem({super.key, required this.brandName, required this.brandImage, this.onTap});
   final String brandName;
   final String brandImage;
   final void Function()? onTap;
@@ -18,8 +17,7 @@ class BrandsItem extends StatelessWidget {
           Image.asset(brandImage),
           Text(
             brandName,
-            style: AppFonts.button
-                .copyWith(fontWeight: FontWeight.w900, fontSize: 10),
+            style: AppFonts.button.copyWith(fontWeight: FontWeight.w900, fontSize: 10),
           )
         ],
       ),

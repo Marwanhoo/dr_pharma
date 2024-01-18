@@ -6,6 +6,6 @@ class Layout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  BottomNavBar();
+    return const BottomNavBar();
   }
 }
