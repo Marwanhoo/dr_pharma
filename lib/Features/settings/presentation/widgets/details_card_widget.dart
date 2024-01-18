@@ -18,7 +18,7 @@ class DetailsCardWidget extends StatelessWidget {
             title: "Profile Info",
             subtitle: "Make Changes to your account",
             onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const ProfileInfoEditView()));
+              Navigator.of(navigatorKey.currentContext!).push(MaterialPageRoute(builder: (_)=> const ProfileInfoEditView()));
             },
           ),
           CustomListTitleWidget(
@@ -26,7 +26,7 @@ class DetailsCardWidget extends StatelessWidget {
             title: "Pharmacy Info",
             subtitle: "Make Changes to your pharmacy",
             onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const PharmacyInfoEditView()));
+              Navigator.of(navigatorKey.currentContext!).push(MaterialPageRoute(builder: (_)=> const PharmacyInfoEditView()));
             },
           ),
           CustomListTitleWidget(
@@ -34,7 +34,7 @@ class DetailsCardWidget extends StatelessWidget {
             title: "Language",
             subtitle: "Change the language of the application",
             onTap: () {
-              buildChangeLanguage(context);
+              buildChangeLanguage(navigatorKey.currentContext!);
             },
           ),
           CustomListTitleWidget(
@@ -43,7 +43,7 @@ class DetailsCardWidget extends StatelessWidget {
             title: "Egypt",
             subtitle: "change your current location",
             onTap: () {
-              showCountryPicker(context);
+              showCountryPicker(navigatorKey.currentContext!);
             },
           ),
         ],

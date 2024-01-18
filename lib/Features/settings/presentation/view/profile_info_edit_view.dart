@@ -19,41 +19,41 @@ class ProfileInfoEditView extends StatelessWidget {
           children: [
             const HeadProfileInfo(),
             SizedBox(
-              height: context.screenHeight / 100,
+              height: navigatorKey.currentContext!.screenHeight / 100,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.person,
               hintText: "Muhammad Marwan",
             ),
             SizedBox(
-              height: context.screenHeight / 40,
+              height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.email,
               hintText: "Muh.Marwanhoo@Gmail.com",
             ),
             SizedBox(
-              height: context.screenHeight / 40,
+              height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.phone_iphone,
               hintText: "+201090039341",
             ),
             SizedBox(
-              height: context.screenHeight / 40,
+              height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             CustomTextFormField(
               prefixIcon: Icons.lock,
               hintText: "Change Passwprd",
               suffixIcon: Icons.arrow_forward_ios,
               onTap: () {
-                buildChangePassword(context);
+                buildChangePassword(navigatorKey.currentContext!);
               },
               showCursor: false,
               readOnly: true,
             ),
             SizedBox(
-              height: context.screenHeight / 30,
+              height: navigatorKey.currentContext!.screenHeight / 30,
             ),
             CustomRow(text: "Save Changes", onPressed: () {}),
           ],

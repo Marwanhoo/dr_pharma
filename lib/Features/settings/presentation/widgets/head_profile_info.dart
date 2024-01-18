@@ -56,21 +56,21 @@ class HeadProfileInfo extends StatelessWidget {
               InkWell(
                 borderRadius: BorderRadius.circular(50),
                 onTap: (){
-                  showDialog(context: context, builder: (_)=>  AlertDialog(
+                  showDialog(context: navigatorKey.currentContext!, builder: (_)=>  AlertDialog(
                     backgroundColor: Colors.transparent,
                     content: const CircleAvatar(
                       radius: 100,
                       backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/125823028?v=4"),
                     ),
                     actions: [
-                      TextButton(onPressed: (){Navigator.of(context).pop();}, child: const Text("Close",style: TextStyle(color: Colors.white),)),
+                      TextButton(onPressed: (){Navigator.of(navigatorKey.currentContext!).pop();}, child: const Text("Close",style: TextStyle(color: Colors.white),)),
                     ],
                   ));
                 },
                 child: CircleAvatar(
                   radius: 55,
                   backgroundColor:
-                  Theme.of(context).scaffoldBackgroundColor,
+                  Theme.of(navigatorKey.currentContext!).scaffoldBackgroundColor,
                   child: const CircleAvatar(
                     radius: 50,
                     backgroundImage: NetworkImage(
@@ -83,7 +83,7 @@ class HeadProfileInfo extends StatelessWidget {
                 backgroundColor: Colors.white,
                 child: IconButton(
                   onPressed: () {
-                    showAttachFilePhoto(context);
+                    showAttachFilePhoto(navigatorKey.currentContext!);
                   },
                   icon: const Icon(
                     Icons.camera_alt,
@@ -103,7 +103,7 @@ void showAttachFilePhoto(BuildContext context) {
     context: context,
     builder: (BuildContext context) {
       return Container(
-        height: MediaQuery.of(context).size.height * 0.40,
+        height: MediaQuery.of(navigatorKey.currentContext!).size.height * 0.40,
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
         child: Column(
           children: [

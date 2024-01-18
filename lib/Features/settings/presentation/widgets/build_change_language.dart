@@ -5,7 +5,7 @@ void buildChangeLanguage(context) {
     context: context,
     builder: (BuildContext context) {
       return Container(
-        height: MediaQuery.of(context).size.height * 0.30,
+        height: MediaQuery.of(navigatorKey.currentContext!).size.height * 0.30,
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
         child: Column(
           children: [
@@ -32,7 +32,7 @@ void buildChangeLanguage(context) {
               alignment: Alignment.centerLeft,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: const Color(0XFFF8F8FD),
+                color:  AppColors.grey,
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
                   width: 0.5,
@@ -52,7 +52,7 @@ void buildChangeLanguage(context) {
               alignment: Alignment.centerLeft,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: const Color(0XFFF8F8FD),
+                color: AppColors.grey,
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
                   width: 0.5,

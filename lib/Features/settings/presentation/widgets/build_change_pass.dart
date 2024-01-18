@@ -6,7 +6,7 @@ void buildChangePassword(context) {
     context: context,
     builder: (BuildContext context) {
       return Container(
-        height: MediaQuery.of(context).size.height * 0.75,
+        height: MediaQuery.of(navigatorKey.currentContext!).size.height * 0.75,
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
         child: Column(
           children: [
@@ -19,7 +19,7 @@ void buildChangePassword(context) {
               ),
             ),
              SizedBox(
-              height: context.screenHeight / 40,
+              height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             const Text(
               "Reset Password",
@@ -29,21 +29,21 @@ void buildChangePassword(context) {
               ),
             ),
              SizedBox(
-              height: context.screenHeight / 40,
+              height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             const CustomTextFormField(prefixIcon: Icons.lock, hintText: "Old Password"),
             SizedBox(
-              height: context.screenHeight / 50,
+              height: navigatorKey.currentContext!.screenHeight / 50,
             ),
             const CustomTextFormField(prefixIcon: Icons.lock, hintText: "New Password"),
             SizedBox(
-              height: context.screenHeight / 50,
+              height: navigatorKey.currentContext!.screenHeight / 50,
             ),
             const CustomTextFormField(prefixIcon: Icons.lock, hintText: "Confirm New Password"),
             const Spacer(),
             Row(
               children: [
-                Expanded(
+               /* Expanded(
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
@@ -55,7 +55,7 @@ void buildChangePassword(context) {
                       ),
                     ),
                     onPressed: (){
-                      Navigator.of(context).pop();
+                      Navigator.of(navigatorKey.currentContext!).pop();
                     },
                     child: const Text(
                       "Cancel",
@@ -66,28 +66,26 @@ void buildChangePassword(context) {
                       ),
                     ),
                   ),
+                ),*/
+                buildButton(
+                  "Cancel",
+                  Colors.white,
+                  AppColors.primary,
+                  () {
+                    Navigator.of(navigatorKey.currentContext!).pop();
+                  },
+                  colorSide: AppColors.primary
                 ),
                 SizedBox(
                   width: context.screenWidth / 30,
                 ),
-                Expanded(
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.primary,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                    onPressed: (){},
-                    child: const Text(
-                      "Save",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
+                buildButton(
+                    "Save",
+                    AppColors.primary,
+                    Colors.white,
+                        () {
+                      Navigator.of(navigatorKey.currentContext!).pop();
+                    },
                 ),
               ],
             ),
@@ -102,21 +100,23 @@ Expanded buildButton(
     String text,
     Color bgColor,
     Color textColor,
-    VoidCallback onPressed,
+    VoidCallback onPressed,{
+      Color? colorSide,
+}
     ) {
   return Expanded(
     child: ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: bgColor,
+        backgroundColor:bgColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-          side: BorderSide(
-            color: textColor,
+          side:  BorderSide(
+            color: colorSide ?? AppColors.primary,
           ),
         ),
       ),
       onPressed: onPressed,
-      child: Text(
+      child:  Text(
         text,
         style: TextStyle(
           color: textColor,

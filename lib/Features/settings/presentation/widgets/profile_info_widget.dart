@@ -9,7 +9,7 @@ class ProfileInfoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: (){
-        Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const ProfileInfoEditView()));
+        Navigator.of(navigatorKey.currentContext!).push(MaterialPageRoute(builder: (_)=> const ProfileInfoEditView()));
       },
       child: Card(
         color: AppColors.primary.withOpacity(0.8),

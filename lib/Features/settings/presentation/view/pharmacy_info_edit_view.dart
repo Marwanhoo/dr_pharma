@@ -19,34 +19,34 @@ class PharmacyInfoEditView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height: context.screenHeight / 40,
+              height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.medical_information,
               hintText: "AZ Pharmacy",
             ),
             SizedBox(
-              height: context.screenHeight / 40,
+              height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.phone_iphone,
               hintText: "+201090039341",
             ),
             SizedBox(
-              height: context.screenHeight / 40,
+              height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             CustomTextFormField(
               prefixIcon: Icons.map,
               hintText: "Pharmacy Region",
               suffixIcon: Icons.arrow_forward_ios,
               onTap: () {
-                showCountryPicker(context);
+                showCountryPicker(navigatorKey.currentContext!);
               },
               showCursor: false,
               readOnly: true,
             ),
             SizedBox(
-              height: context.screenHeight / 30,
+              height: navigatorKey.currentContext!.screenHeight / 30,
             ),
             const Text(
               "Pharmacy License",
@@ -55,7 +55,7 @@ class PharmacyInfoEditView extends StatelessWidget {
               ),
             ),
             Divider(
-              endIndent: MediaQuery.of(context).size.width / 2,
+              endIndent: MediaQuery.of(navigatorKey.currentContext!).size.width / 2,
             ),
             const PharmacyLicenseWidget(),
             const Spacer(),
