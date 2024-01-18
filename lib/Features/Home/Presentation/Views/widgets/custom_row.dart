@@ -22,15 +22,22 @@ class CustomCategoryWitharrow extends StatelessWidget {
                   )
                 ],
               )
-            : Row(
-                children: [
-                  Text('see all', style: AppFonts.style14Pop500),
-                  Icon(
-                    Icons.arrow_forward_ios,
-                    size: 12,
-                    color: AppColors.black,
-                  )
-                ],
+            : GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return CategoryView();
+                  }));
+                },
+                child: Row(
+                  children: [
+                    Text('see all', style: AppFonts.style14Pop500),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      size: 12,
+                      color: AppColors.black,
+                    )
+                  ],
+                ),
               )
       ],
     );

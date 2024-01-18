@@ -1,8 +1,15 @@
+
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 void main() {
+
+// import 'core/app_export.dart';
+
+// GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+// main() {
+
   runApp(
     const MyApp(),
   );
@@ -16,14 +23,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       navigatorKey: navigatorKey,
       debugShowCheckedModeBanner: false,
-      supportedLocales: L10n.all,
-      localizationsDelegates: const [
-        AppLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
+     
       initialRoute: '/',
+
       routes: routes,
     );
   }
