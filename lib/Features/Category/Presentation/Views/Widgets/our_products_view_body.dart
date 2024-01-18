@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/product_card.dart';
 
@@ -40,15 +39,15 @@ class OurProducts extends StatelessWidget {
                     );
                   },
                   separatorBuilder: (context, index) {
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                      child: const ProductCard(),
+                    return const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 15.0),
+                      child: ProductCard(),
                     );
                   },
                   itemCount: 10),
-              Text('data'),
-              Text('data'),
-              Text('data')
+              const Text('data'),
+              const Text('data'),
+              const Text('data')
             ]),
           )
         ]));

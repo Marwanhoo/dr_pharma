@@ -18,7 +18,7 @@ void buildChangePassword(context) {
                 color: Colors.grey,
               ),
             ),
-             SizedBox(
+            SizedBox(
               height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             const Text(
@@ -28,7 +28,7 @@ void buildChangePassword(context) {
                 fontSize: 16,
               ),
             ),
-             SizedBox(
+            SizedBox(
               height: navigatorKey.currentContext!.screenHeight / 40,
             ),
             const CustomTextFormField(prefixIcon: Icons.lock, hintText: "Old Password"),
@@ -43,49 +43,19 @@ void buildChangePassword(context) {
             const Spacer(),
             Row(
               children: [
-               /* Expanded(
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        side: const BorderSide(
-                          color: AppColors.primary,
-                        ),
-                      ),
-                    ),
-                    onPressed: (){
-                      Navigator.of(navigatorKey.currentContext!).pop();
-                    },
-                    child: const Text(
-                      "Cancel",
-                      style: TextStyle(
-                        color: AppColors.primary,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-                ),*/
-                buildButton(
-                  "Cancel",
-                  Colors.white,
-                  AppColors.primary,
-                  () {
-                    Navigator.of(navigatorKey.currentContext!).pop();
-                  },
-                  colorSide: AppColors.primary
-                ),
+                buildButton("Cancel", Colors.white, AppColors.primary, () {
+                  Navigator.of(navigatorKey.currentContext!).pop();
+                }, colorSide: AppColors.primary),
                 SizedBox(
                   width: context.screenWidth / 30,
                 ),
                 buildButton(
-                    "Save",
-                    AppColors.primary,
-                    Colors.white,
-                        () {
-                      Navigator.of(navigatorKey.currentContext!).pop();
-                    },
+                  "Save",
+                  AppColors.primary,
+                  Colors.white,
+                  () {
+                    Navigator.of(navigatorKey.currentContext!).pop();
+                  },
                 ),
               ],
             ),
@@ -97,26 +67,25 @@ void buildChangePassword(context) {
 }
 
 Expanded buildButton(
-    String text,
-    Color bgColor,
-    Color textColor,
-    VoidCallback onPressed,{
-      Color? colorSide,
-}
-    ) {
+  String text,
+  Color bgColor,
+  Color textColor,
+  VoidCallback onPressed, {
+  Color? colorSide,
+}) {
   return Expanded(
     child: ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor:bgColor,
+        backgroundColor: bgColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-          side:  BorderSide(
+          side: BorderSide(
             color: colorSide ?? AppColors.primary,
           ),
         ),
       ),
       onPressed: onPressed,
-      child:  Text(
+      child: Text(
         text,
         style: TextStyle(
           color: textColor,

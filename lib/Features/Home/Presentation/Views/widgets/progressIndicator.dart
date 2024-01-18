@@ -1,6 +1,6 @@
+// ignore_for_file: file_names
+
 import 'package:flutter_drpharma_2/core/app_export.dart';
-
-
 
 class ProgressIndicatorr extends StatelessWidget {
   const ProgressIndicatorr({
@@ -41,7 +41,7 @@ class ProgressIndicatorr extends StatelessWidget {
                   "2700 point     ",
                   style: AppFonts.small.copyWith(fontWeight: FontWeight.w900),
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 8,
                   backgroundColor: Colors.white,
                 )

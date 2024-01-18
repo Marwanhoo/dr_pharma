@@ -5,6 +5,6 @@ class MedicinesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MedicinesViewBody();
+    return const MedicinesViewBody();
   }
 }

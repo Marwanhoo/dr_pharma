@@ -46,7 +46,7 @@ class AboutUs extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          LocationContainer()
+          const LocationContainer()
         ],
       ),
     );

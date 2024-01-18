@@ -2,7 +2,7 @@ import '../../../../../core/app_export.dart';
 import '../../../../../core/constants/images.dart';
 
 class BeautyToolsViewBody extends StatefulWidget {
-  BeautyToolsViewBody({super.key});
+  const BeautyToolsViewBody({super.key});
 
   @override
   State<BeautyToolsViewBody> createState() => _BeautyToolsViewBodyState();
@@ -85,7 +85,7 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
                       );
                     },
                     separatorBuilder: (BuildContext context, int index) {
-                      return SizedBox(
+                      return const SizedBox(
                         height: 10,
                       );
                     },

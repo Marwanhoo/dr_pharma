@@ -15,7 +15,7 @@ class TransactionDetails extends StatelessWidget {
     return Container(
       width: 368.45,
       height: 93.94,
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(

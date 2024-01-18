@@ -45,11 +45,11 @@ class CategoryViewBody extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        CategoryRow(),
+                        const CategoryRow(),
                         SizedBox(
                           height: context.screenHeight * .1 - 30,
                         ),
-                        CategoryRow(),
+                        const CategoryRow(),
                       ],
                     ),
                     const BrandsTabView()

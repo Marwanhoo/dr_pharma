@@ -29,31 +29,31 @@ class BrandsTabViewBody extends StatelessWidget {
             brandName: 'Merck',
             brandImage: AppImages.brand2,
           ),
-          BrandsItem(
+          const BrandsItem(
             brandName: 'Gsk',
             brandImage: AppImages.brand1,
           ),
-          BrandsItem(
+          const BrandsItem(
             brandName: 'Sanofi',
             brandImage: AppImages.brand3,
           ),
-          BrandsItem(
+          const BrandsItem(
             brandName: 'Merck',
             brandImage: AppImages.brand2,
           ),
-          BrandsItem(
+          const BrandsItem(
             brandName: 'Gsk',
             brandImage: AppImages.brand1,
           ),
-          BrandsItem(
+          const BrandsItem(
             brandName: 'Sanofi',
             brandImage: AppImages.brand3,
           ),
-          BrandsItem(
+          const BrandsItem(
             brandName: 'Merck',
             brandImage: AppImages.brand2,
           ),
-          BrandsItem(
+          const BrandsItem(
             brandName: 'Gsk',
             brandImage: AppImages.brand1,
           ),

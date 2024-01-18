@@ -1,5 +1,3 @@
-import 'package:flutter_drpharma_2/Features/on_boarding/data/data_text.dart';
-
 import '../../../../core/app_export.dart';
 
 Widget buildPageIndicator(PageController pageController) {

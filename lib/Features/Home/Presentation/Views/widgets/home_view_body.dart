@@ -42,22 +42,20 @@ class HomeViewBody extends StatelessWidget {
                   return const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png"),
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png")
+                      BestOffersCard(imagePath: "assets/images/medicineImage.png"),
+                      BestOffersCard(imagePath: "assets/images/medicineImage.png")
                     ],
                   );
                 },
                 separatorBuilder: (BuildContext context, int index) {
-                  return SizedBox(
+                  return const SizedBox(
                     height: 10,
                   );
                 },
                 itemCount: 10,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
           ],

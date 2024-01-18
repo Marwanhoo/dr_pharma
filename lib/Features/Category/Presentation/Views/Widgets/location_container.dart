@@ -22,13 +22,13 @@ class LocationContainer extends StatelessWidget {
             Container(
               width: 362.93,
               height: 88.86,
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               decoration: ShapeDecoration(
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(9.52),
                 ),
-                shadows: [AppFonts.boxShadow],
+                shadows: const [AppFonts.boxShadow],
               ),
               child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 SvgPicture.asset(AppImages.location),

@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -51,16 +53,13 @@ class isNotFLash extends StatelessWidget {
               Navigator.pop(context);
             },
             child: SvgPicture.asset(leadingIcon)),
-        Spacer(),
+        const Spacer(),
         Text(
           title,
-          style: AppFonts.style14Urbn.copyWith(
-              fontWeight: FontWeight.w700,
-              fontSize: 18.30,
-              fontFamily: 'Poppins',
-              color: Colors.white),
+          style: AppFonts.style14Urbn
+              .copyWith(fontWeight: FontWeight.w700, fontSize: 18.30, fontFamily: 'Poppins', color: Colors.white),
         ),
-        Spacer()
+        const Spacer()
       ],
     );
   }
@@ -84,16 +83,12 @@ class IsFlashRow extends StatelessWidget {
         SvgPicture.asset(leadingIcon),
         Text(
           title,
-          style: AppFonts.style14Urbn.copyWith(
-              fontWeight: FontWeight.w700,
-              fontSize: 18.30,
-              fontFamily: 'Poppins',
-              color: Colors.white),
+          style: AppFonts.style14Urbn
+              .copyWith(fontWeight: FontWeight.w700, fontSize: 18.30, fontFamily: 'Poppins', color: Colors.white),
         ),
         GestureDetector(
             onTap: () {
-              PersistentNavBarNavigator.pushNewScreen(context,
-                  screen: SearchView(), withNavBar: false);
+              PersistentNavBarNavigator.pushNewScreen(context, screen: const SearchView(), withNavBar: false);
             },
             child: SvgPicture.asset("assets/icons/search.svg"))
       ],

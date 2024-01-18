@@ -1,6 +1,5 @@
 export 'package:flutter/foundation.dart';
 export 'package:flutter/material.dart';
-export 'package:flutter_drpharma_2/Config/app_localizations.dart';
 export 'package:flutter_drpharma_2/layout.dart';
 export 'package:flutter_localizations/flutter_localizations.dart';
 export 'package:flutter_drpharma_2/Features/Home/Presentation/Views/search_view.dart';
