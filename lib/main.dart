@@ -1,7 +1,15 @@
-import 'core/app_export.dart';
+
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
-main() {
+
+void main() {
+
+// import 'core/app_export.dart';
+
+// GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+// main() {
+
   runApp(
     const MyApp(),
   );
