@@ -1,6 +1,8 @@
-// ignore_for_file: file_names
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_drpharma_2/Features/Invoice/Presentation/Views/invoice_view.dart';
+
+
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class BottomNavBar extends StatelessWidget {
@@ -51,7 +53,7 @@ class BottomNavBar extends StatelessWidget {
       const HomeViewBody(),
       const CategoryView(),
       const FlashSaleViewBody(),
-      const HomeViewBody(),
+      const InVoiceView(),
       const HomeViewBody(),
     ];
   }
@@ -67,6 +69,8 @@ class BottomNavBar extends StatelessWidget {
       screens: _buildScreens(),
       items: _navBarsItems(),
       confineInSafeArea: true,
+      navBarHeight: 89,
+
       backgroundColor: Colors.white, // Default is Colors.white.
       handleAndroidBackButtonPress: true, // Default is true.
       resizeToAvoidBottomInset:
@@ -75,7 +79,7 @@ class BottomNavBar extends StatelessWidget {
       hideNavigationBarWhenKeyboardShows:
           true, // Recommended to set 'resizeToAvoidBottomInset' as true while using this argument. Default is true.
       decoration: NavBarDecoration(
-        borderRadius: BorderRadius.circular(10.0),
+        borderRadius: BorderRadius.circular(33.0),
         colorBehindNavBar: Colors.white,
       ),
       popAllScreensOnTapOfSelectedTab: true,

@@ -14,7 +14,9 @@ class DiscFavRow extends StatelessWidget {
           width: 38.09,
           height: 19,
           decoration: ShapeDecoration(
-            color: const Color(0xFFDA3A2A),
+
+            color:AppColors.red,
+
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),

@@ -1,4 +1,6 @@
-// ignore_for_file: camel_case_types
+
+import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/is_not_flash.dart';
+import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/isFlashRow.dart';
 
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
@@ -27,71 +29,10 @@ class CustomAppBar extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: isFlash
               ? IsFlashRow(leadingIcon: leadingIcon, title: title)
-              : isNotFLash(leadingIcon: leadingIcon, title: title),
+              : IsNotFLash(leadingIcon: leadingIcon, title: title),
         ),
       ),
     );
   }
 }
 
-class isNotFLash extends StatelessWidget {
-  const isNotFLash({
-    super.key,
-    required this.leadingIcon,
-    required this.title,
-  });
-
-  final String leadingIcon;
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        GestureDetector(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: SvgPicture.asset(leadingIcon)),
-        const Spacer(),
-        Text(
-          title,
-          style: AppFonts.style14Urbn
-              .copyWith(fontWeight: FontWeight.w700, fontSize: 18.30, fontFamily: 'Poppins', color: Colors.white),
-        ),
-        const Spacer()
-      ],
-    );
-  }
-}
-
-class IsFlashRow extends StatelessWidget {
-  const IsFlashRow({
-    super.key,
-    required this.leadingIcon,
-    required this.title,
-  });
-
-  final String leadingIcon;
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        SvgPicture.asset(leadingIcon),
-        Text(
-          title,
-          style: AppFonts.style14Urbn
-              .copyWith(fontWeight: FontWeight.w700, fontSize: 18.30, fontFamily: 'Poppins', color: Colors.white),
-        ),
-        GestureDetector(
-            onTap: () {
-              PersistentNavBarNavigator.pushNewScreen(context, screen: const SearchView(), withNavBar: false);
-            },
-            child: SvgPicture.asset("assets/icons/search.svg"))
-      ],
-    );
-  }
-}

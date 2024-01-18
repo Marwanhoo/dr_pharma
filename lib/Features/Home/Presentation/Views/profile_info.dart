@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/core/utils/widgets/custom_bottom_nav.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class ProfileInfoView extends StatelessWidget {
@@ -7,7 +8,18 @@ class ProfileInfoView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      bottomNavigationBar: const ProfileBottomNav(),
+      bottomNavigationBar: const Padding(
+        padding: EdgeInsets.all(16.0),
+        child: CustomBottomNav(
+          btnText1: 'Add To Cart',
+          btnText2: 'Buy Now',
+          btnC1: AppColors.primary,
+          btn2: AppColors.red,
+          height: 57,
+          btn1BorderC: AppColors.primary,
+          btn2BorderC: AppColors.red,
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.white,
@@ -44,65 +56,5 @@ class ProfileInfoView extends StatelessWidget {
       ),
       body: const ProfileInfoViewBody(),
     );
-  }
-}
-
-class ProfileBottomNav extends StatelessWidget {
-  const ProfileBottomNav({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return const SizedBox(
-      height: 80,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          ProfileButton(
-            text: 'Add To Cart',
-            btnColor: AppColors.primary,
-          ),
-          SizedBox(
-            width: 30,
-          ),
-          ProfileButton(
-            text: 'Buy Now',
-            btnColor: AppColors.red,
-          )
-        ],
-      ),
-    );
-  }
-}
-
-class ProfileButton extends StatelessWidget {
-  const ProfileButton({
-    super.key,
-    required this.text,
-    required this.btnColor,
-  });
-  final String text;
-  final Color btnColor;
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-        width: 166,
-        height: 57,
-        decoration: ShapeDecoration(
-          color: btnColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(17.83),
-          ),
-        ),
-        child: Center(
-          child: Text(
-            text,
-            style: AppFonts.tabBar.copyWith(
-              color: Colors.white,
-            ),
-          ),
-        ));
   }
 }
