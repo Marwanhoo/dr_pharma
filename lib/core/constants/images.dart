@@ -12,6 +12,14 @@ class AppImages {
   static const String equ = "assets/icons/equ.svg";
   static const String minus = "assets/images/minus.png";
   static const String coupon = "assets/icons/coupon.svg";
+  static const String wallet = "assets/icons/wallet.svg";
+  static const String chat = "assets/icons/chat.svg";
+  static const String returnIcon = "assets/icons/return.svg";
+  static const String expired = "assets/icons/expired.svg";
+  static const String ads = "assets/icons/ads.svg";
+  static const String wCart = "assets/icons/wCart.svg";
+  static const String medService = "assets/icons/medService.svg";
+  static const String noteBook = "assets/icons/noteBook.svg";
   static const String plus = "assets/images/plus.png";
   static const String tools = "assets/icons/tools.svg";
   static const String circle = 'assets/icons/circle.svg';

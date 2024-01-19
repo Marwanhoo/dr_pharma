@@ -1,4 +1,6 @@
 
+import 'package:flutter_drpharma_2/core/constants/images.dart';
+
 import '../../../../core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/category_item.dart';
 
@@ -18,7 +20,6 @@ class CategoryRow extends StatelessWidget {
           iconPath: "assets/icons/medicine.svg",
           onTap: () {
 
-            log("object");
             PersistentNavBarNavigator.pushNewScreen(navigatorKey.currentContext!, screen: const MedicinesView());
 
           },

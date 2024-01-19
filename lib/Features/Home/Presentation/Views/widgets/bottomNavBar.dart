@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_drpharma_2/Features/Invoice/Presentation/Views/invoice_view.dart';
+import 'package:flutter_drpharma_2/Features/Menu/Presenattion/views/menu_view.dart';
 
 
 import 'package:flutter_drpharma_2/core/app_export.dart';
@@ -54,7 +55,7 @@ class BottomNavBar extends StatelessWidget {
       const CategoryView(),
       const FlashSaleViewBody(),
       const InVoiceView(),
-      const HomeViewBody(),
+      const MenuView(),
     ];
   }
 

@@ -7,29 +7,32 @@ class CustomColumn extends StatelessWidget {
     required this.iconPath,
     required this.title,
     required this.subTitle,
+    required this.isMenu,
   });
   final String iconPath;
   final String title;
-  final String subTitle;
-
+  final String? subTitle;
+  final bool isMenu;
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Stack(
-          children: [
-            SvgPicture.asset(AppImages.circle),
-            Positioned(top: 6, left: 9, child: SvgPicture.asset(iconPath)),
-          ],
+        CircleAvatar(
+          backgroundColor: AppColors.primary,
+          radius: 22,
+          child: SvgPicture.asset(iconPath),
         ),
+        isMenu
+            ? Text(title, style: AppFonts.style14Urbn)
+            : Text(
+                title,
+                style: AppFonts.tabBar.copyWith(fontSize: 13),
+              ),
         Text(
-          title,
-          style: AppFonts.tabBar.copyWith(fontSize: 13),
-        ),
-        Text(
-          subTitle,
-          style: AppFonts.style14Pop500.copyWith(fontSize: 13, color: Colors.black),
+          subTitle!,
+          style: AppFonts.style14Pop500
+              .copyWith(fontSize: 13, color: Colors.black),
         )
       ],
     );
