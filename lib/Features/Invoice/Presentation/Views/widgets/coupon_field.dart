@@ -15,9 +15,10 @@ class CouponField extends StatefulWidget {
 }
 
 class _CouponFieldState extends State<CouponField> {
+      bool isVisible = false;
+
   @override
   Widget build(BuildContext context) {
-    bool isVisible = false;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
