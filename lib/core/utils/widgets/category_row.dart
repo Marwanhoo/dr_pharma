@@ -1,3 +1,4 @@
+
 import '../../../../core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/category_item.dart';
 
@@ -16,10 +17,10 @@ class CategoryRow extends StatelessWidget {
           catName: "Medicines",
           iconPath: "assets/icons/medicine.svg",
           onTap: () {
-            print("object");
-            PersistentNavBarNavigator.pushNewScreen(
-                navigatorKey.currentContext!,
-                screen:const MedicinesView());
+
+            log("object");
+            PersistentNavBarNavigator.pushNewScreen(navigatorKey.currentContext!, screen: const MedicinesView());
+
           },
         ),
         const CategoryItem(
@@ -30,10 +31,9 @@ class CategoryRow extends StatelessWidget {
         CategoryItem(
           categoryItemCount: 60,
           catName: "Beauty Tools",
-          iconPath:AppImages.tools,
+          iconPath: AppImages.tools,
           onTap: () {
-            Navigator.of(navigatorKey.currentContext!)
-                .pushNamed('/beautyTools');
+            Navigator.of(navigatorKey.currentContext!).pushNamed('/beautyTools');
           },
         ),
       ],

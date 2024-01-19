@@ -1,7 +1,10 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  const CustomTextFormField({super.key,
+  const CustomTextFormField({
+    super.key,
     required this.prefixIcon,
     required this.hintText,
     this.suffixIcon,
@@ -20,7 +23,6 @@ class CustomTextFormField extends StatelessWidget {
   final bool showCursor;
   final bool readOnly;
   final bool obscureText;
-
 
   @override
   Widget build(BuildContext context) {
@@ -44,9 +46,9 @@ class CustomTextFormField extends StatelessWidget {
           ),
           suffixIcon: suffixIcon != null
               ? Icon(
-            suffixIcon,
-            color: Colors.grey,
-          )
+                  suffixIcon,
+                  color: Colors.grey,
+                )
               : null,
           hintText: hintText,
           hintStyle: const TextStyle(

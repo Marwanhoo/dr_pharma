@@ -6,6 +6,6 @@ class BeautyToolsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  BeautyToolsViewBody();
+    return const BeautyToolsViewBody();
   }
 }

@@ -27,7 +27,7 @@ class SerachTextField extends StatelessWidget {
               ),
               hintText: "Search Here...",
               hintStyle: AppFonts.small.copyWith(color: AppColors.hintColor),
-              prefixIcon: Icon(Icons.search, color: AppColors.hintColor)),
+              prefixIcon: const Icon(Icons.search, color: AppColors.hintColor)),
         ),
       ),
     );

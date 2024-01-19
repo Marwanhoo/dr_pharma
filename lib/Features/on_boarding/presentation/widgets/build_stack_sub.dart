@@ -27,6 +27,7 @@ class BuildStackSub extends StatelessWidget {
                   Navigator.pushNamed(context, '/login view');
                 },
                 "login",
+
                 const Color(0XFF566CA2),
               ),
               SizedBox(

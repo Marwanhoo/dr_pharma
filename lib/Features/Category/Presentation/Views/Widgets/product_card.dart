@@ -1,3 +1,4 @@
+
 import 'package:flutter_drpharma_2/Core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/is_our_product_card.dart';
 import 'package:flutter_drpharma_2/Features/Invoice/Presentation/Views/widgets/is_invoice_card.dart';
@@ -12,6 +13,7 @@ class ProductCard extends StatefulWidget {
 
 class _ProductCardState extends State<ProductCard> {
   int counter = 0;
+
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +31,7 @@ class _ProductCardState extends State<ProductCard> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+
             Row(
               children: [
                 Image.asset(
@@ -63,6 +66,7 @@ class _ProductCardState extends State<ProductCard> {
               width: context.screenWidth * .001,
             )
           ]),
+
     );
   }
 }

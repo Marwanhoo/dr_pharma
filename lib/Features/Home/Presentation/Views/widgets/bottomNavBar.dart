@@ -1,5 +1,7 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_drpharma_2/Features/Invoice/Presentation/Views/invoice_view.dart';
+
 
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
@@ -93,8 +95,7 @@ class BottomNavBar extends StatelessWidget {
         curve: Curves.ease,
         duration: Duration(milliseconds: 200),
       ),
-      navBarStyle:
-          NavBarStyle.style1, // Choose the nav bar style with this property.
+      navBarStyle: NavBarStyle.style1, // Choose the nav bar style with this property.
     );
   }
 }

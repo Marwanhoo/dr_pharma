@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Config/app_localizations.dart';
 
 extension AppSizes on BuildContext {
   double get screenHeight => MediaQuery.of(this).size.height;

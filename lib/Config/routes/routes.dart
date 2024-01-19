@@ -6,7 +6,7 @@ Map<String, WidgetBuilder> get routes {
     "/": (context) => const HomeSplashView(),
     '/layout': (context) => const Layout(),
     '/home': (context) => const HomeView(),
-    '/category': (context) => CategoryView(),
+    '/category': (context) => const CategoryView(),
     '/categoryProds': (context) => const MedicinesView(),
     '/cashBack': (context) => const CashBackView(),
     '/medicines': (context) => const MedicinesView(),

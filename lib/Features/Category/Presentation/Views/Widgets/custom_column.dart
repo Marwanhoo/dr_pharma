@@ -1,4 +1,5 @@
-import '../../../../../Core/app_export.dart';
+import '../../../../../core/app_export.dart';
+import '../../../../../core/constants/images.dart';
 
 class CustomColumn extends StatelessWidget {
   const CustomColumn({
@@ -28,8 +29,7 @@ class CustomColumn extends StatelessWidget {
         ),
         Text(
           subTitle,
-          style: AppFonts.style14Pop500
-              .copyWith(fontSize: 13, color: Colors.black),
+          style: AppFonts.style14Pop500.copyWith(fontSize: 13, color: Colors.black),
         )
       ],
     );
