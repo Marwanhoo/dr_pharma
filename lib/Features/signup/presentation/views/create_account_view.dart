@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class CreateAccountView extends StatelessWidget {
@@ -7,7 +8,7 @@ class CreateAccountView extends StatelessWidget {
   Widget build(BuildContext context) {
     void signUp() {
       Future.delayed(const Duration(seconds: 2), () {
-        ScaffoldMessenger.of(navigatorKey.currentContext!).showSnackBar(
+        ScaffoldMessenger.of(GlobalKeyy.currentContext).showSnackBar(
           const SnackBar(
             content: Text('Sign-up successful!'),
           ),
@@ -19,7 +20,7 @@ class CreateAccountView extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(
-              horizontal: navigatorKey.currentContext!.screenWidth / 15),
+              horizontal:GlobalKeyy.currentContext.screenWidth / 15),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -35,21 +36,21 @@ class CreateAccountView extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                  height: navigatorKey.currentContext!.screenHeight / 30 //15,
+                  height:GlobalKeyy.currentContext.screenHeight / 30 //15,
                   ),
               const CustomTextFormField(
                 prefixIcon: Icons.local_hospital,
                 hintText: "Pharmacy Name",
               ),
               SizedBox(
-                  height: navigatorKey.currentContext!.screenHeight / 30 //15,
+                  height: GlobalKeyy.currentContext.screenHeight / 30 //15,
                   ),
               const CustomTextFormField(
                 prefixIcon: Icons.phone_android,
                 hintText: "Pharmacy phone",
               ),
               SizedBox(
-                  height: navigatorKey.currentContext!.screenHeight / 30 //15,
+                  height:GlobalKeyy.currentContext.screenHeight / 30 //15,
                   ),
               const Text(
                 "Pharmacy license",
@@ -65,29 +66,29 @@ class CreateAccountView extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                  height: navigatorKey.currentContext!.screenHeight / 30 //15,
+                  height:GlobalKeyy.currentContext.screenHeight / 30 //15,
                   ),
-              buildAttachAFile(navigatorKey.currentContext!),
+              buildAttachAFile(GlobalKeyy.currentContext),
               SizedBox(
-                  height: navigatorKey.currentContext!.screenHeight / 30 //15,
+                  height:GlobalKeyy.currentContext.screenHeight / 30 //15,
                   ),
               CustomTextFormField(
                 prefixIcon: Icons.map,
                 hintText: "Your Region",
                 onTap: () {
-                  showRegion(navigatorKey.currentContext!);
+                  showRegion(GlobalKeyy.currentContext);
                 },
                 showCursor: false,
                 readOnly: true,
               ),
               SizedBox(
-                  height: navigatorKey.currentContext!.screenHeight / 10 //30,
+                  height:GlobalKeyy.currentContext.screenHeight / 10 //30,
                   ),
               CustomRow(
                   text: "Sign up",
                   onPressed: () {
                     showDialog(
-                      context: navigatorKey.currentContext!,
+                      context: GlobalKeyy.currentContext,
                       builder: (BuildContext context) {
                         return const Center(
                           child: CircularProgressIndicator(),

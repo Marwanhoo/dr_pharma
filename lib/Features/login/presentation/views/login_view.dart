@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 
@@ -9,7 +10,7 @@ class LoginView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(navigatorKey.currentContext!.screenWidth / 15),
+          padding: EdgeInsets.all(GlobalKeyy.currentContext.screenWidth / 15),
           child: Column(
             children: [
                const Align(
@@ -23,14 +24,14 @@ class LoginView extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: navigatorKey.currentContext!.screenHeight / 30 //20,
+              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 30 //20,
                   ),
               const CustomTextFormField(
                 prefixIcon: Icons.person,
                 hintText: "Username or Email",
               ),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 40, //30,
+                height: GlobalKeyy.currentContext.screenHeight / 40, //30,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
@@ -38,9 +39,9 @@ class LoginView extends StatelessWidget {
                 suffixIcon: Icons.remove_red_eye_outlined,
                 obscureText: true,
               ),
-              buildForgotPassword(navigatorKey.currentContext!),
+              buildForgotPassword(GlobalKeyy.currentContext),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 30, //20,
+                height: GlobalKeyy.currentContext.screenHeight / 30, //20,
               ),
               CustomRow(
                 text: "Sign In",
@@ -49,18 +50,18 @@ class LoginView extends StatelessWidget {
                 },
               ),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 10, //40,
+                height: GlobalKeyy.currentContext.screenHeight / 10, //40,
               ),
               buildLoginWith(),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 50,
+                height: GlobalKeyy.currentContext.screenHeight / 50,
               ),
               buildLoginGoogleOrApple(),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 50,
+                height: GlobalKeyy.currentContext.screenHeight / 50,
               ),
-              buildDontHaveAccount(navigatorKey.currentContext!, "You don't hava account ? ", "Sign Up",(){
-                Navigator.pushNamed(navigatorKey.currentContext!, '/signup view');
+              buildDontHaveAccount(GlobalKeyy.currentContext, "You don't hava account ? ", "Sign Up",(){
+                Navigator.pushNamed(GlobalKeyy.currentContext, '/signup view');
               }),
             ],
           ),

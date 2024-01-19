@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_drpharma_2/Features/Menu/Presenattion/views/widgets/menu_Item.dart';
+import 'package:flutter_drpharma_2/Services/global_key.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
 import 'package:flutter_drpharma_2/core/constants/images.dart';
+import 'package:flutter_drpharma_2/core/utils/widgets/default_appBar.dart';
 
 class MenuViewBody extends StatelessWidget {
   const MenuViewBody({super.key});
@@ -8,11 +11,11 @@ class MenuViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('mm')),
+      appBar: CustomAppHeader().build(GlobalKeyy.currentContext),
       backgroundColor: Colors.white,
       body: GridView.count(
         crossAxisCount: 2,
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 50),
         physics: const ClampingScrollPhysics(),
         children: const [
           MenuItem(

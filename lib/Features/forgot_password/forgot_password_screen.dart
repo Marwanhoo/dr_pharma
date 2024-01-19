@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/main.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class ForgotPasswordScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Forgot Pasword View",style: Theme.of(navigatorKey.currentContext!).textTheme.headlineLarge,)
+            Text("Forgot Pasword View",style: Theme.of(GlobalKeyy.currentContext).textTheme.headlineLarge,)
           ],
         ),
       ),

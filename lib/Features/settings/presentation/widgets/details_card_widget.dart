@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class DetailsCardWidget extends StatelessWidget {
@@ -18,7 +19,7 @@ class DetailsCardWidget extends StatelessWidget {
             title: "Profile Info",
             subtitle: "Make Changes to your account",
             onTap: () {
-              Navigator.of(navigatorKey.currentContext!).push(MaterialPageRoute(builder: (_)=> const ProfileInfoEditView()));
+              Navigator.of(GlobalKeyy.currentContext).push(MaterialPageRoute(builder: (_)=> const ProfileInfoEditView()));
             },
           ),
           CustomListTitleWidget(
@@ -26,7 +27,7 @@ class DetailsCardWidget extends StatelessWidget {
             title: "Pharmacy Info",
             subtitle: "Make Changes to your pharmacy",
             onTap: () {
-              Navigator.of(navigatorKey.currentContext!).push(MaterialPageRoute(builder: (_)=> const PharmacyInfoEditView()));
+              Navigator.of(GlobalKeyy.currentContext).push(MaterialPageRoute(builder: (_)=> const PharmacyInfoEditView()));
             },
           ),
           CustomListTitleWidget(
@@ -34,7 +35,7 @@ class DetailsCardWidget extends StatelessWidget {
             title: "Language",
             subtitle: "Change the language of the application",
             onTap: () {
-              buildChangeLanguage(navigatorKey.currentContext!);
+              buildChangeLanguage(GlobalKeyy.currentContext);
             },
           ),
           CustomListTitleWidget(
@@ -43,7 +44,7 @@ class DetailsCardWidget extends StatelessWidget {
             title: "Egypt",
             subtitle: "change your current location",
             onTap: () {
-              showCountryPicker(navigatorKey.currentContext!);
+              showCountryPicker(GlobalKeyy.currentContext);
             },
           ),
         ],

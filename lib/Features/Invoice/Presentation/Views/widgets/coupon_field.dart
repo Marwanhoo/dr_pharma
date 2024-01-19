@@ -34,27 +34,29 @@ class _CouponFieldState extends State<CouponField> {
             ),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: TextFormField(
-                decoration: InputDecoration(
-                    border: InputBorder.none,
-                    prefixIcon: SvgPicture.asset(
-                      AppImages.coupon,
-                      width: 23,
-                      height: 18,
-                    ),
-                    suffixIcon: GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            isVisible = true;
-                          });
-                          print('object');
-                        },
-                        child: const Text('Submit')),
-                    suffixStyle: AppFonts.small.copyWith(
-                        color: AppColors.brown, fontWeight: FontWeight.w900),
-                    hintText: 'Enter the coupon code',
-                    hintStyle: AppFonts.small.copyWith(
-                        color: AppColors.brown, fontWeight: FontWeight.w900)),
+              child: Center(
+                child: TextFormField(
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      prefixIcon: SvgPicture.asset(
+                        AppImages.coupon,
+                        width: 23,
+                        height: 18,
+                      ),
+                      suffixIcon: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              isVisible = true;
+                            });
+                            print('object');
+                          },
+                          child: const Text('Submit')),
+                      suffixStyle: AppFonts.small.copyWith(
+                          color: AppColors.brown, fontWeight: FontWeight.w900),
+                      hintText: 'Enter the coupon code',
+                      hintStyle: AppFonts.small.copyWith(
+                          color: AppColors.brown, fontWeight: FontWeight.w900)),
+                ),
               ),
             )),
         Visibility(

@@ -1,4 +1,5 @@
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/brands_tab_view.dart';
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 
 import '../../../../../core/app_export.dart';
 
@@ -11,10 +12,7 @@ class CategoryViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: const PreferredSize(
-          preferredSize: Size.fromHeight(90),
-          child: CustomHeader(),
-        ),
+        appBar: CustomAppHeader().build(GlobalKeyy.currentContext),
         backgroundColor: Colors.white,
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),

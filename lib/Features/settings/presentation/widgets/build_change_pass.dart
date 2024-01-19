@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 void buildChangePassword(context) {
@@ -6,7 +7,7 @@ void buildChangePassword(context) {
     context: context,
     builder: (BuildContext context) {
       return Container(
-        height: MediaQuery.of(navigatorKey.currentContext!).size.height * 0.75,
+        height: MediaQuery.of(GlobalKeyy.currentContext).size.height * 0.75,
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
         child: Column(
           children: [
@@ -19,7 +20,7 @@ void buildChangePassword(context) {
               ),
             ),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 40,
+              height: GlobalKeyy.currentContext.screenHeight / 40,
             ),
             const Text(
               "Reset Password",
@@ -29,22 +30,22 @@ void buildChangePassword(context) {
               ),
             ),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 40,
+              height: GlobalKeyy.currentContext.screenHeight / 40,
             ),
             const CustomTextFormField(prefixIcon: Icons.lock, hintText: "Old Password"),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 50,
+              height: GlobalKeyy.currentContext.screenHeight / 50,
             ),
             const CustomTextFormField(prefixIcon: Icons.lock, hintText: "New Password"),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 50,
+              height: GlobalKeyy.currentContext.screenHeight / 50,
             ),
             const CustomTextFormField(prefixIcon: Icons.lock, hintText: "Confirm New Password"),
             const Spacer(),
             Row(
               children: [
                 buildButton("Cancel", Colors.white, AppColors.primary, () {
-                  Navigator.of(navigatorKey.currentContext!).pop();
+                  Navigator.of(GlobalKeyy.currentContext).pop();
                 }, colorSide: AppColors.primary),
                 SizedBox(
                   width: context.screenWidth / 30,
@@ -54,7 +55,7 @@ void buildChangePassword(context) {
                   AppColors.primary,
                   Colors.white,
                   () {
-                    Navigator.of(navigatorKey.currentContext!).pop();
+                    Navigator.of(GlobalKeyy.currentContext).pop();
                   },
                 ),
               ],

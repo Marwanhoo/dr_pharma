@@ -1,3 +1,6 @@
+
+
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 void buildChangeLanguage(context) {
@@ -5,7 +8,7 @@ void buildChangeLanguage(context) {
     context: context,
     builder: (BuildContext context) {
       return Container(
-        height: MediaQuery.of(navigatorKey.currentContext!).size.height * 0.30,
+        height: MediaQuery.of(GlobalKeyy.currentContext).size.height * 0.30,
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
         child: Column(
           children: [

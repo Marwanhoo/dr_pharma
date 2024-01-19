@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class PharmacyInfoEditView extends StatelessWidget {
@@ -19,34 +20,34 @@ class PharmacyInfoEditView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 40,
+              height: GlobalKeyy.currentContext.screenHeight / 40,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.medical_information,
               hintText: "AZ Pharmacy",
             ),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 40,
+              height: GlobalKeyy.currentContext.screenHeight / 40,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.phone_iphone,
               hintText: "+201090039341",
             ),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 40,
+              height: GlobalKeyy.currentContext.screenHeight / 40,
             ),
             CustomTextFormField(
               prefixIcon: Icons.map,
               hintText: "Pharmacy Region",
               suffixIcon: Icons.arrow_forward_ios,
               onTap: () {
-                showCountryPicker(navigatorKey.currentContext!);
+                showCountryPicker(GlobalKeyy.currentContext);
               },
               showCursor: false,
               readOnly: true,
             ),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 30,
+              height: GlobalKeyy.currentContext.screenHeight / 30,
             ),
             const Text(
               "Pharmacy License",
@@ -55,7 +56,7 @@ class PharmacyInfoEditView extends StatelessWidget {
               ),
             ),
             Divider(
-              endIndent: MediaQuery.of(navigatorKey.currentContext!).size.width / 2,
+              endIndent: MediaQuery.of(GlobalKeyy.currentContext).size.width / 2,
             ),
             const PharmacyLicenseWidget(),
             const Spacer(),

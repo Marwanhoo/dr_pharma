@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 import '../../../../core/constants/images.dart';
@@ -21,7 +22,7 @@ class _HomeSplashViewState extends State<HomeSplashView> {
       const Duration(seconds: 2),
       () {
         Navigator.pushReplacementNamed(
-          navigatorKey.currentContext!,
+          GlobalKeyy.currentContext,
           "/onBoarding view",
         );
       },
@@ -43,9 +44,9 @@ class _HomeSplashViewState extends State<HomeSplashView> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              buildContainer(navigatorKey.currentContext!),
+              buildContainer(GlobalKeyy.currentContext),
               Image(
-                width: navigatorKey.currentContext!.screenWidth / 2,
+                width: GlobalKeyy.currentContext.screenWidth / 2,
                 image: const AssetImage(AppImages.textLogo),
               ),
             ],

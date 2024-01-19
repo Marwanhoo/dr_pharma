@@ -1,3 +1,5 @@
+import 'package:flutter_drpharma_2/core/utils/widgets/default_appBar.dart';
+
 import '../../../../../core/app_export.dart';
 import '../../../../../core/constants/images.dart';
 
@@ -21,18 +23,7 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text("Beauty Tools", style: AppFonts.header2),
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.white,
-        leading: GestureDetector(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: const Icon(Icons.arrow_back_ios)),
-        iconTheme: const IconThemeData(size: 15, color: Colors.black),
-      ),
+      appBar:  DefaultAppBar(brandName: 'Beauty Tools').build(context),
       body: SingleChildScrollView(
           child: DefaultTabController(
         length: 4,
@@ -68,29 +59,27 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
             SizedBox(
               height: 400,
               child: TabBarView(children: [
-                Expanded(
-                  child: ListView.separated(
-                    shrinkWrap: true,
-                    physics: const BouncingScrollPhysics(),
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 16,
-                    ),
-                    itemBuilder: (BuildContext context, int index) {
-                      return const Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-                          BestOffersCard(imagePath: "assets/images/medicineImage.png")
-                        ],
-                      );
-                    },
-                    separatorBuilder: (BuildContext context, int index) {
-                      return const SizedBox(
-                        height: 10,
-                      );
-                    },
-                    itemCount: 10,
+                ListView.separated(
+                  shrinkWrap: true,
+                  physics: const BouncingScrollPhysics(),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 16,
                   ),
+                  itemBuilder: (BuildContext context, int index) {
+                    return const Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        BestOffersCard(imagePath: "assets/images/medicineImage.png"),
+                        BestOffersCard(imagePath: "assets/images/medicineImage.png")
+                      ],
+                    );
+                  },
+                  separatorBuilder: (BuildContext context, int index) {
+                    return const SizedBox(
+                      height: 10,
+                    );
+                  },
+                  itemCount: 10,
                 ),
                 const Text("data"),
                 const Text("data"),

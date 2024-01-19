@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/utils/widgets/custom_bottom_nav.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
@@ -44,7 +45,7 @@ class ProfileInfoView extends StatelessWidget {
               imagePath: "assets/icons/searchh.svg",
               onTap: () {
                 PersistentNavBarNavigator.pushNewScreen(
-                  navigatorKey.currentContext!,
+                  GlobalKeyy.currentContext,
                   screen: const SearchView(),
                   withNavBar: false,
                   pageTransitionAnimation: PageTransitionAnimation.cupertino,

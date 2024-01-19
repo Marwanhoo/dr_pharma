@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/Config/routes/routeManager.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/about_us_view_body.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/our_products_view_body.dart';
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/constants/styles.dart';
 import 'package:flutter_drpharma_2/core/helper.dart';
+import 'package:flutter_drpharma_2/core/utils/widgets/default_appBar.dart';
 
 import '../../../../../core/constants/images.dart';
-import '../../../../../main.dart';
 
 class BrandViewBody extends StatelessWidget {
   const BrandViewBody({super.key, required this.brandAme});
@@ -14,18 +16,7 @@ class BrandViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text(brandAme, style: AppFonts.header2),
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.white,
-        leading: GestureDetector(
-            onTap: () {
-              Navigator.pop(navigatorKey.currentContext!);
-            },
-            child: const Icon(Icons.arrow_back_ios)),
-        iconTheme: const IconThemeData(size: 15, color: Colors.black),
-      ),
+      appBar: DefaultAppBar(brandName: 'Sanofi').build(GlobalKeyy.currentContext),
       body: SingleChildScrollView(
           child: Center(
         child: DefaultTabController(

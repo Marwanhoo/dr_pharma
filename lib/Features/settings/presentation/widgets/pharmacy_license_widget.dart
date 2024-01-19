@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class PharmacyLicenseWidget extends StatelessWidget {
@@ -19,7 +20,7 @@ class PharmacyLicenseWidget extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 5,),
-        Expanded(child: buildAttachAFile(navigatorKey.currentContext!)),
+        Expanded(child: buildAttachAFile(GlobalKeyy.currentContext)),
       ],
     );
   }
