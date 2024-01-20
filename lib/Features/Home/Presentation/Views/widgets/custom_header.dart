@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Config/routes/routeManager.dart';
 import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 import 'package:flutter_drpharma_2/core/constants/images.dart';
@@ -16,7 +17,11 @@ class CustomAppHeader {
               children: [
                 Row(
                   children: [
-                    Image.asset(AppImages.avater),
+                    GestureDetector(
+                        onTap: () {
+                          RouteManager.moveTo('');
+                        },
+                        child: Image.asset(AppImages.avater)),
                     Padding(
                       padding: const EdgeInsets.only(top: 14, left: 10),
                       child: Column(

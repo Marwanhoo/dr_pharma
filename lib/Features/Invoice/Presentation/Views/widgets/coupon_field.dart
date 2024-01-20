@@ -15,11 +15,11 @@ class CouponField extends StatefulWidget {
 }
 
 class _CouponFieldState extends State<CouponField> {
-      bool isVisible = false;
+  bool isVisible = false;
+  Color? color =  AppColors.brown;
 
   @override
   Widget build(BuildContext context) {
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -40,19 +40,20 @@ class _CouponFieldState extends State<CouponField> {
                       border: InputBorder.none,
                       prefixIcon: SvgPicture.asset(
                         AppImages.coupon,
-                        width: 23,
-                        height: 18,
+                      
                       ),
+                      prefixIconConstraints: BoxConstraints(maxHeight: 29,maxWidth: 27),
                       suffixIcon: GestureDetector(
                           onTap: () {
                             setState(() {
                               isVisible = true;
+                              color=AppColors.primary;
                             });
                             print('object');
                           },
-                          child: const Text('Submit')),
+                          child: const Text('Submit')),suffixIconConstraints: BoxConstraints.loose(const Size.fromHeight(80)),
                       suffixStyle: AppFonts.small.copyWith(
-                          color: AppColors.brown, fontWeight: FontWeight.w900),
+                          color:color, fontWeight: FontWeight.w900),
                       hintText: 'Enter the coupon code',
                       hintStyle: AppFonts.small.copyWith(
                           color: AppColors.brown, fontWeight: FontWeight.w900)),
@@ -62,7 +63,7 @@ class _CouponFieldState extends State<CouponField> {
         Visibility(
             visible: isVisible,
             child: Text(
-              " Additional discount of 5 \$",
+              " Additional Discount of 5 \$",
               style: AppFonts.style14Pop500,
             )),
       ],

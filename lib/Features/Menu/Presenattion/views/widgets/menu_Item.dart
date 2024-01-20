@@ -12,8 +12,7 @@ class MenuItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 150,
-      height: 80,
-      margin: EdgeInsets.all(20),
+      height: 90,
       decoration: ShapeDecoration(
         color: AppColors.grey,
         shape: RoundedRectangleBorder(

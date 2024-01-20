@@ -8,7 +8,7 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: CustomAppHeader().build(GlobalKeyy.currentContext),
+        appBar:const CustomAppHeader().build(GlobalKeyy.currentContext),
         backgroundColor: Colors.white,
         body: ListView(
           children: [

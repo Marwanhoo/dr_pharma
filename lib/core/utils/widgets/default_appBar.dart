@@ -3,7 +3,6 @@ import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class DefaultAppBar extends AppBar {
   DefaultAppBar({
-    super.key,
     required this.brandName,
   });
 

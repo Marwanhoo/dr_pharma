@@ -1,3 +1,5 @@
+import 'package:flutter_drpharma_2/core/utils/widgets/default_appBar.dart';
+
 import '../../../../../core/app_export.dart';
 
 class MedicinesViewBody extends StatelessWidget {
@@ -7,18 +9,7 @@ class MedicinesViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.white,
-        leading: GestureDetector(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: const Icon(Icons.arrow_back_ios)),
-        iconTheme: const IconThemeData(size: 15, color: Colors.black),
-        centerTitle: true,
-        title: Text("Medicines", style: AppFonts.style20Pop),
-      ),
+      appBar: DefaultAppBar(brandName: 'Medicines',),
       body: ListView.separated(
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.symmetric(
