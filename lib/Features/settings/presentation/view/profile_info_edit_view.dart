@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class ProfileInfoEditView extends StatelessWidget {
@@ -19,41 +20,41 @@ class ProfileInfoEditView extends StatelessWidget {
           children: [
             const HeadProfileInfo(),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 100,
+              height: GlobalKeyy.currentContext.screenHeight / 100,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.person,
               hintText: "Muhammad Marwan",
             ),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 40,
+              height: GlobalKeyy.currentContext.screenHeight / 40,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.email,
               hintText: "Muh.Marwanhoo@Gmail.com",
             ),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 40,
+              height: GlobalKeyy.currentContext.screenHeight / 40,
             ),
             const CustomTextFormField(
               prefixIcon: Icons.phone_iphone,
               hintText: "+201090039341",
             ),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 40,
+              height: GlobalKeyy.currentContext.screenHeight / 40,
             ),
             CustomTextFormField(
               prefixIcon: Icons.lock,
               hintText: "Change Passwprd",
               suffixIcon: Icons.arrow_forward_ios,
               onTap: () {
-                buildChangePassword(navigatorKey.currentContext!);
+                buildChangePassword(GlobalKeyy.currentContext);
               },
               showCursor: false,
               readOnly: true,
             ),
             SizedBox(
-              height: navigatorKey.currentContext!.screenHeight / 30,
+              height: GlobalKeyy.currentContext.screenHeight / 30,
             ),
             CustomRow(text: "Save Changes", onPressed: () {}),
           ],

@@ -1,5 +1,5 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
-import 'package:flutter_drpharma_2/core/utils/widgets/custom_bottom_nav.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/product_card.dart';
 import 'package:flutter_drpharma_2/Features/Invoice/Presentation/Views/widgets/invoice_nav_bar.dart';
 
@@ -15,10 +15,7 @@ class _InVoiceViewBodyState extends State<InVoiceViewBody> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: const PreferredSize(
-          preferredSize: Size.fromHeight(90),
-          child: CustomHeader(),
-        ),
+        appBar:const CustomAppHeader().build(GlobalKeyy.currentContext),
         bottomNavigationBar: const InvoiceBottomNav(),
         backgroundColor: Colors.white,
         body: ListView.separated(

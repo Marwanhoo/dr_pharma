@@ -1,5 +1,7 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/utils/widgets/custom_bottom_nav.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/utils/widgets/default_appBar.dart';
 
 class ProfileInfoView extends StatelessWidget {
   const ProfileInfoView({super.key});
@@ -20,40 +22,7 @@ class ProfileInfoView extends StatelessWidget {
           btn2BorderC: AppColors.red,
         ),
       ),
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.white,
-        centerTitle: true,
-        title: Text(
-          "Profile Info",
-          style: AppFonts.style14Urbn.copyWith(fontSize: 20),
-        ),
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.pop(context);
-          },
-          child: const Icon(
-            Icons.arrow_back_ios,
-            size: 15,
-          ),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12.0),
-            child: CustomContainer(
-              imagePath: "assets/icons/searchh.svg",
-              onTap: () {
-                PersistentNavBarNavigator.pushNewScreen(
-                  navigatorKey.currentContext!,
-                  screen: const SearchView(),
-                  withNavBar: false,
-                  pageTransitionAnimation: PageTransitionAnimation.cupertino,
-                );
-              },
-            ),
-          )
-        ],
-      ),
+      appBar: DefaultAppBar(brandName: 'Profile Info',),
       body: const ProfileInfoViewBody(),
     );
   }

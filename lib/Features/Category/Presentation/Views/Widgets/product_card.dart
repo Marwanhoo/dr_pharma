@@ -2,6 +2,7 @@
 import 'package:flutter_drpharma_2/Core/app_export.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/is_our_product_card.dart';
 import 'package:flutter_drpharma_2/Features/Invoice/Presentation/Views/widgets/is_invoice_card.dart';
+import 'package:flutter_drpharma_2/core/constants/images.dart';
 
 class ProductCard extends StatefulWidget {
   const ProductCard({super.key, required this.isInvoice});

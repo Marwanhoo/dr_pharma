@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class HeadProfileInfo extends StatelessWidget {
@@ -56,21 +57,21 @@ class HeadProfileInfo extends StatelessWidget {
               InkWell(
                 borderRadius: BorderRadius.circular(50),
                 onTap: (){
-                  showDialog(context: navigatorKey.currentContext!, builder: (_)=>  AlertDialog(
+                  showDialog(context: GlobalKeyy.currentContext, builder: (_)=>  AlertDialog(
                     backgroundColor: Colors.transparent,
                     content: const CircleAvatar(
                       radius: 100,
                       backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/125823028?v=4"),
                     ),
                     actions: [
-                      TextButton(onPressed: (){Navigator.of(navigatorKey.currentContext!).pop();}, child: const Text("Close",style: TextStyle(color: Colors.white),)),
+                      TextButton(onPressed: (){Navigator.of(GlobalKeyy.currentContext).pop();}, child: const Text("Close",style: TextStyle(color: Colors.white),)),
                     ],
                   ));
                 },
                 child: CircleAvatar(
                   radius: 55,
                   backgroundColor:
-                  Theme.of(navigatorKey.currentContext!).scaffoldBackgroundColor,
+                  Theme.of(GlobalKeyy.currentContext).scaffoldBackgroundColor,
                   child: const CircleAvatar(
                     radius: 50,
                     backgroundImage: NetworkImage(
@@ -83,7 +84,7 @@ class HeadProfileInfo extends StatelessWidget {
                 backgroundColor: Colors.white,
                 child: IconButton(
                   onPressed: () {
-                    showAttachFilePhoto(navigatorKey.currentContext!);
+                    showAttachFilePhoto(GlobalKeyy.currentContext);
                   },
                   icon: const Icon(
                     Icons.camera_alt,
@@ -103,7 +104,7 @@ void showAttachFilePhoto(BuildContext context) {
     context: context,
     builder: (BuildContext context) {
       return Container(
-        height: MediaQuery.of(navigatorKey.currentContext!).size.height * 0.40,
+        height: MediaQuery.of(GlobalKeyy.currentContext).size.height * 0.40,
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
         child: Column(
           children: [

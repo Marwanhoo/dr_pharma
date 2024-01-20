@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class SignUpView extends StatelessWidget {
@@ -8,7 +9,7 @@ class SignUpView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(horizontal: navigatorKey.currentContext!.screenWidth / 15),
+          padding: EdgeInsets.symmetric(horizontal:GlobalKeyy.currentContext.screenWidth / 15),
           child: Column(
             children: [
               const Align(
@@ -23,33 +24,33 @@ class SignUpView extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 30, //15,
+                height: GlobalKeyy.currentContext.screenHeight / 30, //15,
               ),
               CustomTextFormField(
                 prefixIcon: Icons.map,
                 hintText: "Your Country",
                 suffixIcon: Icons.arrow_forward_ios,
                 onTap: () {
-                  showCountryPicker(navigatorKey.currentContext!);
+                  showCountryPicker(GlobalKeyy.currentContext);
                 },
                 showCursor: false,
                 readOnly: true,
               ),
-              SizedBox(height: navigatorKey.currentContext!.screenHeight / 40 //15,
+              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 40 //15,
                   ),
               const CustomTextFormField(
                 prefixIcon: Icons.phone_android,
                 hintText: "Phone",
               ),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 40, //15,
+                height: GlobalKeyy.currentContext.screenHeight / 40, //15,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.mail,
                 hintText: "Email",
               ),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 40, //15,
+                height: GlobalKeyy.currentContext.screenHeight / 40, //15,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
@@ -58,7 +59,7 @@ class SignUpView extends StatelessWidget {
                 obscureText: true,
               ),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 40, //15,
+                height: GlobalKeyy.currentContext.screenHeight / 40, //15,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
@@ -67,10 +68,10 @@ class SignUpView extends StatelessWidget {
                 obscureText: true,
               ),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 40,
+                height: GlobalKeyy.currentContext.screenHeight / 40,
               ),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 15,
+                height: GlobalKeyy.currentContext.screenHeight / 15,
               ),
               CustomRow(
                 text: "Continue",
@@ -79,11 +80,11 @@ class SignUpView extends StatelessWidget {
                 },
               ),
               SizedBox(
-                height: navigatorKey.currentContext!.screenHeight / 40,
+                height: GlobalKeyy.currentContext.screenHeight / 40,
               ),
               buildDontHaveAccount(
-                  navigatorKey.currentContext!, "Already hava an account ? ", "Sign In", () {
-                Navigator.pop(navigatorKey.currentContext!);
+                  GlobalKeyy.currentContext, "Already hava an account ? ", "Sign In", () {
+                Navigator.pop(GlobalKeyy.currentContext);
               }),
             ],
           ),

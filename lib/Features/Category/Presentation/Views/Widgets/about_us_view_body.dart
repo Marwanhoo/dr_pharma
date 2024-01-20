@@ -30,6 +30,7 @@ class AboutUs extends StatelessWidget {
                 iconPath: AppImages.gmail,
                 title: 'Our Gmail',
                 subTitle: 'ZARA73@gmail.com',
+                isMenu: false,
               ),
               VerticalDivider(
                 color: AppColors.darkGrey,
@@ -40,6 +41,7 @@ class AboutUs extends StatelessWidget {
                 iconPath: AppImages.phone,
                 title: 'Call Us',
                 subTitle: '+020949485783',
+                isMenu: false,
               ),
             ]),
           ),
