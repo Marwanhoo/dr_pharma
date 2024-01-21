@@ -1,7 +1,6 @@
 
-import 'package:flutter_drpharma_2/Services/global_key.dart';
-import 'package:flutter_drpharma_2/core/lang/generated/app_localizations.dart';
-import 'core/app_export.dart';
+
+import 'package:flutter_drpharma_2/core/app_export.dart';
 
 void main() {
 
@@ -20,11 +19,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      initialRoute: '/',
-      routes: routes,
-     // home: InVoiceView(),
+      // initialRoute: '/',
+      // routes: routes,
+      home: ChatScreen(),
     );
   }
 }
-
-// marwanhoo
