@@ -89,3 +89,5 @@ export 'package:flutter_drpharma_2/Features/settings/presentation/widgets/head_p
 export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/show_attach_file.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/one_item_attach_file.dart';
 export 'package:flutter_drpharma_2/Features/settings/presentation/widgets/pharmacy_license_widget.dart';
+export 'package:flutter_drpharma_2/core/constants/images.dart';
+export 'package:flutter_drpharma_2/Features/my_wallet/presentation/widget/CustomPaintWallet.dart';

@@ -24,6 +24,7 @@ class _HomeSplashViewState extends State<HomeSplashView> {
         Navigator.pushReplacementNamed(
           GlobalKeyy.currentContext,
           "/onBoarding view",
+          result: true,
         );
       },
     );

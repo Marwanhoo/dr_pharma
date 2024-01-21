@@ -59,11 +59,14 @@ class BuildStackMain extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                Text(
-                  DataText.textVectorBody[index],
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    color: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    DataText.textVectorBody[index],
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ],
