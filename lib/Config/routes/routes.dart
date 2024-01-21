@@ -1,4 +1,5 @@
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/beauty_tools_view.dart';
+import 'package:flutter_drpharma_2/Features/Menu/Presenattion/views/my_ads_view.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 Map<String, WidgetBuilder> get routes {
@@ -10,6 +11,7 @@ Map<String, WidgetBuilder> get routes {
     '/categoryProds': (context) => const MedicinesView(),
     '/cashBack': (context) => const CashBackView(),
     '/medicines': (context) => const MedicinesView(),
+    '/MyAds':(context) =>  const MyAdsView(),
     '/beautyTools': (context) => const BeautyToolsView(),
     "/onBoarding view": (context) => const OnBoardingView(),
     '/login view': (context) => const LoginView(),
