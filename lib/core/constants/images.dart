@@ -1,8 +1,9 @@
 class AppImages {
-
   static const String logo = 'assets/images/logo.png';
   static const String avater = "assets/images/avatar.png";
   static const String gift = "assets/icons/gift.svg";
+  static const String heart = "assets/icons/heart.svg";
+  static const String fillRHeart = "assets/icons/fillRHeart.svg";
   static const String crown = 'assets/icons/crown.svg';
   static const String background = 'assets/images/background.png';
   static const String med = "assets/images/bigMed.png";

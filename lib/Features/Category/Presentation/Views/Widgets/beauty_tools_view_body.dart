@@ -23,7 +23,7 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar:  DefaultAppBar(brandName: 'Beauty Tools').build(context),
+      appBar: DefaultAppBar(pageTitle: 'Beauty Tools').build(context),
       body: SingleChildScrollView(
           child: DefaultTabController(
         length: 4,
@@ -52,8 +52,10 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
               tabs: [
                 Text("all", style: AppFonts.tabBar.copyWith(fontSize: 14)),
                 Text("makeup", style: AppFonts.tabBar.copyWith(fontSize: 14)),
-                Text("skin care", style: AppFonts.tabBar.copyWith(fontSize: 14)),
-                Text("hair care", style: AppFonts.tabBar.copyWith(fontSize: 14)),
+                Text("skin care",
+                    style: AppFonts.tabBar.copyWith(fontSize: 14)),
+                Text("hair care",
+                    style: AppFonts.tabBar.copyWith(fontSize: 14)),
               ],
             ),
             SizedBox(
@@ -69,8 +71,11 @@ class _BeautyToolsViewBodyState extends State<BeautyToolsViewBody> {
                     return const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-                        BestOffersCard(imagePath: "assets/images/medicineImage.png")
+                        BestOffersCard(
+                          isFav: false,
+                            imagePath: "assets/images/medicineImage.png"),
+                        BestOffersCard(isFav: false,
+                            imagePath: "assets/images/medicineImage.png")
                       ],
                     );
                   },

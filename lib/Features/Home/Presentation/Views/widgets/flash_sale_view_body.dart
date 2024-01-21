@@ -24,8 +24,10 @@ class FlashSaleViewBody extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       BestOffersCard(
+                          isFav: false,
                           imagePath: "assets/images/medicineImage.png"),
                       BestOffersCard(
+                          isFav: false,
                           imagePath: "assets/images/medicineImage.png")
                     ],
                   ),
@@ -36,8 +38,10 @@ class FlashSaleViewBody extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       BestOffersCard(
+                          isFav: false,
                           imagePath: "assets/images/medicineImage.png"),
                       BestOffersCard(
+                          isFav: false,
                           imagePath: "assets/images/medicineImage.png")
                     ],
                   ),
@@ -48,8 +52,10 @@ class FlashSaleViewBody extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       BestOffersCard(
+                          isFav: false,
                           imagePath: "assets/images/medicineImage.png"),
                       BestOffersCard(
+                          isFav: false,
                           imagePath: "assets/images/medicineImage.png")
                     ],
                   ),

@@ -39,9 +39,11 @@ class HomeViewBody extends StatelessWidget {
                 return const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    BestOffersCard(
+                    BestOffersCard(isFav: false,
                         imagePath: "assets/images/medicineImage.png"),
-                    BestOffersCard(imagePath: "assets/images/medicineImage.png")
+                    BestOffersCard(
+                      isFav: false,
+                      imagePath: "assets/images/medicineImage.png")
                   ],
                 );
               },

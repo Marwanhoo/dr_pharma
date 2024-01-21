@@ -1,17 +1,14 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/best_offers_card.dart';
 import 'package:flutter_drpharma_2/core/utils/widgets/default_appBar.dart';
 
-import '../../../../../core/app_export.dart';
-
-class MedicinesViewBody extends StatelessWidget {
-  const MedicinesViewBody({super.key});
+class FavoritViewBody extends StatelessWidget {
+  const FavoritViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: DefaultAppBar(
-        pageTitle: 'Medicines',
-      ),
+      appBar: DefaultAppBar(pageTitle: 'Favorites'),
       body: ListView.separated(
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.symmetric(
@@ -22,11 +19,9 @@ class MedicinesViewBody extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               BestOffersCard(
-                isFav: false,
-                imagePath: "assets/images/medicineImage.png"),
+                  isFav: true, imagePath: "assets/images/medicineImage.png"),
               BestOffersCard(
-                isFav: false,
-                imagePath: "assets/images/medicineImage.png")
+                  isFav: true, imagePath: "assets/images/medicineImage.png")
             ],
           );
         },

@@ -1,12 +1,10 @@
-
 import 'package:flutter_drpharma_2/Core/app_export.dart';
-import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/is_our_product_card.dart';
-import 'package:flutter_drpharma_2/Features/Invoice/Presentation/Views/widgets/is_invoice_card.dart';
 import 'package:flutter_drpharma_2/core/constants/images.dart';
+import 'package:flutter_drpharma_2/core/utils/widgets/card_trailing.dart';
 
 class ProductCard extends StatefulWidget {
-  const ProductCard({super.key, required this.isInvoice});
-  final bool isInvoice;
+  const ProductCard({super.key, required this.pageName});
+  final String pageName;
 
   @override
   State<ProductCard> createState() => _ProductCardState();
@@ -14,7 +12,6 @@ class ProductCard extends StatefulWidget {
 
 class _ProductCardState extends State<ProductCard> {
   int counter = 0;
-
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +29,6 @@ class _ProductCardState extends State<ProductCard> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-
             Row(
               children: [
                 Image.asset(
@@ -62,12 +58,13 @@ class _ProductCardState extends State<ProductCard> {
                 ),
               ],
             ),
-            widget.isInvoice ? const IsInvoice() : const IsOurProductsCard(),
+            TrailingWidget(widget.pageName),
             SizedBox(
               width: context.screenWidth * .001,
             )
           ]),
-
     );
   }
 }
+
+

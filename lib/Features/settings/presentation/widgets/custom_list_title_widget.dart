@@ -23,13 +23,21 @@ class CustomListTitleWidget extends StatelessWidget {
       child: ListTile(
         leading: CircleAvatar(
           backgroundColor: AppColors.primary.withOpacity(0.3),
-          child: Icon(iconLeading,color: AppColors.primary,),
+          child: Icon(
+            iconLeading,
+            color: AppColors.primary,
+          ),
         ),
         title: Text(
           title,
-          style: AppFonts.style16Pop500,
+          style: AppFonts.style16Pop700,
         ),
-        subtitle: subtitle != null ? Text(subtitle!,style: AppFonts.style12DmSans,) : null,
+        subtitle: subtitle != null
+            ? Text(
+                subtitle!,
+                style: AppFonts.style12DmSans,
+              )
+            : null,
         trailing: const Icon(
           Icons.arrow_forward_ios,
           color: Colors.grey,

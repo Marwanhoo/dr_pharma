@@ -1,5 +1,5 @@
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/beauty_tools_view.dart';
-import 'package:flutter_drpharma_2/Features/Menu/Presenattion/views/my_ads_view.dart';
+import 'package:flutter_drpharma_2/Features/MyAds/Presentation/views/my_ads_view.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 Map<String, WidgetBuilder> get routes {

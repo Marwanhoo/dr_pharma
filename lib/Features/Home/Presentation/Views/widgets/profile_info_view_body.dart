@@ -37,7 +37,7 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
               ),
               shadows: const [AppFonts.boxShadow]),
           child: Column(children: [
-            const DiscFavRow(),
+            const DiscFavRow(iconPath: AppImages.heart,),
             CustomSmoothIndicator(
               isProfile: true,
               imagesUrl: imagesUrl,
@@ -132,8 +132,12 @@ class _ProfileInfoViewBodyState extends State<ProfileInfoViewBody> {
             return const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-                BestOffersCard(imagePath: "assets/images/medicineImage.png")
+                BestOffersCard(
+                  isFav: false,
+                  imagePath: "assets/images/medicineImage.png"),
+                BestOffersCard(
+                  isFav: false,
+                  imagePath: "assets/images/medicineImage.png")
               ],
             );
           },

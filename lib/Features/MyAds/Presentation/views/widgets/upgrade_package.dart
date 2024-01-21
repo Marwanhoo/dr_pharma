@@ -23,15 +23,16 @@ class UpgradePackageContainer extends StatelessWidget {
           children: [
             Row(
               children: [
-              const  SizedBox(width:17 ,),
+                const SizedBox(
+                  width: 17,
+                ),
                 SvgPicture.asset(AppImages.crown),
                 const SizedBox(
                   width: 7,
                 ),
                 Text(
                   'upgrade package',
-                  style:
-                      AppFonts.style16Pop500.copyWith(color: AppColors.red),
+                  style: AppFonts.style16Pop700.copyWith(color: AppColors.red),
                 ),
               ],
             ),

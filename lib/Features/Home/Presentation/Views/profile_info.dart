@@ -22,7 +22,9 @@ class ProfileInfoView extends StatelessWidget {
           btn2BorderC: AppColors.red,
         ),
       ),
-      appBar: DefaultAppBar(brandName: 'Profile Info',),
+      appBar: DefaultAppBar(
+        pageTitle: 'Profile Info',
+      ),
       body: const ProfileInfoViewBody(),
     );
   }

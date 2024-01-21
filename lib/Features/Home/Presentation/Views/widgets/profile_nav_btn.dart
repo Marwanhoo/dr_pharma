@@ -8,31 +8,37 @@ class ProfileButton extends StatelessWidget {
     this.textColor = Colors.white,
     this.height = 57,
     required this.borderColor,
+    this.onTap, required this.width,
   });
   final String text;
   final Color btnColor;
   final Color? textColor;
   final double? height;
   final Color borderColor;
+  final double width;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
-    return Container(
-        width: 140,
-        height: height,
-        decoration: ShapeDecoration(
-          color: btnColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(17.83),
-            side: BorderSide(width: 1.94, color: borderColor),
-          ),
-        ),
-        child: Center(
-          child: Text(
-            text,
-            style: AppFonts.tabBar.copyWith(
-              color: textColor,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+          width: width,
+          height: height,
+          decoration: ShapeDecoration(
+            color: btnColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(17.83),
+              side: BorderSide(width: 1.94, color: borderColor),
             ),
           ),
-        ));
+          child: Center(
+            child: Text(
+              text,
+              style: AppFonts.tabBar.copyWith(
+                color: textColor,
+              ),
+            ),
+          )),
+    );
   }
 }

@@ -1,5 +1,7 @@
 import 'package:flutter_drpharma_2/Config/routes/routeManager.dart';
-import 'package:flutter_drpharma_2/Features/Menu/Presenattion/views/my_ads_view.dart';
+import 'package:flutter_drpharma_2/Features/Favorite/Presentation/views/favorite_view.dart';
+import 'package:flutter_drpharma_2/Features/MyAds/Presentation/views/my_ads_view.dart';
+import 'package:flutter_drpharma_2/Features/MyOrder/Presentation/views/my_order_view.dart';
 import 'package:flutter_drpharma_2/Features/Menu/Presenattion/views/widgets/menu_Item.dart';
 import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
@@ -35,9 +37,12 @@ class MenuViewBody extends StatelessWidget {
                     iconPath: AppImages.ads,
                     title: 'My Ads',
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (c) {
-                        return MyAdsView();
-                      }));
+                      PersistentNavBarNavigator.pushNewScreen(
+                        context,
+                        customPageRoute: MaterialPageRoute(builder: (builder) {
+                          return MyAdsView();
+                        }),
+                      );
                     },
                   ),
                 ],
@@ -55,6 +60,11 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.wCart,
                     title: 'My Order',
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (c) {
+                        return MyOrderView();
+                      }));
+                    },
                   ),
                 ],
               ),
@@ -87,6 +97,11 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: 'assets/icons/wHeart.svg',
                     title: 'Favorite',
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (c) {
+                        return FavoritView();
+                      }));
+                    },
                   ),
                 ],
               ),

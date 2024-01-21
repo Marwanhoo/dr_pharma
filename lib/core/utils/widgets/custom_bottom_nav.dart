@@ -37,10 +37,12 @@ class CustomBottomNav extends StatelessWidget {
             textColor: textColor,
             height: height,
             borderColor: btn1BorderC,
+            width: 140,
           ),
           GestureDetector(
             onTap: onTap,
             child: ProfileButton(
+              width: 140,
               text: btnText2,
               btnColor: btn2,
               height: height,
