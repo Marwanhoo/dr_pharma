@@ -99,3 +99,8 @@ export 'package:flutter_drpharma_2/Features/chat/presentation/widget/user_item_c
 export 'package:flutter_drpharma_2/Features/chat/presentation/widget/chats.dart';
 export 'package:flutter_drpharma_2/Features/chat/presentation/widget/write_your_message.dart';
 export 'package:flutter_drpharma_2/Features/chat/data/data_chat.dart';
+export 'package:flutter_drpharma_2/Features/Category/Presentation/Views/beauty_tools_view.dart';
+export 'package:flutter_drpharma_2/Features/customer_ads/presentation/view/customer_ads_view.dart';
+export 'package:flutter_drpharma_2/Features/expire_products/presentation/view/expire_products.dart';
+export 'package:flutter_drpharma_2/Features/my_note_book/presentation/view/my_note_book_view.dart';
+export 'package:flutter_drpharma_2/Features/my_wallet/presentation/view/my_wallet_view.dart';
