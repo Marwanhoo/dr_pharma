@@ -1,4 +1,6 @@
+import 'package:flutter_drpharma_2/Config/routes/routeManager.dart';
 import 'package:flutter_drpharma_2/Features/Menu/Presenattion/views/widgets/menu_Item.dart';
+import 'package:flutter_drpharma_2/Features/my_wallet/presentation/view/my_wallet_view.dart';
 import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 import 'package:flutter_drpharma_2/core/constants/images.dart';
@@ -14,7 +16,7 @@ class MenuViewBody extends StatelessWidget {
           backgroundColor: Colors.white,
           body: ListView(
             padding:const EdgeInsets.symmetric(horizontal: 16),
-            children: const [
+            children:  [
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 8.0),
                 child: SerachTextField(),
@@ -28,10 +30,16 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.wallet,
                     title: 'Wallet',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/my wallet');
+                    },
                   ),
                   MenuItem(
                     iconPath: AppImages.ads,
                     title: 'My Ads',
+                    onTap: (){
+
+                    },
                   ),
                 ],
               ),
@@ -44,6 +52,9 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.ads,
                     title: 'Customer Ads',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/customer ads view');
+                    },
                   ),
                   MenuItem(
                     iconPath: AppImages.wCart,
@@ -60,6 +71,9 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.noteBook,
                     title: 'My Notebook',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/my note book view');
+                    },
                   ),
                   MenuItem(
                     iconPath: AppImages.medService,
@@ -76,6 +90,9 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.expired,
                     title: 'Expired Prducts',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/expire products');
+                    },
                   ),
                   MenuItem(
                     iconPath: 'assets/icons/wHeart.svg',
@@ -100,7 +117,8 @@ class MenuViewBody extends StatelessWidget {
                 ],
               ),
             ],
-          )),
+          ),
+      ),
     );
   }
 }

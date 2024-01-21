@@ -13,9 +13,9 @@ class TransactionDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 368.45,
-      height: 93.94,
-      padding: const EdgeInsets.all(8),
+      //width: //368.45,
+      //height: //93.94,
+      //padding: const EdgeInsets.all(8),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
@@ -30,21 +30,19 @@ class TransactionDetails extends StatelessWidget {
           ),
         ],
       ),
-      child: Center(
-        child: ListTile(
-          leading: SvgPicture.asset(iconPath),
-          title: Text(
-            "1000 gift points were obtained on your latest bill",
-            style: AppFonts.medium,
-          ),
-          subtitle: Text(
-            "30 may 2023 - 6:55 PM",
-            style: AppFonts.small.copyWith(color: AppColors.softGrey),
-          ),
-          trailing: Text(
-            "+1000 \n point",
-            style: AppFonts.medium.copyWith(color: color),
-          ),
+      child: ListTile(
+        leading: SvgPicture.asset(iconPath),
+        title: Text(
+          "1000 gift points were obtained on your latest bill",
+          style: AppFonts.medium,
+        ),
+        subtitle: Text(
+          "30 may 2023 - 6:55 PM",
+          style: AppFonts.small.copyWith(color: AppColors.softGrey),
+        ),
+        trailing: Text(
+          "+1000 \n point",
+          style: AppFonts.medium.copyWith(color: color),
         ),
       ),
     );
