@@ -19,9 +19,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      // initialRoute: '/',
-      // routes: routes,
-      home: ChatScreen(),
+      initialRoute: '/',
+      routes: routes,
     );
   }
 }
