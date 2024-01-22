@@ -4,7 +4,7 @@ import 'package:flutter_drpharma_2/core/app_export.dart';
 void showRegion(BuildContext context) {
   showModalBottomSheet(
     isScrollControlled: true,
-    context: context,
+    context: GlobalKeyy.currentContext,
     builder: (BuildContext context) {
       return Container(
         height: MediaQuery.of(context).size.height * 0.75,
@@ -23,7 +23,7 @@ void showRegion(BuildContext context) {
               height: 10,
             ),
             const Text(
-              "Your Region",
+              AppText.yourRegion,
             ),
             const SizedBox(
               height: 10,
@@ -46,30 +46,24 @@ void showRegion(BuildContext context) {
                 style: TextButton.styleFrom(
                   foregroundColor: Colors.red,
                 ),
-                onPressed: () {
-                  // Navigator.of(context).push(
-                  //   MaterialPageRoute(
-                  //     builder: (_) => const MapScreen(),
-                  //   ),
-                  // );
-                },
+                onPressed: () {},
                 icon: const Text(
-                  "Show On Map",
+                  AppText.showOnMap,
                 ),
                 label: const Icon(Icons.location_pin),
               ),
             ),
             const ListTile(
-              title: Text("alsharqa 34"),
-              subtitle: Text("Ahmed Maher Street,Mansoura"),
-              trailing: Text("568 km"),
+              title: Text(AppText.titleMap),
+              subtitle: Text(AppText.subtitleMap),
+              trailing: Text(AppText.trailingMap),
               isThreeLine: true,
             ),
             const DottedLine(
               lineLength: double.infinity,
               lineThickness: 1.0,
               dashLength: 8.0,
-              dashColor: Colors.grey,
+              dashColor: AppColors.greyColor,
             )
           ],
         ),

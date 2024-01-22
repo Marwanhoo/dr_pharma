@@ -1,5 +1,5 @@
-import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
+
 
 class SignUpView extends StatelessWidget {
   const SignUpView({super.key});
@@ -12,23 +12,23 @@ class SignUpView extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal:GlobalKeyy.currentContext.screenWidth / 15),
           child: Column(
             children: [
-              const Align(
+               const Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "Create an\naccount!",
+                  AppText.signUpCreateAccount,
                   style: TextStyle(
-                    color: Color(0xFF566CA2),
+                    color: AppColors.primary,
                     fontWeight: FontWeight.w700,
                     fontSize: 35,
                   ),
                 ),
               ),
               SizedBox(
-                height: GlobalKeyy.currentContext.screenHeight / 30, //15,
+                height: GlobalKeyy.currentContext.screenHeight / 30,
               ),
               CustomTextFormField(
                 prefixIcon: Icons.map,
-                hintText: "Your Country",
+                hintText: AppText.yourCountry,
                 suffixIcon: Icons.arrow_forward_ios,
                 onTap: () {
                   showCountryPicker(GlobalKeyy.currentContext);
@@ -36,34 +36,34 @@ class SignUpView extends StatelessWidget {
                 showCursor: false,
                 readOnly: true,
               ),
-              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 40 //15,
+              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 40
                   ),
               const CustomTextFormField(
                 prefixIcon: Icons.phone_android,
-                hintText: "Phone",
+                hintText: AppText.phone,
               ),
               SizedBox(
-                height: GlobalKeyy.currentContext.screenHeight / 40, //15,
+                height: GlobalKeyy.currentContext.screenHeight / 40,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.mail,
-                hintText: "Email",
+                hintText: AppText.email,
               ),
               SizedBox(
-                height: GlobalKeyy.currentContext.screenHeight / 40, //15,
+                height: GlobalKeyy.currentContext.screenHeight / 40,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
-                hintText: "Password",
+                hintText: AppText.password,
                 suffixIcon: Icons.remove_red_eye_outlined,
                 obscureText: true,
               ),
               SizedBox(
-                height: GlobalKeyy.currentContext.screenHeight / 40, //15,
+                height: GlobalKeyy.currentContext.screenHeight / 40,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
-                hintText: "Confirm Password",
+                hintText: AppText.confirmPass,
                 suffixIcon: Icons.remove_red_eye_outlined,
                 obscureText: true,
               ),
@@ -74,7 +74,7 @@ class SignUpView extends StatelessWidget {
                 height: GlobalKeyy.currentContext.screenHeight / 15,
               ),
               CustomRow(
-                text: "Continue",
+                text: AppText.continueText,
                 onPressed: () {
                   showBusinessSpecialization(context);
                 },
@@ -82,8 +82,8 @@ class SignUpView extends StatelessWidget {
               SizedBox(
                 height: GlobalKeyy.currentContext.screenHeight / 40,
               ),
-              buildDontHaveAccount(
-                  GlobalKeyy.currentContext, "Already hava an account ? ", "Sign In", () {
+              buildDoNotHaveAccount(
+                  GlobalKeyy.currentContext, AppText.alreadyHaveAccount, AppText.signIn, () {
                 Navigator.pop(GlobalKeyy.currentContext);
               }),
             ],

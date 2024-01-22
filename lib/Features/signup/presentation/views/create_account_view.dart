@@ -1,4 +1,3 @@
-import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class CreateAccountView extends StatelessWidget {
@@ -6,97 +5,72 @@ class CreateAccountView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    void signUp() {
-      Future.delayed(const Duration(seconds: 2), () {
-        ScaffoldMessenger.of(GlobalKeyy.currentContext).showSnackBar(
-          const SnackBar(
-            content: Text('Sign-up successful!'),
-          ),
-        );
-      });
-    }
-
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(
-              horizontal:GlobalKeyy.currentContext.screenWidth / 15),
+            horizontal: GlobalKeyy.currentContext.screenWidth / 15,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "Create an\naccount!",
+                  AppText.createAnAccount,
                   style: TextStyle(
-                    color: Color(0xFF566CA2),
+                    color: AppColors.primary,
                     fontWeight: FontWeight.w700,
                     fontSize: 35,
                   ),
                 ),
               ),
-              SizedBox(
-                  height:GlobalKeyy.currentContext.screenHeight / 30 //15,
-                  ),
+              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 30),
               const CustomTextFormField(
                 prefixIcon: Icons.local_hospital,
-                hintText: "Pharmacy Name",
+                hintText: AppText.pharmacyName,
               ),
-              SizedBox(
-                  height: GlobalKeyy.currentContext.screenHeight / 30 //15,
-                  ),
+              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 30),
               const CustomTextFormField(
                 prefixIcon: Icons.phone_android,
-                hintText: "Pharmacy phone",
+                hintText: AppText.pharmacyPhone,
               ),
-              SizedBox(
-                  height:GlobalKeyy.currentContext.screenHeight / 30 //15,
-                  ),
+              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 30),
               const Text(
-                "Pharmacy license",
+                AppText.pharmacyLicense,
                 style: TextStyle(
                   fontWeight: FontWeight.w400,
                 ),
               ),
               const Text(
-                "Please upload your pharmacy license",
+                AppText.pleaseUploadPharmacyLicense,
                 style: TextStyle(
                   fontWeight: FontWeight.w400,
-                  color: Colors.grey,
+                  color: AppColors.greyColor,
                 ),
               ),
-              SizedBox(
-                  height:GlobalKeyy.currentContext.screenHeight / 30 //15,
-                  ),
+              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 30),
               buildAttachAFile(GlobalKeyy.currentContext),
-              SizedBox(
-                  height:GlobalKeyy.currentContext.screenHeight / 30 //15,
-                  ),
+              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 30),
               CustomTextFormField(
                 prefixIcon: Icons.map,
-                hintText: "Your Region",
+                hintText: AppText.yourRegion,
                 onTap: () {
                   showRegion(GlobalKeyy.currentContext);
                 },
                 showCursor: false,
                 readOnly: true,
               ),
-              SizedBox(
-                  height:GlobalKeyy.currentContext.screenHeight / 10 //30,
-                  ),
+              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 10),
               CustomRow(
-                  text: "Sign up",
-                  onPressed: () {
-                    showDialog(
-                      context: GlobalKeyy.currentContext,
-                      builder: (BuildContext context) {
-                        return const Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      },
-                    );
-                    signUp();
-                  }),
+                text: AppText.signUp,
+                onPressed: () {
+                  Navigator.pushReplacementNamed(
+                    context,
+                    '/login view',
+                  );
+                },
+              ),
             ],
           ),
         ),

@@ -13,6 +13,8 @@ class CustomTextFormField extends StatelessWidget {
     this.showCursor = true,
     this.readOnly = false,
     this.obscureText = false,
+    this.borderRadius = 15,
+    this.suffixIconColor = Colors.grey,
   });
 
   final IconData prefixIcon;
@@ -23,13 +25,15 @@ class CustomTextFormField extends StatelessWidget {
   final bool showCursor;
   final bool readOnly;
   final bool obscureText;
+  final double borderRadius ;
+  final Color suffixIconColor;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(borderRadius),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.5),
@@ -47,7 +51,7 @@ class CustomTextFormField extends StatelessWidget {
           suffixIcon: suffixIcon != null
               ? Icon(
                   suffixIcon,
-                  color: Colors.grey,
+                  color: suffixIconColor,
                 )
               : null,
           hintText: hintText,

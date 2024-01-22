@@ -7,19 +7,19 @@ Widget oneItemAttachFile(IconData icon, String name, [bool shape = false]) {
             borderRadius: BorderRadius.circular(12),
             side: const BorderSide(
               width: 1,
-              color: Color(0xFF566CA2),
+              color: AppColors.primary,
             ),
           )
         : null,
-    color: Colors.white,
+    color: AppColors.white,
     child: Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         CircleAvatar(
-          backgroundColor: const Color(0xFF566CA2),
+          backgroundColor: AppColors.primary,
           child: Icon(
             icon,
-            color: Colors.white,
+            color: AppColors.white,
           ),
         ),
         Text(

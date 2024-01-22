@@ -21,24 +21,24 @@ void showCountryPicker(BuildContext context) {
               height: 10,
             ),
             const Text(
-              "select your country",
+              AppText.selectCountry,
             ),
             const SizedBox(
               height: 10,
             ),
-            country(Country.sa, "Saudi Arabia"),
+            country(Country.sa, AppText.countrySA),
             const SizedBox(
               height: 5,
             ),
-            country(Country.ps, "Palestine"),
+            country(Country.ps, AppText.countryPS),
             const SizedBox(
               height: 5,
             ),
-            country(Country.eg, "Egypt"),
+            country(Country.eg, AppText.countryEG),
             const SizedBox(
               height: 5,
             ),
-            country(Country.bh, "Bahrain"),
+            country(Country.bh, AppText.countryBH),
           ],
         ),
       );

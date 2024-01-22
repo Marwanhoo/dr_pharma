@@ -107,6 +107,9 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.chat,
                     title: 'Chat Us',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/chat screen');
+                    },
                   ),
                   MenuItem(
                     iconPath: AppImages.returnIcon,
