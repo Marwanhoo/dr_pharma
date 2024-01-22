@@ -9,7 +9,7 @@ class SettingsView extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "Settings",
+          AppText.settings,
           style: AppFonts.style18Pop,
         ),
       ),

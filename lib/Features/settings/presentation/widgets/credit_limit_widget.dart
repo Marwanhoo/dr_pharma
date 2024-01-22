@@ -19,7 +19,7 @@ class CreditLimitWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text("Your credit limit :",style: AppFonts.style16DmSans,),
+            Text(AppText.yourCreditLimit,style: AppFonts.style16DmSans,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.baseline,

@@ -19,8 +19,8 @@ class MyNoteBookView extends StatelessWidget {
           return const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-              BestOffersCard(imagePath: "assets/images/medicineImage.png")
+              BestOffersCard(imagePath: "assets/images/medicineImage.png",isFav: false,),
+              BestOffersCard(imagePath: "assets/images/medicineImage.png",isFav: false,)
             ],
           );
         },
@@ -37,11 +37,13 @@ class MyNoteBookView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             FloatingActionButton(
+              heroTag: "add",
               shape: const StadiumBorder(),
               onPressed: () {},
               child: const Icon(Icons.add),
             ),
             FloatingActionButton.extended(
+              heroTag: "create order",
               onPressed: () {},
               label: const Icon(Icons.arrow_forward),
               icon: const Text("Create Order"),

@@ -18,8 +18,8 @@ class ExpireProducts extends StatelessWidget {
           return const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-              BestOffersCard(imagePath: "assets/images/medicineImage.png")
+              BestOffersCard(imagePath: "assets/images/medicineImage.png", isFav: false,),
+              BestOffersCard(imagePath: "assets/images/medicineImage.png", isFav: false,)
             ],
           );
         },

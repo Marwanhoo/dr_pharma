@@ -12,15 +12,12 @@ class CustomerAdsView extends StatelessWidget {
       body:  ListView.separated(
         shrinkWrap: true,
         physics: const BouncingScrollPhysics(),
-        padding: const EdgeInsets.symmetric(
-          vertical: 16,
-        ),
         itemBuilder: (BuildContext context, int index) {
           return const Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              BestOffersCard(imagePath: "assets/images/medicineImage.png"),
-              BestOffersCard(imagePath: "assets/images/medicineImage.png")
+              BestOffersCard(imagePath: "assets/images/medicineImage.png", isFav: false,),
+              BestOffersCard(imagePath: "assets/images/medicineImage.png", isFav: false,)
             ],
           );
         },

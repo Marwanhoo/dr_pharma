@@ -26,10 +26,12 @@ class MenuViewBody extends StatelessWidget {
               left: 30,
             ),
             children: [
-              const MenuItem(
+               MenuItem(
                 iconPath: AppImages.wallet,
                 title: 'Wallet',
-
+                onTap: (){
+                  Navigator.pushNamed(GlobalKeyy.currentContext, '/my wallet');
+                },
               ),
               MenuItem(
                 iconPath: AppImages.ads,
@@ -43,9 +45,12 @@ class MenuViewBody extends StatelessWidget {
                   );
                 },
               ),
-              const MenuItem(
+               MenuItem(
                 iconPath: AppImages.ads,
                 title: 'Customer Ads',
+                 onTap: (){
+                   Navigator.pushNamed(GlobalKeyy.currentContext, '/customer ads view');
+                 },
               ),
               MenuItem(
                 iconPath: AppImages.wCart,
@@ -62,6 +67,9 @@ class MenuViewBody extends StatelessWidget {
               MenuItem(
                 iconPath: AppImages.noteBook,
                 title: 'My Notebook',
+                onTap: (){
+                  Navigator.pushNamed(GlobalKeyy.currentContext, '/my note book view');
+                },
               ),
               MenuItem(
                 iconPath: AppImages.medService,
@@ -78,6 +86,9 @@ class MenuViewBody extends StatelessWidget {
               MenuItem(
                 iconPath: AppImages.expired,
                 title: 'Expired Prducts',
+                onTap: (){
+                  Navigator.pushNamed(GlobalKeyy.currentContext, '/expire products');
+                },
               ),
               MenuItem(
                 iconPath: 'assets/icons/wHeart.svg',
@@ -94,6 +105,9 @@ class MenuViewBody extends StatelessWidget {
               MenuItem(
                 iconPath: AppImages.chat,
                 title: 'Chat Us',
+                onTap: (){
+                  Navigator.pushNamed(GlobalKeyy.currentContext, '/chat view');
+                },
               ),
               MenuItem(
                 iconPath: AppImages.returnIcon,

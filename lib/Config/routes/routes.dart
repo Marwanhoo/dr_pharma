@@ -1,9 +1,3 @@
-
-import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/beauty_tools_view.dart';
-import 'package:flutter_drpharma_2/Features/MedicalServices/Presentation/views/add_service.dart';
-import 'package:flutter_drpharma_2/Features/MedicalServices/Presentation/views/medical_services_view.dart';
-import 'package:flutter_drpharma_2/Features/MyAds/Presentation/views/my_ads_view.dart';
-
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 Map<String, WidgetBuilder> get routes {
@@ -28,6 +22,8 @@ Map<String, WidgetBuilder> get routes {
     '/customer ads view': (context) => const CustomerAdsView(),
     '/my note book view': (context) => const MyNoteBookView(),
     '/expire products': (context) => const ExpireProducts(),
-    '/chat screen': (context) => const ChatScreen(),
+    '/chat view': (context) => const ChatView(),
+    '/profile info edit view': (context) => const ProfileInfoEditView(),
+    '/pharmacy info edit view': (context) => const PharmacyInfoEditView(),
   };
 }

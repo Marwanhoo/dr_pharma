@@ -108,3 +108,6 @@ export 'package:flutter_drpharma_2/Features/on_boarding/presentation/widgets/bui
 export 'package:flutter_drpharma_2/Features/on_boarding/presentation/widgets/build_waves.dart';
 export 'package:flutter_drpharma_2/core/constants/app_text.dart';
 export 'package:flutter_drpharma_2/Features/forgot_password/forgot_password_view.dart';
+export 'package:flutter_drpharma_2/Features/MedicalServices/Presentation/views/add_service.dart';
+export 'package:flutter_drpharma_2/Features/MedicalServices/Presentation/views/medical_services_view.dart';
+export 'package:flutter_drpharma_2/Features/MyAds/Presentation/views/my_ads_view.dart';
