@@ -1,9 +1,15 @@
 class AppImages {
-  // Add your images here
-  static const String logo = 'assets/images/logo.png';
+  static const String logo = "assets/images/logo.png";
   static const String avater = "assets/images/avatar.png";
   static const String gift = "assets/icons/gift.svg";
+  static const String heart = "assets/icons/heart.svg";
+  static const String fillRHeart = "assets/icons/fillRHeart.svg";
+  static const String crown = 'assets/icons/crown.svg';
   static const String background = 'assets/images/background.png';
+  static const String gradient = "assets/images/gradient.png";
+  static const String gradientShadow = "assets/images/gradientShadow.png";
+  static const String m1 = 'assets/images/m1.png';
+  static const String m2 = 'assets/images/m2.png';
   static const String med = "assets/images/bigMed.png";
   static const String beauty = "assets/images/beauty.png";
   static const String brand = "assets/images/brand.png";
@@ -20,14 +26,20 @@ class AppImages {
   static const String expired = "assets/icons/expired.svg";
   static const String ads = "assets/icons/ads.svg";
   static const String wCart = "assets/icons/wCart.svg";
+  static const String arrow = "assets/icons/arrow.svg";
+  static const String star =  "assets/icons/star.svg";
   static const String medService = "assets/icons/medService.svg";
+  static const String dollar = "assets/icons/dollar.svg";
   static const String noteBook = "assets/icons/noteBook.svg";
+  static const String gTrans = "assets/icons/greenTranss.svg";
+  static const String rTrans = "assets/icons/redTrans.svg";
   static const String plus = "assets/images/plus.png";
   static const String tools = "assets/icons/tools.svg";
   static const String circle = 'assets/icons/circle.svg';
   static const String cart = 'assets/icons/cart.svg';
   static const String phone = 'assets/icons/phone.svg';
   static const String medicine = "assets/images/medicineImage.png";
+  static const String group =  "assets/images/Group.png";
   static const String location = 'assets/icons/location.svg';
   static const String map = 'assets/images/map.png';
   static const String splash = 'assets/images/splash.png';

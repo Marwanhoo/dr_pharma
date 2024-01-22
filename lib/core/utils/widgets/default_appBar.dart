@@ -1,16 +1,16 @@
 import 'package:flutter_drpharma_2/Config/routes/routeManager.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
-class DefaultAppBar extends AppBar {
+class DefaultAppBar  {
   DefaultAppBar({
-    required this.brandName,
+    required this.pageTitle,
   });
 
-  final String brandName;
+  final String pageTitle;
 
   AppBar build(BuildContext context) {
     return AppBar(
-      title: Text(brandName, style: AppFonts.header2),
+      title: Text(pageTitle, style: AppFonts.header2),
       centerTitle: true,
       backgroundColor: Colors.white,
       surfaceTintColor: Colors.white,

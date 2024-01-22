@@ -1,4 +1,6 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/constants/images.dart';
+import 'package:flutter_drpharma_2/core/utils/widgets/bsProductsList.dart';
 
 class FlashSaleViewBody extends StatelessWidget {
   const FlashSaleViewBody({super.key});
@@ -20,42 +22,10 @@ class FlashSaleViewBody extends StatelessWidget {
                   SizedBox(
                     height: 30,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png"),
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png")
-                    ],
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png"),
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png")
-                    ],
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png"),
-                      BestOffersCard(
-                          imagePath: "assets/images/medicineImage.png")
-                    ],
-                  ),
+                  ProductsList(),
                   SizedBox(
                     height: 60,
-                  )
+                  ),
                 ],
               ),
             ),

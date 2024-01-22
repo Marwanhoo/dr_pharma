@@ -22,12 +22,7 @@ class TransactionDetails extends StatelessWidget {
           borderRadius: BorderRadius.circular(7.23),
         ),
         shadows: const [
-          BoxShadow(
-            color: Color(0x3F808080),
-            blurRadius: 10.32,
-            offset: Offset(0, 4.13),
-            spreadRadius: 0,
-          ),
+        AppFonts.boxShadow
         ],
       ),
       child: ListTile(

@@ -3,6 +3,7 @@ import 'package:flutter_drpharma_2/core/constants/colors.dart';
 import 'package:flutter_drpharma_2/core/utils/widgets/custom_bottom_nav.dart';
 import 'package:flutter_drpharma_2/Features/Invoice/Presentation/Views/widgets/bottom_sheet.dart';
 import 'package:flutter_drpharma_2/core/constants/styles.dart';
+import 'package:flutter_drpharma_2/core/utils/widgets/total_ptice_row.dart';
 
 class InvoiceNavBar extends StatelessWidget {
   const InvoiceNavBar({
@@ -15,19 +16,7 @@ class InvoiceNavBar extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 20),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "Total",
-                style: AppFonts.Timer.copyWith(fontSize: 16),
-              ),
-              Text(
-                ('30.50\$'),
-                style: AppFonts.Timer.copyWith(fontSize: 16),
-              )
-            ],
-          ),
+          const TotalPriceRow(),
           CustomBottomNav(
             btnText1: 'Add Item',
             btnText2: 'Checkout',
@@ -61,3 +50,4 @@ class InvoiceNavBar extends StatelessWidget {
     );
   }
 }
+

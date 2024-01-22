@@ -21,7 +21,7 @@ class CategoryViewBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const SerachTextField(),
+                const SerachTextField(hint: "Search Here...",isService: false,),
                 SizedBox(
                   height: context.screenHeight * .1 - 60,
                 ),

@@ -3,11 +3,16 @@ import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class MenuItem extends StatelessWidget {
   const MenuItem(
-      {super.key, required this.iconPath, required this.title, this.subTitle,  this.onTap});
+
+      {super.key,
+      required this.iconPath,
+      required this.title,
+      this.subTitle,
+      this.onTap});
   final String iconPath;
   final String title;
   final String? subTitle;
-  final VoidCallback? onTap;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +21,9 @@ class MenuItem extends StatelessWidget {
       child: Container(
         width: 150,
         height: 90,
+
+        margin: EdgeInsetsDirectional.all(20),
+
         decoration: ShapeDecoration(
           color: AppColors.grey,
           shape: RoundedRectangleBorder(

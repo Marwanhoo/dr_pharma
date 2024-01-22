@@ -11,25 +11,20 @@ class AddToCartBtn extends StatelessWidget {
       width: 133,
       height: 35,
       decoration: ShapeDecoration(
-        color: const Color(0xFF566CA2),
+        color: AppColors.primary,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(33),
         ),
       ),
-      child: const Row(
+      child:  Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
             'Add to cart',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 14,
-              fontFamily: 'Urbanist',
-              fontWeight: FontWeight.w700,
-            ),
+            style: AppFonts.style14Urbn.copyWith(color: Colors.white),
           ),
-          Icon(
+        const  Icon(
             Icons.shopping_cart,
             color: Colors.white,
             size: 15,

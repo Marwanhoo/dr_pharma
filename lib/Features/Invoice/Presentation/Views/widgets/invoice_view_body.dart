@@ -22,7 +22,7 @@ class _InVoiceViewBodyState extends State<InVoiceViewBody> {
             padding: const EdgeInsets.symmetric(horizontal: 15),
             itemBuilder: (context, index) {
               return const ProductCard(
-                isInvoice: true,
+                pageName: 'cart',
               );
             },
             separatorBuilder: (context, index) {

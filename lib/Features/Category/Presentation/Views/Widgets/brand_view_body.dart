@@ -16,7 +16,8 @@ class BrandViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: DefaultAppBar(brandName: 'Sanofi').build(GlobalKeyy.currentContext),
+      appBar:
+          DefaultAppBar(pageTitle: 'Sanofi').build(GlobalKeyy.currentContext),
       body: SingleChildScrollView(
           child: Center(
         child: DefaultTabController(

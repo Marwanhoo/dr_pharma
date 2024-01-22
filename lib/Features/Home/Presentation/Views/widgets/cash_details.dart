@@ -15,14 +15,7 @@ class CashesDetails extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(9.29),
         ),
-        shadows: const [
-          BoxShadow(
-            color: Color(0x21000000),
-            blurRadius: 14.40,
-            offset: Offset(-1.03, 4.13),
-            spreadRadius: 0,
-          )
-        ],
+        shadows: const [AppFonts.boxShadow],
       ),
       child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -49,7 +42,7 @@ class CashesDetails extends StatelessWidget {
                 )
               ],
             ),
-            const ProgressIndicatorr(),
+             ProgressIndicatorr(),
             Column(
               children: [
                 Text(

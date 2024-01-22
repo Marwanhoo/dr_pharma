@@ -9,7 +9,13 @@ class AppFonts {
     fontFamily: 'Urbanist',
     fontWeight: FontWeight.w700,
   );
-
+  static TextStyle dots = const TextStyle(
+    color: Color(0xFF566CA2),
+    fontSize: 20,
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w600,
+    height: 0,
+  );
   static TextStyle style22Pop = const TextStyle(
     color: Colors.black,
     fontSize: 22,
@@ -21,7 +27,7 @@ class AppFonts {
     color: Color(0xFF566CA2),
     fontSize: 16,
     fontFamily: 'Outfit',
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w800,
     height: 0,
   );
 
@@ -58,6 +64,12 @@ class AppFonts {
     color: AppColors.grey,
     fontFamily: 'Urbanist',
   );
+  static TextStyle style9Pop500 = const TextStyle(
+    fontSize: 9,
+    fontWeight: FontWeight.w500,
+    color: AppColors.primary,
+    fontFamily: 'Poppins',
+  );
 
   //POP
   static TextStyle style14Pop500 = const TextStyle(
@@ -67,7 +79,7 @@ class AppFonts {
     fontWeight: FontWeight.w500,
     height: 0,
   );
-  static TextStyle style16Pop500 = const TextStyle(
+  static TextStyle style16Pop700 = const TextStyle(
     color: Colors.black,
     fontSize: 16,
     fontFamily: 'Poppins',
