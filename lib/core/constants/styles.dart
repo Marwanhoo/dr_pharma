@@ -9,7 +9,13 @@ class AppFonts {
     fontFamily: 'Urbanist',
     fontWeight: FontWeight.w700,
   );
-
+  static TextStyle dots = const TextStyle(
+    color: Color(0xFF566CA2),
+    fontSize: 20,
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w600,
+    height: 0,
+  );
   static TextStyle style22Pop = const TextStyle(
     color: Colors.black,
     fontSize: 22,

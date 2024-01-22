@@ -12,7 +12,7 @@ class BestOffersCard extends StatelessWidget {
         PersistentNavBarNavigator.pushNewScreen(
           context,
           screen: const ProfileInfoView(),
-          withNavBar: false, // OPTIONAL VALUE. True by default.
+          withNavBar: false, 
           pageTransitionAnimation: PageTransitionAnimation.cupertino,
         );
       },

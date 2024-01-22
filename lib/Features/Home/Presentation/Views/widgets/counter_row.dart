@@ -1,4 +1,5 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/constants/images.dart';
 
 class CounterRow extends StatelessWidget {
   const CounterRow({
@@ -16,7 +17,7 @@ class CounterRow extends StatelessWidget {
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(6), color: const Color(0xffFFE177).withOpacity(.45)),
           child: Row(
             children: [
-              SvgPicture.asset("assets/icons/dollar.svg"),
+              SvgPicture.asset(AppImages.dollar),
               Text(
                 "Points    ",
                 style: AppFonts.medium.copyWith(color: const Color(0xffFCD240)),

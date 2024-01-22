@@ -1,4 +1,5 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/constants/images.dart';
 class CustomSlider extends StatelessWidget {
   const CustomSlider({super.key});
 
@@ -15,7 +16,7 @@ class CustomSlider extends StatelessWidget {
                 decoration: BoxDecoration(
                     image: const DecorationImage(
                       image: AssetImage(
-                        "assets/images/gradient.png",
+                        AppImages.gradient,
                       ),
                       fit: BoxFit.fill,
                     ),
@@ -25,7 +26,7 @@ class CustomSlider extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12),
                       child: Image.asset(
-                        "assets/images/gradientShadow.png",
+                       AppImages.gradientShadow,
                         fit: BoxFit.cover,
                         height: 200,
                       ),
@@ -39,7 +40,7 @@ class CustomSlider extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset(
-                            "assets/images/logo.png",
+                           AppImages.logo,
                             width: 33,
                             height: 33,
                           ),

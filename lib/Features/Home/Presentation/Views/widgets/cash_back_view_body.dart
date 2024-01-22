@@ -1,4 +1,5 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/constants/images.dart';
 
 
 class CashBackViewBody extends StatelessWidget {
@@ -11,7 +12,7 @@ class CashBackViewBody extends StatelessWidget {
         children: [
           const CustomAppBar(
             title: "Cash Back",
-            leadingIcon: "assets/icons/arrow.svg",
+            leadingIcon: AppImages.arrow,
             isFlash: false,
           ),
           Expanded(
@@ -28,13 +29,13 @@ class CashBackViewBody extends StatelessWidget {
                   height: 20,
                 ),
                 TransactionDetails(
-                  iconPath: "assets/icons/greenTranss.svg",
+                  iconPath: AppImages.gTrans,
                 ),
                 SizedBox(
                   height: 20,
                 ),
                 TransactionDetails(
-                  iconPath: "assets/icons/redTrans.svg",
+                  iconPath: AppImages.rTrans,
                   color: AppColors.red,
                 ),
                 SizedBox(

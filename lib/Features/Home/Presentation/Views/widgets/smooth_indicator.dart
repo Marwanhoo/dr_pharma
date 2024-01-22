@@ -38,19 +38,19 @@ class _CustomSmoothIndicatorState extends State<CustomSmoothIndicator> {
                 decoration: BoxDecoration(color: AppColors.softGrey, borderRadius: BorderRadius.circular(13)),
                 child: Center(
                   child: SmoothPageIndicator(
-                    controller: _pageController, // PageController
+                    controller: _pageController, 
                     count: widget.imagesUrl.length,
 
-                    effect: widget.effect, // your preferred effect
+                    effect: widget.effect, 
                     onDotClicked: (index) {},
                   ),
                 ),
               )
             : SmoothPageIndicator(
-                controller: _pageController, // PageController
+                controller: _pageController,
                 count: widget.imagesUrl.length,
 
-                effect: widget.effect, // your preferred effect
+                effect: widget.effect,
                 onDotClicked: (index) {},
               ),
       ],

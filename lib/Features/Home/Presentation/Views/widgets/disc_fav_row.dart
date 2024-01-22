@@ -19,14 +19,10 @@ class DiscFavRow extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
-            child: const Text(
+            child:  Text(
               '-15%',
               textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontFamily: 'Urbanist',
-                fontWeight: FontWeight.w700,
-              ),
+              style: AppFonts.style14Urbn.copyWith(color: Colors.white),
             )),
         SvgPicture.asset(iconPath)
       ],

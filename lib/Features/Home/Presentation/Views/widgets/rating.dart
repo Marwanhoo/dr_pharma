@@ -1,4 +1,5 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/constants/images.dart';
 
 class RatingRow extends StatelessWidget {
   const RatingRow({super.key, required this.reviews, this.iconWidth = 20});
@@ -9,7 +10,7 @@ class RatingRow extends StatelessWidget {
     return Row(
       children: [
         SvgPicture.asset(
-          "assets/icons/star.svg",
+         AppImages.star,
           width: iconWidth,
         ),
         const Text("4.5", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),

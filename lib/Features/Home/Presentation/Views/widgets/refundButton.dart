@@ -32,15 +32,9 @@ class RefundButton extends StatelessWidget {
           )
         ],
       ),
-      child: const Center(
-        child: Text(
-          'Refund',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
+      child: Center(
+        child: Text('Refund',
+            style: AppFonts.header2.copyWith(color: Colors.white)),
       ),
     );
   }

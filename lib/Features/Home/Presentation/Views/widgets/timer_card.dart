@@ -15,29 +15,14 @@ class TimerCard extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20.13),
         ),
-        shadows: const [
-          BoxShadow(
-            color: Color(0x51868181),
-            blurRadius: 11.60,
-            offset: Offset(0, 4),
-            spreadRadius: 0,
-          ),
-        ],
+        shadows: const [AppFonts.boxShadow],
       ),
       child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text(
-              "There is Time Left",
-              style: TextStyle(
-                color: Color(0xFF566CA2),
-                fontSize: 14,
-                fontFamily: 'Poppins',
-                fontWeight: FontWeight.w600,
-                height: 0,
-              ),
-            ),
+            Text("There is Time Left",
+                style: AppFonts.Timer.copyWith(fontSize: 16)),
             Column(
               children: [
                 Row(
@@ -47,30 +32,12 @@ class TimerCard extends StatelessWidget {
                       "01",
                       style: AppFonts.Timer,
                     ),
-                    const Text(
-                      ":",
-                      style: TextStyle(
-                        color: Color(0xFF566CA2),
-                        fontSize: 20,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w600,
-                        height: 0,
-                      ),
-                    ),
+                    Text(":", style: AppFonts.dots),
                     Text(
                       "40",
                       style: AppFonts.Timer,
                     ),
-                    const Text(
-                      ":",
-                      style: TextStyle(
-                        color: Color(0xFF566CA2),
-                        fontSize: 20,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w600,
-                        height: 0,
-                      ),
-                    ),
+                    Text(":", style: AppFonts.dots),
                     Text(
                       "32",
                       style: AppFonts.Timer,

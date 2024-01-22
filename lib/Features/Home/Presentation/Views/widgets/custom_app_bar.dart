@@ -3,6 +3,7 @@ import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/isFlashRow.dart';
 
 import 'package:flutter_drpharma_2/core/app_export.dart';
+import 'package:flutter_drpharma_2/core/constants/images.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
@@ -22,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
           image: DecorationImage(
               fit: BoxFit.fill,
               image: AssetImage(
-                "assets/images/Group.png",
+               AppImages.group,
               ))),
       child: Center(
         child: Padding(

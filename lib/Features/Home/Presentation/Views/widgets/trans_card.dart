@@ -16,43 +16,23 @@ class TransactionCard extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(7.23),
         ),
-        shadows: const [
-          BoxShadow(
-            color: Color(0x3F808080),
-            blurRadius: 10.32,
-            offset: Offset(0, 4.13),
-            spreadRadius: 0,
-          ),
-        ],
+        shadows: const [AppFonts.boxShadow],
       ),
-      child: const Row(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SizedBox(
             width: 165.96,
             height: 21.68,
-            child: Text(
-              'Transaction History',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 14.45,
-                fontWeight: FontWeight.w700,
-                height: 0,
-              ),
-            ),
+            child: Text('Transaction History',
+                style:
+                    AppFonts.style14Urbn.copyWith(fontWeight: FontWeight.w900)),
           ),
           Row(
             children: [
-              Text(
-                'view all',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 12,
-                  fontWeight: FontWeight.w400,
-                  height: 0,
-                ),
-              ),
-              Icon(Icons.arrow_forward_ios, size: 12)
+              Text('view all',
+                  style: AppFonts.small.copyWith(color: AppColors.black)),
+              Icon(Icons.arrow_forward_ios, size: 12, color: AppColors.black)
             ],
           ),
         ],
