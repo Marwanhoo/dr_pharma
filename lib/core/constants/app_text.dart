@@ -39,5 +39,15 @@ class AppText{
   static const String titleMap = "alsharqa 34";
   static const String subtitleMap = "Ahmed Maher Street,Mansoura";
   static const String trailingMap = "568 km";
+  static const String settings = "Settings";
+  static const String yourCreditLimit = "Your credit limit :";
+  static const String profileInfo = "Profile Info";
+  static const String pharmacyInfo = "Pharmacy Info";
+  static const String makeChangesToYourAccount = "Make Changes to your account";
+  static const String makeChangesToYourPharmacy = "Make Changes to your pharmacy";
+  static const String lang = "Language";
+  static const String changeTheLang = "Change the language of the application";
+  static const String egypt = "Egypt";
+  static const String changeYourCurrentLocation = "change your current location";
 
 }

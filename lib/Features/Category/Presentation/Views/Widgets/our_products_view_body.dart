@@ -13,8 +13,9 @@ class OurProducts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 4,
-        child: ListView(children: [
+      length: 4,
+      child: ListView(
+        children: [
           const SizedBox(
             height: 10,
           ),

@@ -1,4 +1,3 @@
-import 'package:flutter_drpharma_2/Config/routes/routeManager.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class ProfileInfoWidget extends StatelessWidget {
@@ -12,9 +11,10 @@ class ProfileInfoWidget extends StatelessWidget {
   }
 
   Widget clickableCard() {
-    return InkWell(
+    return GestureDetector(
       onTap: () {
-        RouteManager.back();
+        Navigator.pushNamed(
+            GlobalKeyy.currentContext, '/profile info edit view');
       },
       child: infoCard(),
     );

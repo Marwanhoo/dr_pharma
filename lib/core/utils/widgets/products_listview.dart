@@ -10,18 +10,26 @@ class ProductsListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
         itemBuilder: (context, index) {
-          return const SizedBox(
-            height: 20,
-          );
+          return itembuilder();
         },
         separatorBuilder: (context, index) {
-          return  Padding(
-            padding:const EdgeInsets.symmetric(horizontal: 15.0),
-            child: ProductCard(
-              pageName: pageName,
-            ),
-          );
+          return separator() ;
         },
         itemCount: 10);
+  }
+
+  Padding itembuilder() {
+    return Padding(
+          padding:const EdgeInsets.symmetric(horizontal: 15.0),
+          child: ProductCard(
+            pageName: pageName,
+          ),
+        );
+  }
+
+  SizedBox separator() {
+    return const SizedBox(
+          height: 20,
+        );
   }
 }

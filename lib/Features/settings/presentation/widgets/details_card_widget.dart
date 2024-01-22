@@ -1,4 +1,3 @@
-import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class DetailsCardWidget extends StatelessWidget {
@@ -16,24 +15,24 @@ class DetailsCardWidget extends StatelessWidget {
         children: [
           CustomListTitleWidget(
             iconLeading: Icons.person,
-            title: "Profile Info",
-            subtitle: "Make Changes to your account",
+            title: AppText.profileInfo,
+            subtitle: AppText.makeChangesToYourAccount,
             onTap: () {
-              Navigator.of(GlobalKeyy.currentContext).push(MaterialPageRoute(builder: (_)=> const ProfileInfoEditView()));
+              Navigator.pushNamed(GlobalKeyy.currentContext, '/profile info edit view');
             },
           ),
           CustomListTitleWidget(
             iconLeading: Icons.local_pharmacy,
-            title: "Pharmacy Info",
-            subtitle: "Make Changes to your pharmacy",
+            title: AppText.pharmacyInfo,
+            subtitle: AppText.makeChangesToYourPharmacy,
             onTap: () {
-              Navigator.of(GlobalKeyy.currentContext).push(MaterialPageRoute(builder: (_)=> const PharmacyInfoEditView()));
+              Navigator.pushNamed(GlobalKeyy.currentContext, '/pharmacy info edit view');
             },
           ),
           CustomListTitleWidget(
             iconLeading: Icons.language,
-            title: "Language",
-            subtitle: "Change the language of the application",
+            title: AppText.lang,
+            subtitle: AppText.changeTheLang,
             onTap: () {
               buildChangeLanguage(GlobalKeyy.currentContext);
             },
@@ -41,8 +40,8 @@ class DetailsCardWidget extends StatelessWidget {
           CustomListTitleWidget(
             //iconLeading: country(Country.eg, "Egypt"),
             iconLeading: Icons.flag,
-            title: "Egypt",
-            subtitle: "change your current location",
+            title: AppText.egypt,
+            subtitle: AppText.changeYourCurrentLocation,
             onTap: () {
               showCountryPicker(GlobalKeyy.currentContext);
             },
@@ -52,4 +51,3 @@ class DetailsCardWidget extends StatelessWidget {
     );
   }
 }
-
