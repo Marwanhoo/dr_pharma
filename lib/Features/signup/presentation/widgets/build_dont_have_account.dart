@@ -1,14 +1,13 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
-Row buildDontHaveAccount(BuildContext context, String text , String sign, VoidCallback onPressed) {
+Row buildDoNotHaveAccount(BuildContext context, String text , String sign, VoidCallback onPressed) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
        Text(
         text,
       ),
-      InkWell(
-        borderRadius: BorderRadius.circular(2),
+      GestureDetector(
         onTap: onPressed,
         child:  Text(
           sign,

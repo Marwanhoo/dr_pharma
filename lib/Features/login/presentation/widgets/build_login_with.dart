@@ -4,9 +4,9 @@ Widget buildLoginWith() {
   return const Align(
     alignment: Alignment.center,
     child: Text(
-      "Or login with",
+      AppText.orLoginWith,
       style: TextStyle(
-        color: Color(0XFFDA3A2A),
+        color: AppColors.whiteDegree,
       ),
     ),
   );

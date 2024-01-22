@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/main.dart';
 
-class ForgotPasswordScreen extends StatelessWidget {
-  const ForgotPasswordScreen({super.key});
+class ForgotPasswordView extends StatelessWidget {
+  const ForgotPasswordView({super.key});
 
   @override
   Widget build(BuildContext context) {

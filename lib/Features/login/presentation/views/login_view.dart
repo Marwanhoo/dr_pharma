@@ -1,6 +1,4 @@
-import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
-
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -10,13 +8,15 @@ class LoginView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(GlobalKeyy.currentContext.screenWidth / 15),
+          padding: EdgeInsets.all(
+            GlobalKeyy.currentContext.screenWidth / 15,
+          ),
           child: Column(
             children: [
-               const Align(
+              const Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "Welcome\nBack!",
+                  AppText.loginWelcomeBack,
                   style: TextStyle(
                     color: AppColors.primary,
                     fontWeight: FontWeight.w700,
@@ -24,33 +24,34 @@ class LoginView extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: GlobalKeyy.currentContext.screenHeight / 30 //20,
-                  ),
+              SizedBox(
+                height: GlobalKeyy.currentContext.screenHeight / 30,
+              ),
               const CustomTextFormField(
                 prefixIcon: Icons.person,
-                hintText: "Username or Email",
+                hintText: AppText.loginUserOrEmail,
               ),
               SizedBox(
-                height: GlobalKeyy.currentContext.screenHeight / 40, //30,
+                height: GlobalKeyy.currentContext.screenHeight / 40,
               ),
               const CustomTextFormField(
                 prefixIcon: Icons.lock,
-                hintText: "Password",
+                hintText: AppText.password,
                 suffixIcon: Icons.remove_red_eye_outlined,
                 obscureText: true,
               ),
               buildForgotPassword(GlobalKeyy.currentContext),
               SizedBox(
-                height: GlobalKeyy.currentContext.screenHeight / 30, //20,
+                height: GlobalKeyy.currentContext.screenHeight / 30,
               ),
               CustomRow(
-                text: "Sign In",
+                text: AppText.signIn,
                 onPressed: () {
-                  Navigator.pushNamed(context, '/layout');
+                  Navigator.pushNamed(context, '/layout',);
                 },
               ),
               SizedBox(
-                height: GlobalKeyy.currentContext.screenHeight / 10, //40,
+                height: GlobalKeyy.currentContext.screenHeight / 10,
               ),
               buildLoginWith(),
               SizedBox(
@@ -60,9 +61,17 @@ class LoginView extends StatelessWidget {
               SizedBox(
                 height: GlobalKeyy.currentContext.screenHeight / 50,
               ),
-              buildDontHaveAccount(GlobalKeyy.currentContext, "You don't hava account ? ", "Sign Up",(){
-                Navigator.pushNamed(GlobalKeyy.currentContext, '/signup view');
-              }),
+              buildDoNotHaveAccount(
+                GlobalKeyy.currentContext,
+                AppText.loginYouDoNotHaveAccount,
+                AppText.signupText,
+                () {
+                  Navigator.pushNamed(
+                    GlobalKeyy.currentContext,
+                    '/signup view',
+                  );
+                },
+              ),
             ],
           ),
         ),

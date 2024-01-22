@@ -12,22 +12,18 @@ void showBusinessSpecialization(BuildContext context) {
         child: Column(
           children: [
             buildLineGrey(),
-            SizedBox(
-              height: context.screenHeight / 50,
-            ),
+            SizedBox(height: context.screenHeight / 50),
             const Text(
-              "Your business specialization",
+              AppText.yourBusinessSpecialization,
               style: TextStyle(
                 fontWeight: FontWeight.w700,
               ),
             ),
-            SizedBox(
-              height: context.screenHeight / 50,
-            ),
+            SizedBox(height: context.screenHeight / 50),
             buildGridViewBusiness(),
             const SizedBox(height: 65),
             CustomRow(
-              text: "Continue",
+              text: AppText.continueText,
               onPressed: () {
                 Navigator.pushNamed(context, '/create account view');
               },
@@ -50,10 +46,10 @@ GridView buildGridViewBusiness() {
       mainAxisExtent: 100,
     ),
     children: [
-      oneItemBusinessSpecialization(Icons.science, "Lab"),
-      oneItemBusinessSpecialization(Icons.health_and_safety, "Pharmacy", true),
-      oneItemBusinessSpecialization(Icons.local_hospital, "Clinic"),
-      oneItemBusinessSpecialization(Icons.apartment, "Hospital"),
+      oneItemBusinessSpecialization(Icons.science, AppText.lab),
+      oneItemBusinessSpecialization(Icons.health_and_safety, AppText.pharmacy, true),
+      oneItemBusinessSpecialization(Icons.local_hospital, AppText.clinic),
+      oneItemBusinessSpecialization(Icons.apartment, AppText.hospital),
     ],
   );
 }
@@ -64,7 +60,7 @@ Container buildLineGrey() {
     margin: const EdgeInsets.symmetric(horizontal: 100),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: Colors.grey,
+      color: AppColors.greyColor,
     ),
   );
 }
@@ -76,7 +72,7 @@ Widget oneItemBusinessSpecialization(IconData icon, String name, [bool shape = f
             borderRadius: BorderRadius.circular(12),
             side: const BorderSide(
               width: 1,
-              color: Colors.red,
+              color: AppColors.redColors,
             ),
           )
         : null,
@@ -85,10 +81,10 @@ Widget oneItemBusinessSpecialization(IconData icon, String name, [bool shape = f
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         CircleAvatar(
-          backgroundColor: const Color(0xFF566CA2),
+          backgroundColor: AppColors.primary,
           child: Icon(
             icon,
-            color: Colors.white,
+            color: AppColors.white,
           ),
         ),
         Text(name),

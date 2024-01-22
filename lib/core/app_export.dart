@@ -55,7 +55,6 @@ export 'package:flutter_drpharma_2/Features/login/presentation/widgets/build_log
 export 'package:flutter_drpharma_2/Features/login/presentation/widgets/build_login_with.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/build_dont_have_account.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/views/signup_view.dart';
-export 'package:flutter_drpharma_2/Features/forgot_password/forgot_password_screen.dart';
 export 'package:flutter_drpharma_2/Features/on_boarding/data/data_text.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/build_attach_file.dart';
 export 'package:flutter_drpharma_2/Features/signup/presentation/widgets/show_region.dart';
@@ -104,3 +103,8 @@ export 'package:flutter_drpharma_2/Features/customer_ads/presentation/view/custo
 export 'package:flutter_drpharma_2/Features/expire_products/presentation/view/expire_products.dart';
 export 'package:flutter_drpharma_2/Features/my_note_book/presentation/view/my_note_book_view.dart';
 export 'package:flutter_drpharma_2/Features/my_wallet/presentation/view/my_wallet_view.dart';
+export 'package:flutter_drpharma_2/Features/on_boarding/presentation/widgets/build_shadow.dart';
+export 'package:flutter_drpharma_2/Features/on_boarding/presentation/widgets/build_image_background.dart';
+export 'package:flutter_drpharma_2/Features/on_boarding/presentation/widgets/build_waves.dart';
+export 'package:flutter_drpharma_2/core/constants/app_text.dart';
+export 'package:flutter_drpharma_2/Features/forgot_password/forgot_password_view.dart';

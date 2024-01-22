@@ -15,6 +15,7 @@ Map<String, WidgetBuilder> get routes {
     '/login view': (context) => const LoginView(),
     '/signup view': (context) => const SignUpView(),
     '/create account view': (context) => const CreateAccountView(),
+    '/forgot pass view': (context) => const ForgotPasswordView(),
     '/my wallet': (context) => const MyWalletView(),
     '/customer ads view': (context) => const CustomerAdsView(),
     '/my note book view': (context) => const MyNoteBookView(),

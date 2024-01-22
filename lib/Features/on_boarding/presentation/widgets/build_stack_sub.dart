@@ -26,9 +26,8 @@ class BuildStackSub extends StatelessWidget {
                     () {
                   Navigator.pushNamed(context, '/login view');
                 },
-                "login",
-
-                const Color(0XFF566CA2),
+                AppText.loginText,
+                AppColors.primary,
               ),
               SizedBox(
                 height: context.screenHeight / 30,
@@ -38,9 +37,9 @@ class BuildStackSub extends StatelessWidget {
                     () {
                   Navigator.pushNamed(context, '/signup view');
                 },
-                "sign up",
-                Colors.transparent,
-                Colors.white,
+                AppText.signupText,
+                AppColors.transparent,
+                AppColors.white,
               ),
             ],
           ),
