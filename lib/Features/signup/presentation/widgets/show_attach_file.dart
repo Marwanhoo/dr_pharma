@@ -17,27 +17,21 @@ void showAttachFile(BuildContext context) {
                 color: Colors.grey,
               ),
             ),
-            const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             const Text(
-              "Attach a file",
+              AppText.attachAFile,
               style: TextStyle(
                 fontWeight: FontWeight.w700,
               ),
             ),
-            const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             const Text(
-              "Please upload your pharmacy license",
+              AppText.pleaseUploadPharmacyLicense,
               style: TextStyle(
                 fontWeight: FontWeight.w400,
               ),
             ),
-            const SizedBox(
-              height: 25,
-            ),
+            const SizedBox(height: 25),
             GridView(
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
@@ -48,8 +42,8 @@ void showAttachFile(BuildContext context) {
                 mainAxisExtent: 100,
               ),
               children: [
-                oneItemAttachFile(Icons.add_to_drive_outlined, "From Drive"),
-                oneItemAttachFile(Icons.phone_iphone, "Your Files", true),
+                oneItemAttachFile(Icons.add_to_drive_outlined, AppText.fromDrive),
+                oneItemAttachFile(Icons.phone_iphone, AppText.yourFiles, true),
               ],
             ),
           ],

@@ -9,7 +9,7 @@ InkWell buildAttachAFile(BuildContext context) {
     child: DottedBorder(
       radius: const Radius.circular(16),
       borderType: BorderType.RRect,
-      color: const Color(0xFF566CA2),
+      color: AppColors.primary,
       dashPattern: const [8, 8],
       child: Container(
         width: double.infinity,
@@ -19,7 +19,7 @@ InkWell buildAttachAFile(BuildContext context) {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Icons.cloud_upload),
-            Text("Attach A File"),
+            Text(AppText.attachAFile),
           ],
         ),
       ),

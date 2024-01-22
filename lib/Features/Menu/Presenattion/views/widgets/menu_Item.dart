@@ -3,6 +3,7 @@ import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class MenuItem extends StatelessWidget {
   const MenuItem(
+
       {super.key,
       required this.iconPath,
       required this.title,
@@ -12,6 +13,7 @@ class MenuItem extends StatelessWidget {
   final String title;
   final String? subTitle;
   final void Function()? onTap;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -19,7 +21,9 @@ class MenuItem extends StatelessWidget {
       child: Container(
         width: 150,
         height: 90,
+
         margin: EdgeInsetsDirectional.all(20),
+
         decoration: ShapeDecoration(
           color: AppColors.grey,
           shape: RoundedRectangleBorder(

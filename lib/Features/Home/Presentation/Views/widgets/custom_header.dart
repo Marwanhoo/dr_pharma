@@ -19,7 +19,7 @@ class CustomAppHeader {
                   children: [
                     GestureDetector(
                         onTap: () {
-                          RouteManager.moveTo('');
+                          RouteManager.persistentPush(SettingsView());
                         },
                         child: Image.asset(AppImages.avater)),
                     Padding(

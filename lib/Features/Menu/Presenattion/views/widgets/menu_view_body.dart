@@ -18,6 +18,7 @@ class MenuViewBody extends StatelessWidget {
       child: Scaffold(
           appBar: const CustomAppHeader().build(GlobalKeyy.currentContext),
           backgroundColor: Colors.white,
+
           body: GridView.count(
             crossAxisCount: 2,
             padding: const EdgeInsets.only(
@@ -28,6 +29,7 @@ class MenuViewBody extends StatelessWidget {
               const MenuItem(
                 iconPath: AppImages.wallet,
                 title: 'Wallet',
+
               ),
               MenuItem(
                 iconPath: AppImages.ads,
@@ -126,10 +128,14 @@ class MenuViewBody extends StatelessWidget {
                 const  MenuItem(
                     iconPath: AppImages.wallet,
                     title: 'Wallet',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/my wallet');
+                    },
                   ),
                   MenuItem(
                     iconPath: AppImages.ads,
                     title: 'My Ads',
+
                     onTap: () {
                       PersistentNavBarNavigator.pushNewScreen(
                         context,
@@ -138,6 +144,7 @@ class MenuViewBody extends StatelessWidget {
                           return MyAdsView();
                         }),
                       );
+
                     },
                   ),
                 ],
@@ -151,6 +158,9 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.ads,
                     title: 'Customer Ads',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/customer ads view');
+                    },
                   ),
                   MenuItem(
                     iconPath: AppImages.wCart,
@@ -172,6 +182,9 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.noteBook,
                     title: 'My Notebook',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/my note book view');
+                    },
                   ),
                   MenuItem(
                     iconPath: AppImages.medService,
@@ -188,6 +201,9 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.expired,
                     title: 'Expired Prducts',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/expire products');
+                    },
                   ),
                   MenuItem(
                     iconPath: 'assets/icons/wHeart.svg',
@@ -209,6 +225,9 @@ class MenuViewBody extends StatelessWidget {
                   MenuItem(
                     iconPath: AppImages.chat,
                     title: 'Chat Us',
+                    onTap: (){
+                      Navigator.pushNamed(GlobalKeyy.currentContext, '/chat screen');
+                    },
                   ),
                   MenuItem(
                     iconPath: AppImages.returnIcon,
@@ -220,4 +239,6 @@ class MenuViewBody extends StatelessWidget {
                 ],
               ),
             ],
+
           )*/
+

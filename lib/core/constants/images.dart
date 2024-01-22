@@ -48,4 +48,5 @@ class AppImages {
   static const String splashLogo = 'assets/images/dp.png';
   static const String textLogo = 'assets/images/dpharma.png';
   static const String logoApple = "assets/images/apple.png";
+  static const String logoGoogle = "assets/images/google.png";
 }
