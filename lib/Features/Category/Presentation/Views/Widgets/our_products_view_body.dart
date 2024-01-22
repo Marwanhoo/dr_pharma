@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_drpharma_2/Features/Category/Presentation/Views/Widgets/product_card.dart';
 import 'package:flutter_drpharma_2/core/utils/widgets/products_listview.dart';
 
-
 import '../../../../../core/app_export.dart';
 
 // import '../../../../../core/constants/colors.dart';
 // import '../../../../../core/constants/styles.dart';
-
 
 class OurProducts extends StatelessWidget {
   const OurProducts({super.key});
@@ -34,16 +32,18 @@ class OurProducts extends StatelessWidget {
               Text("best offer", style: AppFonts.tabBar.copyWith(fontSize: 14)),
             ],
           ),
-        const  SizedBox(
-            height: 500,
+          const SizedBox(
+            height: 600,
             child: TabBarView(children: [
-              ProductsListView(pageName: 'ourProducts',),
-               Text('data'),
-               Text('data'),
-               Text('data')
+              ProductsListView(
+                pageName: 'ourProducts',
+              ),
+              Text('data'),
+              Text('data'),
+              Text('data')
             ]),
-          )
+          ),
+          const SizedBox(height: 50),
         ]));
   }
 }
-

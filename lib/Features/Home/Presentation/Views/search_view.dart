@@ -9,15 +9,15 @@ class SearchView extends StatelessWidget {
         backgroundColor: Colors.white,
         body: Padding(
           padding: EdgeInsets.symmetric(
-              horizontal: context.screenWidth * .02,
-              vertical: context.screenHeight * .07,
+            horizontal: context.screenWidth * .02,
+            vertical: context.screenHeight * .07,
           ),
           child: Column(
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const SerachTextField(),
+                  const SerachTextField(hint: "Search Here...",isService: false,),
                   Text(
                     "Cancel",
                     style: AppFonts.medium,
@@ -26,8 +26,8 @@ class SearchView extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: context.screenHeight * .01,
-                    vertical: context.screenHeight * .02,
+                  horizontal: context.screenHeight * .01,
+                  vertical: context.screenHeight * .02,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

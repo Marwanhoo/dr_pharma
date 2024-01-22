@@ -11,7 +11,7 @@ class MedicinesViewBody extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: DefaultAppBar(
         pageTitle: 'Medicines',
-      ),
+      ).build(context),
       body: ListView.separated(
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.symmetric(

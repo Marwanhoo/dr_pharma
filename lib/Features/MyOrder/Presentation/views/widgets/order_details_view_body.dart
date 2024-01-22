@@ -27,7 +27,7 @@ class OrderDetailsViewBody extends StatelessWidget {
         child: const  ProfileButton(text: 'Cancel', btnColor: Colors.white, textColor: AppColors.primary,
         borderColor: AppColors.primary, width: 50,),
       ),
-      appBar: DefaultAppBar(pageTitle: 'Order Details'),
+      appBar: DefaultAppBar(pageTitle: 'Order Details').build(context),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

@@ -12,7 +12,8 @@ class MyOrderViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: DefaultAppBar(pageTitle: 'My Order'),
+        backgroundColor: Colors.white,
+        appBar: DefaultAppBar(pageTitle: 'My Order').build(context),
         body: DefaultTabController(
             length: 3,
             child: Column(children: [
@@ -44,7 +45,6 @@ class MyOrderViewBody extends StatelessWidget {
                   MyOrderListView(
                     itemCount: 10,
                     listviewIndex: 0,
-                    
                   ),
                   MyOrderListView(
                     itemCount: 3,

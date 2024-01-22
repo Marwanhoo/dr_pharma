@@ -1,3 +1,4 @@
+import 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/bottomNavBar.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
 class CustomCategoryWitharrow extends StatelessWidget {
@@ -24,9 +25,13 @@ class CustomCategoryWitharrow extends StatelessWidget {
               )
             : GestureDetector(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const CategoryView();
-                  }));
+                  controller.index = 1;
+                  PersistentNavBarNavigator.pushNewScreen(
+                    context,
+                    screen: const CategoryView(),
+                    withNavBar: true,
+                    pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                  );
                 },
                 child: Row(
                   children: [

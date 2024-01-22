@@ -6,6 +6,9 @@ class AppImages {
   static const String fillRHeart = "assets/icons/fillRHeart.svg";
   static const String crown = 'assets/icons/crown.svg';
   static const String background = 'assets/images/background.png';
+
+  static const String m1 = 'assets/images/m1.png';
+  static const String m2 = 'assets/images/m2.png';
   static const String med = "assets/images/bigMed.png";
   static const String beauty = "assets/images/beauty.png";
   static const String brand = "assets/images/brand.png";

@@ -1,4 +1,3 @@
-import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/utils/widgets/custom_bottom_nav.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 import 'package:flutter_drpharma_2/core/utils/widgets/default_appBar.dart';
@@ -24,7 +23,7 @@ class ProfileInfoView extends StatelessWidget {
       ),
       appBar: DefaultAppBar(
         pageTitle: 'Profile Info',
-      ),
+      ).build(context),
       body: const ProfileInfoViewBody(),
     );
   }

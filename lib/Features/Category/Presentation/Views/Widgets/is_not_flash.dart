@@ -18,7 +18,10 @@ class IsNotFLash extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
             },
-            child: SvgPicture.asset(leadingIcon)),
+            child: SvgPicture.asset(
+              leadingIcon,
+              width: 10,
+            )),
         Spacer(),
         Text(
           title,

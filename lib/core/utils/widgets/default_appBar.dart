@@ -1,7 +1,7 @@
 import 'package:flutter_drpharma_2/Config/routes/routeManager.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
-class DefaultAppBar extends AppBar {
+class DefaultAppBar  {
   DefaultAppBar({
     required this.pageTitle,
   });

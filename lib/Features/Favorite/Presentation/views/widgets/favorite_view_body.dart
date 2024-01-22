@@ -8,7 +8,7 @@ class FavoritViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: DefaultAppBar(pageTitle: 'Favorites'),
+      appBar: DefaultAppBar(pageTitle: 'Favorites').build(context),
       body: ListView.separated(
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.symmetric(

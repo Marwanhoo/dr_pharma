@@ -10,8 +10,9 @@ class AppColors {
   static const Color softGrey = Color(0x4C12121D);
   static Color black = Colors.black.withOpacity(0.44999998807907104);
   static const Color red = Color(0xffDA3A2A);
-  static Color greyWithOpacity = Color.fromARGB(255, 234, 227, 227);
+  static Color greyWithOpacity =const Color.fromARGB(255, 240, 238, 238);
   static const Color orange =Color(0xffF2A03D);
   static const Color semiOrange =Color(0xffEEB500);
   static const Color green =Color(0xff88B361);
+  static const Color semiWhite =Color(0xFFFAFBFA);
 }

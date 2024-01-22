@@ -8,13 +8,16 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar:const CustomAppHeader().build(GlobalKeyy.currentContext),
+        appBar: const CustomAppHeader().build(GlobalKeyy.currentContext),
         backgroundColor: Colors.white,
         body: ListView(
           children: [
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30),
-              child: SerachTextField(),
+              child: SerachTextField(
+                hint: "Search Here...",
+                isService: false,
+              ),
             ),
             const CustomSlider(),
             const Padding(
@@ -39,11 +42,12 @@ class HomeViewBody extends StatelessWidget {
                 return const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    BestOffersCard(isFav: false,
+                    BestOffersCard(
+                        isFav: false,
                         imagePath: "assets/images/medicineImage.png"),
                     BestOffersCard(
-                      isFav: false,
-                      imagePath: "assets/images/medicineImage.png")
+                        isFav: false,
+                        imagePath: "assets/images/medicineImage.png")
                   ],
                 );
               },
