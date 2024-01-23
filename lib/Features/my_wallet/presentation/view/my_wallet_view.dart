@@ -6,10 +6,7 @@ class MyWalletView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text("My Wallet"),
-      ),
+      appBar: DefaultAppBar(pageTitle: 'My Wallet').build(GlobalKeyy.currentContext),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

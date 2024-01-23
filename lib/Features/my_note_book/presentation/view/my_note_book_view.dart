@@ -6,9 +6,7 @@ class MyNoteBookView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("My Note Book View"),
-      ),
+      appBar: DefaultAppBar(pageTitle: 'My Note Book').build(GlobalKeyy.currentContext),
       body: ListView.separated(
         shrinkWrap: true,
         physics: const BouncingScrollPhysics(),

@@ -5,9 +5,7 @@ class ExpireProducts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Expire Products"),
-      ),
+        appBar: DefaultAppBar(pageTitle: 'Expire Products').build(GlobalKeyy.currentContext),
       body: ListView.separated(
         shrinkWrap: true,
         physics: const BouncingScrollPhysics(),

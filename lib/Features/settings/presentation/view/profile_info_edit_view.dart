@@ -1,5 +1,5 @@
-import 'package:flutter_drpharma_2/Services/global_key.dart';
 import 'package:flutter_drpharma_2/core/app_export.dart';
+
 
 class ProfileInfoEditView extends StatelessWidget {
   const ProfileInfoEditView({super.key});
@@ -7,13 +7,7 @@ class ProfileInfoEditView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          "Profile Info",
-          style: AppFonts.style18Pop,
-        ),
-      ),
+      appBar: DefaultAppBar(pageTitle: 'Profile Info').build(GlobalKeyy.currentContext),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 8),
         child: Column(

@@ -6,9 +6,7 @@ class CustomerAdsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Customer Ads View"),
-      ),
+      appBar: DefaultAppBar(pageTitle: 'Customer Ads').build(GlobalKeyy.currentContext),
       body:  ListView.separated(
         shrinkWrap: true,
         physics: const BouncingScrollPhysics(),

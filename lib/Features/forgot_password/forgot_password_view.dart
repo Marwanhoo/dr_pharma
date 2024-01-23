@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_drpharma_2/Services/global_key.dart';
-import 'package:flutter_drpharma_2/main.dart';
+import 'package:flutter_drpharma_2/core/app_export.dart';
+
 
 class ForgotPasswordView extends StatelessWidget {
   const ForgotPasswordView({super.key});
@@ -8,9 +7,7 @@ class ForgotPasswordView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Forgot Password"),
-      ),
+      appBar: DefaultAppBar(pageTitle: "Forgot Password").build(GlobalKeyy.currentContext),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

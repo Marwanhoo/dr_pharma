@@ -111,3 +111,5 @@ export 'package:flutter_drpharma_2/Features/forgot_password/forgot_password_view
 export 'package:flutter_drpharma_2/Features/MedicalServices/Presentation/views/add_service.dart';
 export 'package:flutter_drpharma_2/Features/MedicalServices/Presentation/views/medical_services_view.dart';
 export 'package:flutter_drpharma_2/Features/MyAds/Presentation/views/my_ads_view.dart';
+export 'package:flutter_drpharma_2/core/utils/widgets/default_appBar.dart';
+export 'package:flutter_drpharma_2/Config/routes/routeManager.dart';

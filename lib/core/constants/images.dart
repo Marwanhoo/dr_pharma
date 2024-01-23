@@ -49,4 +49,7 @@ class AppImages {
   static const String textLogo = 'assets/images/dpharma.png';
   static const String logoApple = "assets/images/apple.png";
   static const String logoGoogle = "assets/images/google.png";
+  static const String backgroundProfile = "assets/images/background_profile.jpg";
+  static const String imageProfile = "assets/images/image_profile.jpg";
+  static const String pharmacyLicense = "assets/images/pharmacy_license.jpg";
 }

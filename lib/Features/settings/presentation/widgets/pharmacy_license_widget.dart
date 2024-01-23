@@ -14,9 +14,7 @@ class PharmacyLicenseWidget extends StatelessWidget {
         Expanded(
           child: ClipRRect(
             borderRadius: BorderRadius.circular(12),
-            child: Image.network(
-              "https://media.licdn.com/dms/image/D4D22AQHY5LswxZndgg/feedshare-shrink_1280/0/1691352303278?e=1708560000&v=beta&t=TQHlnchbbxYYrWBBo_rFdnhHoy0jqAk1Z86QLpOBW0I",
-            ),
+            child: Image.asset(AppImages.pharmacyLicense),
           ),
         ),
         const SizedBox(width: 5,),
