@@ -43,7 +43,6 @@ export 'package:flutter_drpharma_2/Features/on_boarding/presentation/widgets/bui
 export 'package:flutter_drpharma_2/Features/on_boarding/presentation/widgets/build_page_indicator.dart';
 export 'package:lottie/lottie.dart';
 export '../../../../core/utils/widgets/search_field.dart';
-export 'package:carousel_slider/carousel_slider.dart';
 export 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/timer_card.dart';
 export 'package:flutter_drpharma_2/core/utils/widgets/category_row.dart';
 export 'package:flutter_drpharma_2/Features/Home/Presentation/Views/widgets/counter_row.dart';
