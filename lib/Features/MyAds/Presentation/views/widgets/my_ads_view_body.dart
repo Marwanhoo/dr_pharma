@@ -9,13 +9,12 @@ class MyAdsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       appBar: DefaultAppBar(pageTitle: 'My Ads').build(context),
-      body:const Padding(
-        padding:  EdgeInsets.all(20.0),
-        child:  Column(
+      body: const Padding(
+        padding: EdgeInsets.all(20.0),
+        child: Column(
           children: [
             RemainingUploadsContainer(),
             SizedBox(
@@ -25,6 +24,6 @@ class MyAdsViewBody extends StatelessWidget {
           ],
         ),
       ),
-    ));
+    );
   }
 }

@@ -31,9 +31,7 @@ class HeadProfileInfo extends StatelessWidget {
                       ),
                     ),
                     image: DecorationImage(
-                      image: NetworkImage(
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT48wKo_hYrLLSCq4nLp4svJKIEBU2AHOKBfaM6P-skAavOaKMOduj7CnhPJyUe3I-PgWQ",
-                      ),
+                      image: AssetImage(AppImages.backgroundProfile),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -54,14 +52,13 @@ class HeadProfileInfo extends StatelessWidget {
           Stack(
             alignment: AlignmentDirectional.bottomEnd,
             children: [
-              InkWell(
-                borderRadius: BorderRadius.circular(50),
+              GestureDetector(
                 onTap: (){
                   showDialog(context: GlobalKeyy.currentContext, builder: (_)=>  AlertDialog(
                     backgroundColor: Colors.transparent,
                     content: const CircleAvatar(
                       radius: 100,
-                      backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/125823028?v=4"),
+                      backgroundImage: AssetImage(AppImages.imageProfile),
                     ),
                     actions: [
                       TextButton(onPressed: (){Navigator.of(GlobalKeyy.currentContext).pop();}, child: const Text("Close",style: TextStyle(color: Colors.white),)),
@@ -74,9 +71,7 @@ class HeadProfileInfo extends StatelessWidget {
                   Theme.of(GlobalKeyy.currentContext).scaffoldBackgroundColor,
                   child: const CircleAvatar(
                     radius: 50,
-                    backgroundImage: NetworkImage(
-                      'https://avatars.githubusercontent.com/u/125823028?v=4',
-                    ),
+                    backgroundImage: AssetImage(AppImages.imageProfile),
                   ),
                 ),
               ),

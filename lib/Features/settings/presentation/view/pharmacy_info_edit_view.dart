@@ -7,13 +7,7 @@ class PharmacyInfoEditView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          "Pharmacy Info",
-          style: AppFonts.style18Pop,
-        ),
-      ),
+      appBar:DefaultAppBar(pageTitle: 'Pharmacy Info').build(GlobalKeyy.currentContext),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 8),
         child: Column(

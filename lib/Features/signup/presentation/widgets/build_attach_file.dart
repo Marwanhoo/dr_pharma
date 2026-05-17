@@ -1,8 +1,7 @@
 import 'package:flutter_drpharma_2/core/app_export.dart';
 
-InkWell buildAttachAFile(BuildContext context) {
-  return InkWell(
-    borderRadius: BorderRadius.circular(16),
+Widget buildAttachAFile(BuildContext context) {
+  return GestureDetector(
     onTap: () {
       showAttachFile(context);
     },
